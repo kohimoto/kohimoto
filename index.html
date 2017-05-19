@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>kohimoto</title>
+	<meta name="description" content="kohimoto coming soon in 7.7. 2017" />
+	<meta name="keywords" content="kohimoto,website,design,digital,creative,photographer,illustrator,artist,ウェブサイト,サイト制作,アーティスト,ホームページ" />
+	<meta name="author" content="kohimoto" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="kohimoto"/>
+	<meta property="og:url" content="http://kohimoto.com"/>
+	<meta property="og:site_name" content="kohimoto"/>
+	<meta property="og:description" content="kohimoto coming soon in 7.7. 2017"/>
+	<meta name="twitter:title" content="kohimoto" />
+	<meta name="twitter:url" content="http://kohimoto.com" />
+	<meta name="twitter:site" content="@_kohimoto_" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_k.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-96997261-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	</head>
+	<body>
+
+<?
+date_default_timezone_set("Asia/Tokyo");
+
+$datetime = new DateTime('2017/07/07 10:00:00');
+$current  = new DateTime('now');
+$diff     = $current->diff($datetime);
+////$diff     = $datetime->diff($current);
+//
+//
+$day   = $diff->days;
+$month = $diff->m;
+//$hour = $day * 24;
+//$minute = $day * 24 * 60;
+//$second   = $diff->s;
+
+$diff_timestamp = strtotime("2017-07-07 10:00:00") - time();
+$minute = floor($diff_timestamp / 60);
+$hour = floor($minute / 60);
+//$day = floor($hour / 24);
+
+?>
+
+	<div id="fh5co-page" class="text-center animate-box">
+		<header>
+			<div class="container">
+				<div class="fh5co-navbar-brand">
+					<h1><a class="khmt-logo" href="index.html"><img src="images/logo_p.gif" alt="Kohimoto"></a></h1>
+				</div>
+			</div>
+		</header>
+		<div>
+				<div class="row">
+					<div class="container">
+						<h2 class="intro-heading glitch">Coming soon in 7.7. 2017</h2>
+						<p><span>
+Hello.<br>
+We can make website and around digital creative.<br>
+And we want to connect with photographer / illustrator / artist.
+						</span></p>
+						<img src="images/slot.gif" class="slot" alt="slot">
+					</div>
+				</div>
+		</div>
+		<div class="fh5co-counters" data-stellar-background-ratio="0.5" id="counter-animate">
+			<div class="fh5co-narrow-content container">
+				<div class="row" >
+					<div class="col-md-4">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="<?=$month?>" data-speed="1000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Month</span>
+					</div>
+					<div class="col-md-4">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="<?=$day?>" data-speed="3000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Days</span>
+					</div>
+					<div class="col-md-4">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="<?=$hour?>" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Hours</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row copy-right container">
+						<div>
+							<p class="fh5co-social-icon">
+								<a href="https://twitter.com/_kohimoto_" target="_blank"><i class="icon-twitter2"></i></a>
+								<a href="https://www.instagram.com/_kohimoto_/" target="_blank"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="mailto:kohimotojアットgmail.com" target=_blank"><i class="icon-envelope2"></i></a>
+							</p>
+							<p>Copyright &copy; 2017 Kohimoto. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

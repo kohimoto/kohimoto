@@ -1,0 +1,37 @@
+.ts-table-row {
+	display: table;
+}
+.ts-table-row > div {
+	display: table-cell;
+	vertical-align: top;
+}
+.ts-table-auth{
+	width: 70%;
+	border-right: 10px solid transparent;
+}
+.ts-table-ad{
+	width: 30%;
+	border-left: 10px solid transparent;
+}
+.ts-ad-area{
+	margin-top: .5em;
+	border: 3px solid #0073aa;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	background: #fff;
+	padding: 0 10px;
+}
+.ts-ad-area a {
+	background-color: #0095ff!important;
+	border-color: #0095ff!important;
+	box-shadow: 0 1px 0 #0095ff!important;
+	color: #fff!important;
+}
+
+.ts-custome_form {
+	padding: 0 20px;
+}
+
+.toplevel_page_typesquare-admin-menu li:nth-child(4) {
+	display: none;
+}

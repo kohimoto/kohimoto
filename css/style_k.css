@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Contrail+One);
+@import url(https://fonts.googleapis.com/css?family=Paytone+One);
+/* ======================================================
+*
+*
+* 	Yuka 2017/04/04 Written
+*
+* ======================================================= */
+body{
+  background-color: #faffb0;
+}
+#fh5co-page {
+  background: #faffb0 none repeat scroll 0 0;
+}
+header {
+  padding: 4em 0 1em;
+}
+.khmt-logo img{
+  width: 260px;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+h1, h2, h3, h4, h5, h6,
+.fh5co-counters .fh5co-counter,
+.fh5co-counters .fh5co-counter-label {
+  color: #3343fb;
+  font-family: 'Contrail One', cursive;
+}
+span {
+  color: #3343fb;
+  font-family: 'Contrail One', cursive;
+  font-size: 20px;
+}
+.intro-heading {
+  font-size: 80px;
+}
+.fh5co-counters {
+  background: none;
+  padding: 3em 0;
+}
+.fh5co-counters .fh5co-counter {
+  font-size: 60px;
+  color: #3343fb;
+}
+#footer {
+  border-top: 0;
+  padding: 0 0 5em;
+}
+#footer .copy-right {
+  padding-top: 0;
+}
+.fh5co-social-icon {
+  margin-bottom: 3em;
+}
+.fh5co-social-icon a {
+  padding: 0 30px;
+  font-size: 30px;
+}
+.fh5co-social-icon a i {
+  color: #f13179;
+}
+.copy-right p{
+  color: #f13179;
+  font-family: 'Contrail One', cursive;
+  font-size: 14px;
+}
+img{
+  width:260px;
+  margin-top: 30px;
+}
+.col-md-4{
+  width: 33.3333%;
+  float: left;
+}
+/*min-width*/
+@media (max-width: 768px) {
+  /*
+  #fh5co-page {
+  margin: 15px;
+  border: 2px solid #f13179;
+  }
+  */
+  header {
+    padding: 2em 0 0;
+  }
+  .container h1 img{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  .intro-heading {
+    font-size: 60px;
+}
+  .container img.slot{
+    width: 190px;
+  }
+  .col-md-4 span.fh5co-counter{
+    font-size: 38px;
+    text-align: left;
+  }
+  .col-md-4 span.fh5co-counter-label{
+    font-size: 10px;
+    text-align: left;
+  }
+  .fh5co-social-icon {
+    margin-bottom: 1em;
+}
+  .fh5co-social-icon a {
+    font-size: 24px;
+    padding: 0 15px;
+  }
+  /*.fh5co-social-icon a:nth-child(1){
+    padding: 0 15px 0 0;
+  }*/
+  #footer {
+      padding: 0 0 2em;
+  }
+}
+
+/*.glitch*/
+.glitch {
+  font-family: 'Paytone One', sans-serif;
+  font-weight: 700;
+  transform: translate(0%, 0%);
+  text-decoration: none;
+}
+.glitch:before, .glitch:after {
+  display: block;
+  content: 'Coming soon in 7.7. 2017';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+}
+.glitch:after {
+  color: #C487C2;
+  z-index: -2;
+  animation: glitch-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+.glitch:before {
+  color: #00FF02;
+  z-index: -1;
+  animation: glitch-left-2 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+}
+@keyframes glitch-left {
+  0% {
+    transform: translate(0);
+  }
+  33% {
+    transform: translate(-3px, 3px);
+  }
+  66% {
+    transform: translate(3px, -3px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes glitch-left-2 {
+  0% {
+    transform: translate(0);
+  }
+  33% {
+    transform: translate(-3px, -3px);
+  }
+  66% {
+    transform: translate(2px, 2px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
