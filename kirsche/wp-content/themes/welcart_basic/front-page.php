@@ -41,8 +41,8 @@
 							<?php if( !usces_have_zaiko_anyone() ) : ?>
 							<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
 							<?php endif; ?>
-							<div class="itemname"><a href="<?php the_permalink(); ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
-							<div class="itemprice"><?php usces_crform( usces_the_firstPrice('return'), true, false ); ?><?php usces_guid_tax(); ?></div>
+							<div class="itemname red"><a href="<?php the_permalink(); ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
+							<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), true, false ); ?> JPY</div>
 						
 						</article>
 					
