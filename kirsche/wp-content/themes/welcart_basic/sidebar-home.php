@@ -95,3 +95,10 @@ global $usces; ?>
 <?
 } //if(0)
 ?>
+	<div class="button"><button>Shop</button></div>
+
+  <div class="info_area">
+    <h2>Thanks dammy dammy</h2>
+    <h3>dammy dammy text dammy dammy textdammy dammy text dammy dammy text  </h3>
+  </div>
+

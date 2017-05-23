@@ -1,4 +1,3 @@
-
 	</div><!-- #main -->
 	
 	
@@ -11,7 +10,7 @@
 	<footer id="colophon" role="contentinfo">
 	
 		
-		<p class="copyright"><?php usces_copyright(); ?></p>
+		<p class="copyright">Copyright &copy; 2017 Kohimoto. All Rights Reserved.</p>
 	
 	</footer><!-- #colophon -->
 	

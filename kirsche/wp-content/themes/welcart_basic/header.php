@@ -23,14 +23,29 @@
 		<div class="inner cf">
 
 			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-			<<?php echo $heading_tag; ?> class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></<?php echo $heading_tag; ?>>
 
+		<nav id="nav" role="navigation">
+		<a href="#" class="nav-toggle nav-toggle active"><i></i></a>
+		<div class="table">
+		<div class="table-cell">
+		<ul>
+		<li><a href="#">TOP</a></li>
+		<li><a href="#">ABOUT US</a></li>
+		<li><a href="#">CONTACT</a></li>
+		<li><a href="#">NOTES</a></li>
+		</ul>
+		</div>
+		</div>
+		</nav>
+		<div class="head_nav">
+			<a href="#" class="nav-toggle o-nav-toggle"><i></i></a>
+		</div>
 			<?php if(! welcart_basic_is_cart_page()): ?>
 			
 			<div class="snav cf">
 
 				<div class="incart-btn">
-					<a href="<?php echo USCES_CART_URL; ?>"><i class="fa fa-shopping-cart"><span><?php _e('In the cart', 'usces') ?></span></i><?php if(! defined( 'WCEX_WIDGET_CART' ) ): ?><span class="total-quant"><?php usces_totalquantity_in_cart(); ?></span><?php endif; ?></a>
+					<a href="<?php echo USCES_CART_URL; ?>"><i class="fa fa-shopping-cart"></i><?php if(! defined( 'WCEX_WIDGET_CART' ) ): ?><span class="total-quant"><?php usces_totalquantity_in_cart(); ?></span><?php endif; ?></a>
 				</div>
 			</div><!-- .snav -->
 
@@ -44,7 +59,7 @@
 	</header><!-- #masthead -->
 
 	<?php if( ( is_front_page() || is_home() ) && get_header_image() ): ?>
-	<h1 class="logo"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></h1>
+	<h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 	<div class="main-image">
 		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo('name'); ?>">
 	</div><!-- main-image -->

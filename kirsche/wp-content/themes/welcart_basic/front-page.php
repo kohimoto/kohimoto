@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+	<h2>More about the shop<h2>	
+	<div class="button"><button>About us</button></div>
+	<h2>Take a look!<h2>	
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
@@ -35,11 +38,11 @@
 								<a href="<?php the_permalink(); ?>"><?php usces_the_itemImage( 0, 300, 300 ); ?></a>
 								<?php welcart_basic_campaign_message(); ?>
 							</div>
-							<div class="itemprice"><?php usces_crform( usces_the_firstPrice('return'), true, false ); ?><?php usces_guid_tax(); ?></div>
 							<?php if( !usces_have_zaiko_anyone() ) : ?>
 							<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
 							<?php endif; ?>
 							<div class="itemname"><a href="<?php the_permalink(); ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
+							<div class="itemprice"><?php usces_crform( usces_the_firstPrice('return'), true, false ); ?><?php usces_guid_tax(); ?></div>
 						
 						</article>
 					
@@ -57,6 +60,7 @@
 				
 		</div><!-- #content -->
 	</div><!-- #primary -->
+
 
 <?php get_sidebar('home'); ?>
 <?php get_footer(); ?>
