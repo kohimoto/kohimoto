@@ -3,7 +3,7 @@
  * @package Welcart
  * @subpackage Welcart_Basic
  */
-
+if(0){
 global $usces; ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
@@ -91,3 +91,7 @@ global $usces; ?>
 	</div>
 
 </aside><!-- #secondary -->
+
+<?
+} //if(0)
+?>

@@ -3,8 +3,11 @@
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 		
+		<?
+		//2017.05.22 kohinata
+		query_posts('posts_per_page=-1&cat=2&post_status=publish'); 
+		?>
 		<?php if ( 'page' == get_option('show_on_front') ): ?>
-
 			<div class="sof">
 				<?php if (have_posts()) : the_post(); ?>
 					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
@@ -28,7 +31,6 @@
 					<?php while( have_posts() ) : the_post(); usces_the_item(); ?>
 					
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						
 							<div class="itemimg">
 								<a href="<?php the_permalink(); ?>"><?php usces_the_itemImage( 0, 300, 300 ); ?></a>
 								<?php welcart_basic_campaign_message(); ?>

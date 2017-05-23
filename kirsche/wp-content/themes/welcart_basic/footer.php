@@ -10,14 +10,6 @@
 	
 	<footer id="colophon" role="contentinfo">
 	
-		<nav id="site-info" class="footer-navigation">
-			<?php
-				$page_c	=	get_page_by_path('usces-cart');
-				$page_m	=	get_page_by_path('usces-member');
-				$pages	=	"{$page_c->ID},{$page_m->ID}";
-				wp_nav_menu(array( 'theme_location' => 'footer', 'exclude' => $pages , 'menu_class' => 'footer-menu cf' )); 
-			?>
-		</nav>	
 		
 		<p class="copyright"><?php usces_copyright(); ?></p>
 	
