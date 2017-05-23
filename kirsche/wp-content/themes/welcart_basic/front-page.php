@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-	<h2>More about the shop<h2>	
+	<h2>More about the shop</h2>	
 	<div class="button"><button>About us</button></div>
-	<h2>Take a look!<h2>	
+	<h2>Take a look!</h2>	
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
