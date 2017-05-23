@@ -258,6 +258,9 @@ button{
   background-color: #fff;
   line-height: 1;
 }
+.red {
+  color: #ff0030;
+}
 a{
   color:#000;
 }
@@ -275,7 +278,6 @@ h1.logo{
   top: 2em;
   left: 50%;
   margin-left: -2.7em;
-  padding-top: 2em;
 }
 .main-image{
   width: 100%;
