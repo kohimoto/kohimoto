@@ -13,6 +13,7 @@
 	<meta name="format-detection" content="telephone=no"/>
 
 	<?php wp_head(); ?>
+	<link rel="stylesheet" type="text/css" href="/kirsche/wp-content/themes/welcart_basic/custom.css" media="all">
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,12 +37,14 @@
 			<?php endif; ?>
 			
 		</div><!-- .inner -->
-
+		<div class="message_left message"><a>papyrus</a></div>
+		<div class="message_right message"><a>Goods day!</a></div>
 		
 
 	</header><!-- #masthead -->
 
 	<?php if( ( is_front_page() || is_home() ) && get_header_image() ): ?>
+	<h1 class="logo"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></h1>
 	<div class="main-image">
 		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo('name'); ?>">
 	</div><!-- main-image -->

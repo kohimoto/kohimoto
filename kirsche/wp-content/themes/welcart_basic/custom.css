@@ -1,0 +1,73 @@
+/*** header ***/
+
+header{
+  position: fixed;
+  border-bottom: none;
+}
+.message{
+  position: fixed;
+  z-index: 42;
+  top: 40%;
+  font-size: 20px;
+}
+.message_left{
+  transform: translateX(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) rotate(-90deg);
+  left: 58px;
+}
+.message_right{
+  transform: translateX(50%) rotate(90deg);
+  -webkit-transform: translateX(50%) rotate(90deg);
+  right: 64px;
+}
+@media screen and (max-width: 1320px) {
+  .message_right{
+    right: 30px;
+  }
+  .message_left{
+    left: 30px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .message_right{
+    right: 10px;
+  }
+  .message_left{
+    left: 10px;
+  }
+}
+
+/*** contents ***/
+
+h1.logo{
+  position: fixed;
+  top: 2em;
+  left: 50%;
+  margin-left: -2.7em;
+}
+.main-image{
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#main{
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+#content article{
+  margin: 0;
+  width: 28%;
+}
+.front-il{
+  letter-spacing: 80px;
+}
+@media screen and (min-width: 62.5em) {
+	header .inner {
+		width: 100%;
+  }
+  .main-image img{
+    width: 100%;
+  }
+}
