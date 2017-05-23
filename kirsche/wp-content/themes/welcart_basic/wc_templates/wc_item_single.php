@@ -73,7 +73,6 @@ get_header();
 							</table>
 						</div>
 						<?php endif; ?>
-					</div><!-- .detail-box -->
 
 					<div class="item-info">
 
@@ -85,9 +84,9 @@ get_header();
 
 						<?php do { ?>
 							<div class="skuform">
-								<?php if( '' !== usces_the_itemSkuDisp('return') ) : ?>
+								<?php if(0){ if( '' !== usces_the_itemSkuDisp('return') ) : ?>
 								<div class="skuname"><?php usces_the_itemSkuDisp(); ?></div>
-								<?php endif; ?>
+								<?php endif; }?>
 
 								<?php if( usces_is_options() ) : ?>
 								<dl class="item-option">
@@ -101,7 +100,13 @@ get_header();
 								<?php usces_the_itemGpExp(); ?>
 
 								<div class="field">
+<?
+if(0){
+?>
 									<div class="zaikostatus"><?php _e('stock status', 'usces'); ?> : <?php usces_the_itemZaikoStatus(); ?></div>
+<?
+}
+?>
 
 									<?php if( 'continue' == welcart_basic_get_item_chargingtype( $post->ID ) ) : ?>
 									<div class="frequency"><span class="field_frequency"><?php dlseller_frequency_name($post->ID, 'amount'); ?></span></div>
@@ -111,7 +116,7 @@ get_header();
 									<?php if( usces_the_itemCprice('return') > 0 ) : ?>
 										<span class="field_cprice"><?php usces_the_itemCpriceCr(); ?></span>
 									<?php endif; ?>
-										<?php usces_the_itemPriceCr(); ?><?php usces_guid_tax(); ?>
+										<?php usces_the_itemPriceCr(); ?><?php if(0){ usces_guid_tax(); }?> JPY
 									</div>
 								</div>
 
@@ -119,8 +124,8 @@ get_header();
 								<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','welcart_basic') ); ?></div>
 								<?php else : ?>
 								<div class="c-box">
-									<span class="quantity"><?php _e('Quantity', 'usces'); ?><?php usces_the_itemQuant(); ?><?php usces_the_itemSkuUnit(); ?></span>
-									<span class="cart-button"><?php usces_the_itemSkuButton( '&#xf07a;&nbsp;&nbsp;' . __('Add to Shopping Cart', 'usces' ), 0 ); ?></span>
+									<span class="quantity"><?php _e('QTY', 'usces'); ?><?php usces_the_itemQuant(); ?><?php usces_the_itemSkuUnit(); ?></span>
+									<span class="cart-button"><?php usces_the_itemSkuButton( __('Add to cart', 'usces' ), 0 ); ?></span>
 								</div>
 								<?php endif; ?>
 								<div class="error_message"><?php usces_singleitem_error_message( $post->ID, usces_the_itemSku('return') ); ?></div>
@@ -132,6 +137,10 @@ get_header();
 						<?php do_action( 'usces_action_single_item_outform' ); ?>
 
 					</div><!-- .item-info -->
+
+
+					</div><!-- .detail-box -->
+
 
 					<?php usces_assistance_item( $post->ID, __('An article concerned', 'usces') ); ?>
 
@@ -147,7 +156,70 @@ get_header();
 	</div><!-- #content -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+	<h2>how 'bout this</h2>	
+
+	<div id="primary2" class="site-content">
+		<div id="content2" role="main">
+		
+		<?
+		//2017.05.22 kohinata
+		$cat = get_the_category();
+		$cat = $cat[0];
+		$cat_id = $cat->cat_ID;
+file_put_contents("/tmp/kohi.txt",print_r("\npost:".$cat_id,true),FILE_APPEND);
+		query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish'); 
+		?>
+		<?php if ( 'page' == get_option('show_on_front') ): ?>
+			<div class="sof">
+				<?php if (have_posts()) : the_post(); ?>
+					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+	
+						<h2 class="entry-title"><?php the_title(); ?></h2>
+				
+						<div class="entry-content">
+							<?php the_content(); ?>
+						</div>
+					</article>
+				<?php else: ?>
+					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+				<?php endif; ?>
+			</div><!-- .sof -->
+
+		<?php else: ?>
+
+			<section class="front-il cf">
+			
+				<?php if( have_posts() ) : ?>
+					<?php while( have_posts() ) : the_post(); usces_the_item(); ?>
+					
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<div class="itemimg">
+								<a href="<?php the_permalink(); ?>"><?php usces_the_itemImage( 0, 300, 300 ); ?></a>
+								<?php welcart_basic_campaign_message(); ?>
+							</div>
+							<?php if( !usces_have_zaiko_anyone() ) : ?>
+							<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
+							<?php endif; ?>
+							<div class="itemname"><a href="<?php the_permalink(); ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
+							<div class="itemprice"><?php usces_crform( usces_the_firstPrice('return'), true, false ); ?><?php usces_guid_tax(); ?></div>
+						
+						</article>
+					
+					<?php endwhile; ?>
+					
+				<?php else: ?>
+					
+					<p class="no-date"><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+				
+				<?php endif; ?>
+			
+			</section><!-- .front-il -->
+
+		<?php endif; ?>
+				
+		</div><!-- #content2 -->
+	</div><!-- #primary2 -->
 <?php get_footer(); ?>
 
 <?php endswitch; ?>
