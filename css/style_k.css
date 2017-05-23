@@ -2,7 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Paytone+One);
 /* ======================================================
 *
-*
 * 	Yuka 2017/04/04 Written
 *
 * ======================================================= */
@@ -86,7 +85,7 @@ img{
     padding: 2em 0 0;
   }
   .container h1 img{
-    width: 200px;
+    width: 140px;
     margin: 0 auto;
     display: block;
   }
