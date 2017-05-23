@@ -59,8 +59,8 @@
 	</header><!-- #masthead -->
 
 	<?php if( ( is_front_page() || is_home() ) && get_header_image() ): ?>
-	<h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 	<div class="main-image">
+	<h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo('name'); ?>">
 	</div><!-- main-image -->
 	<?php endif; ?>

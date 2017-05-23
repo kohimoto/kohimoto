@@ -16,7 +16,7 @@ default://shipped
 
 get_header();
 ?>
-
+<h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 <div id="primary" class="site-content">
 	<div id="content" role="main">
 
@@ -25,7 +25,6 @@ get_header();
 		<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 			<header class="item-header">
-				<h1 class="item_page_title"><?php the_title(); ?></h1>
 			</header><!-- .item-header -->
 
 			<div class="storycontent">
@@ -56,8 +55,8 @@ get_header();
 					</div><!-- #img-box -->
 
 					<div class="detail-box">
-						<h2 class="item-name"><?php usces_the_itemName(); ?></h2>
-						<div class="itemcode">(<?php usces_the_itemCode(); ?>)</div>
+						<h3 class="item-name red"><?php usces_the_itemName(); ?></h3>
+						<p class="red"><?php the_title(); ?></p>
 						<?php welcart_basic_campaign_message(); ?>
 						<div class="item-description">
 							<?php the_content(); ?>
