@@ -242,7 +242,7 @@ h2{
   font-style: italic;
   line-height: 1.4285;
   padding-bottom: 1em;
-
+  text-align: center;
 }
 h3{
   font-size: 2em;
@@ -533,3 +533,112 @@ footer {
 
 
 /*** cart ***/
+.cart_navi{
+  padding-bottom: 3em;
+}
+#wc_cart #cart .upbutton {
+    padding: 0 0 2em;
+}
+button.s_button{
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 3px;
+  padding: 0.714286em 2.14286em;
+  margin-left: 1em;
+  cursor: pointer;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border-radius: 3px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #ff0030;
+  padding: 0.714286em 2.14286em;
+  line-height: 1;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #ff0030;
+  color: #fff;
+}
+div.cart_navi li {
+  color: #ff0030;
+  background-color: #eee;
+}
+div.cart_navi li::before {
+  background-color: #eee;
+}
+div.cart_navi li::after {
+  background-color: #eee;
+}
+div.cart_navi li.current,
+div.cart_navi li.current::before,
+div.cart_navi li.current::after {
+  background-color: #ff0030;
+  color: #fff;
+}
+#cart_table{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 1em;
+  display: block;
+  max-width: 1140px;
+  border-left: 0;
+  border-right: 0;
+  margin: 0 0 4em;
+
+  overflow: hidden;
+}
+#cart_table tbody{
+  padding-bottom: 4em;
+  display: block;
+  border-bottom: 1px solid #000;
+}
+#cart_table tfoot{
+  float: right;
+  display: block;
+}
+#cart_table tfoot tr{
+
+
+}
+#cart_table th {
+  border: 0;
+  background-color: inherit;
+  text-align: left;
+  padding: 4em 4em 0;
+  vertical-align:top;
+}
+#cart_table tfoot th{
+  padding: 4em;
+  vertical-align: top;
+  line-height: 1;
+}
+#cart_table td {
+  font-weight: bold;
+  border: 0;
+  text-align: left;
+  padding: 4em 4em 0;
+}
+#cart_table .amount {
+  font-size: 1em;
+  letter-spacing: 0;
+  padding: 4em 4em 0;
+}
+#cart_table img {
+  width: 200px;
+}
+#cart_table .quantity input {
+  border: 1px solid #aaa;
+  font-weight: bold;
+  padding: 0.571428em;
+}
+#wc_cart .send button{
+  float: left;
+}
+#wc_cart .send button:last-child{
+  float: right;
+}
