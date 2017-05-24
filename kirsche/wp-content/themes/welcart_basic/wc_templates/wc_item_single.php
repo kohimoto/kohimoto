@@ -112,11 +112,11 @@ if(0){
 									<div class="frequency"><span class="field_frequency"><?php dlseller_frequency_name($post->ID, 'amount'); ?></span></div>
 									<?php endif; ?>
 
-									<div class="field_price">
+									<div class="field_price red">
 									<?php if( usces_the_itemCprice('return') > 0 ) : ?>
 										<span class="field_cprice"><?php usces_the_itemCpriceCr(); ?></span>
 									<?php endif; ?>
-										<?php usces_the_itemPriceCr(); ?><?php if(0){ usces_guid_tax(); }?> JPY
+										<?php usces_the_itemPriceCr(); ?> JPY
 									</div>
 								</div>
 
@@ -124,7 +124,13 @@ if(0){
 								<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','welcart_basic') ); ?></div>
 								<?php else : ?>
 								<div class="c-box">
-									<span class="quantity"><?php _e('QTY', 'usces'); ?><?php usces_the_itemQuant(); ?><?php usces_the_itemSkuUnit(); ?></span>
+<?
+if(0){
+?>
+									<span class="quantity red"><?php _e('QTY', 'usces'); ?><?php usces_the_itemQuant(); ?><?php usces_the_itemSkuUnit(); ?></span>
+<?
+}
+?>
 									<span class="cart-button"><?php usces_the_itemSkuButton( __('Add to cart', 'usces' ), 0 ); ?></span>
 								</div>
 								<?php endif; ?>
@@ -156,70 +162,58 @@ if(0){
 	</div><!-- #content -->
 </div><!-- #primary -->
 
+<!-- #how 'bout this -->
+<h2>how 'bout this</h2>	
+<div id="primary2" class="site-content">
+<div id="content2" role="main">
 
-	<h2>how 'bout this</h2>	
+<?
+//2017.05.22 kohinata
+$cat = get_the_category();
+$cat = $cat[0];
+$cat_id = $cat->cat_ID;
+query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish'); 
+?>
+<?php if ( 'page' == get_option('show_on_front') ): ?>
+	<div class="sof">
+	<?php if (have_posts()) : the_post(); ?>
+	<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		<h2 class="entry-title"><?php the_title(); ?></h2>
+		<div class="entry-content">
+		<?php the_content(); ?>
+		</div>
+	</article>
+	<?php else: ?>
+	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+	<?php endif; ?>
+	</div><!-- .sof -->
+	<?php else: ?>
+	<section class="front-il cf">
+	<?php if( have_posts() ) : ?>
+	<?php while( have_posts() ) : the_post(); usces_the_item(); ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="itemimg">
+		<a href="<?php the_permalink(); ?>"><?php usces_the_itemImage( 0, 300, 300 ); ?></a>
+		<?php welcart_basic_campaign_message(); ?>
+	</div>
+	<?php if( !usces_have_zaiko_anyone() ) : ?>
+	<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
+	<?php endif; ?>
+	<div class="itemname"><a href="<?php the_permalink(); ?>"  rel="bookmark" class="red"><?php usces_the_itemName(); ?></a></div>
+	<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), false, false ); ?> JPY</div>
+	</article>
+	<?php endwhile; ?>
+	<?php else: ?>
+	<p class="no-date"><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+	<?php endif; ?>
+	</section><!-- .front-il -->
+	<?php endif; ?>
+</div><!-- #content2 -->
+</div><!-- #primary2 -->
+<!-- #how 'bout this -->
 
-	<div id="primary2" class="site-content">
-		<div id="content2" role="main">
-		
-		<?
-		//2017.05.22 kohinata
-		$cat = get_the_category();
-		$cat = $cat[0];
-		$cat_id = $cat->cat_ID;
-file_put_contents("/tmp/kohi.txt",print_r("\npost:".$cat_id,true),FILE_APPEND);
-		query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish'); 
-		?>
-		<?php if ( 'page' == get_option('show_on_front') ): ?>
-			<div class="sof">
-				<?php if (have_posts()) : the_post(); ?>
-					<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-	
-						<h2 class="entry-title"><?php the_title(); ?></h2>
-				
-						<div class="entry-content">
-							<?php the_content(); ?>
-						</div>
-					</article>
-				<?php else: ?>
-					<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-				<?php endif; ?>
-			</div><!-- .sof -->
+<div class="button"><a href="/kirsche"><button>Shop</button></a></div>
 
-		<?php else: ?>
-
-			<section class="front-il cf">
-			
-				<?php if( have_posts() ) : ?>
-					<?php while( have_posts() ) : the_post(); usces_the_item(); ?>
-					
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<div class="itemimg">
-								<a href="<?php the_permalink(); ?>"><?php usces_the_itemImage( 0, 300, 300 ); ?></a>
-								<?php welcart_basic_campaign_message(); ?>
-							</div>
-							<?php if( !usces_have_zaiko_anyone() ) : ?>
-							<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
-							<?php endif; ?>
-							<div class="itemname"><a href="<?php the_permalink(); ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
-							<div class="itemprice"><?php usces_crform( usces_the_firstPrice('return'), true, false ); ?><?php usces_guid_tax(); ?></div>
-						
-						</article>
-					
-					<?php endwhile; ?>
-					
-				<?php else: ?>
-					
-					<p class="no-date"><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-				
-				<?php endif; ?>
-			
-			</section><!-- .front-il -->
-
-		<?php endif; ?>
-				
-		</div><!-- #content2 -->
-	</div><!-- #primary2 -->
 <?php get_footer(); ?>
 
 <?php endswitch; ?>

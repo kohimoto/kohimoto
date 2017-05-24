@@ -4008,16 +4008,21 @@ function usces_shipping_country_option( $selected, $out = '' ){
 function usces_get_cart_button( $out = '' ) {
 	global $usces;
 	$res = '';
-	
-	if($usces->use_js){
-		$res .= '<input name="previous" type="button" id="previouscart" class="continue_shopping_button" value="' . __('continue shopping','usces') . '"' . apply_filters('usces_filter_cart_prebutton', ' onclick="uscesCart.previousCart();"') . ' />&nbsp;&nbsp;';
+
+//2017.05.24 kohinata	
+	if( $usces->use_js){
+//		$res .= '<input name="previous" type="button" id="previouscart" class="continue_shopping_button" value="' . __('continue shopping','usces') . '"' . apply_filters('usces_filter_cart_prebutton', ' onclick="uscesCart.previousCart();"') . ' />&nbsp;&nbsp;';
+		$res .= '<button name="previous" type="button" id="previouscart" class="continue_shopping_button" value="' . __('Back to shop','') . '"' . apply_filters('usces_filter_cart_prebutton', ' onclick="uscesCart.previousCart();"') . ' />Back to shop</button>';
 		if( usces_is_cart() ) {
-			$res .= '<input name="customerinfo" type="submit" class="to_customerinfo_button" value="' . __(' Next ','usces') . '"' . apply_filters('usces_filter_cart_nextbutton', ' onclick="return uscesCart.cartNext();"') . ' />';
+//			$res .= '<input name="customerinfo" type="submit" class="to_customerinfo_button" value="' . __(' Next ','usces') . '"' . apply_filters('usces_filter_cart_nextbutton', ' onclick="return uscesCart.cartNext();"') . ' />';
+			$res .= '<button name="customerinfo" type="submit" class="to_customerinfo_button" value="' . __(' Next ','') . '"' . apply_filters('usces_filter_cart_nextbutton', ' onclick="return uscesCart.cartNext();"') . ' />Next &gt;&gt;</button>';
 		}
 	}else{
-		$res .= '<a href="' . get_home_url() . '" class="continue_shopping_button">' . __('continue shopping','usces') . '</a>&nbsp;&nbsp;';
+//		$res .= '<a href="' . get_home_url() . '" class="continue_shopping_button">' . __('continue shopping','usces') . '</a>&nbsp;&nbsp;';
+		$res .= '<a href="' . get_home_url() . '" class="continue_shopping_button">' . __('continue shopping','') . '</a>';
 		if( usces_is_cart() ) {
-			$res .= '<input name="customerinfo" type="submit" class="to_customerinfo_button" value="' . __(' Next ','usces') . '"' . apply_filters('usces_filter_cart_nextbutton', NULL) . ' />';
+//			$res .= '<input name="customerinfo" type="submit" class="to_customerinfo_button" value="' . __(' Next ','usces') . '"' . apply_filters('usces_filter_cart_nextbutton', NULL) . ' />';
+			$res .= '<button name="customerinfo" type="submit" class="to_customerinfo_button" value="' . __(' Next ','') . '"' . apply_filters('usces_filter_cart_nextbutton', NULL) . ' />Next &gt;&gt;</button>';
 		}
 	}
 	$res = apply_filters('usces_filter_get_cart_button', $res);
@@ -4033,9 +4038,11 @@ function usces_get_customer_button( $out = '' ) {
 	global $usces, $member_regmode;
 	$res = '';
 	
-	$res = '<input name="backCart" type="submit" class="back_cart_button" value="'.__('Back', 'usces').'" />&nbsp;&nbsp;';
+//	$res = '<input name="backCart" type="submit" class="back_cart_button" value="'.__('Back', 'usces').'" />&nbsp;&nbsp;';
+	$res = '<button name="backCart" type="submit" class="back_cart_button" value="'.__('Back', 'usces').'" />Back to shop</button>';
 	
-	$button = '<input name="deliveryinfo" type="submit" class="to_deliveryinfo_button" value="'.__(' Next ', 'usces').'" />&nbsp;&nbsp;';
+//	$button = '<input name="deliveryinfo" type="submit" class="to_deliveryinfo_button" value="'.__(' Next ', 'usces').'" />&nbsp;&nbsp;';
+	$button = '<button name="deliveryinfo" type="submit" class="to_deliveryinfo_button" value="'.__(' Next ', 'usces').'" />Next &gt;&gt;</button>';
 	$res .= apply_filters('usces_filter_customer_button', $button);
 	
 	if(usces_is_membersystem_state() && $member_regmode != 'editmemberfromcart' && usces_is_login() == false ){

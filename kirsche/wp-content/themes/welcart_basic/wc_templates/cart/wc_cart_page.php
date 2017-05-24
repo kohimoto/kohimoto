@@ -6,6 +6,7 @@
 
 get_header();
 ?>
+<h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 <div id="primary" class="site-content">
 	<div id="content" class="cart-page" role="main">
 
@@ -13,14 +14,14 @@ get_header();
 
 		<article class="post" id="wc_<?php usces_page_name(); ?>">
 
-			<h1 class="cart_page_title"><?php _e('In the cart', 'usces'); ?></h1>
+			<h2>Cart<br> Check please!</h2>
 
 			<div class="cart_navi">
 				<ul>
-					<li class="current"><?php _e('1.Cart','usces'); ?></li>
-					<li><?php _e('2.Customer Info','usces'); ?></li>
-					<li><?php _e('3.Deli. & Pay.','usces'); ?></li>
-					<li><?php _e('4.Confirm','usces'); ?></li>
+					<li class="current red"><?php _e('Cart',''); ?></li>
+					<li class="red"><?php _e('Customer Info',''); ?></li>
+					<li class="red"><?php _e('Deli. & Pay.',''); ?></li>
+					<li class="red"><?php _e('Confirm',''); ?></li>
 				</ul>
 			</div>
 
@@ -33,17 +34,15 @@ get_header();
 			<form action="<?php usces_url('cart'); ?>" method="post" onKeyDown="if(event.keyCode == 13){return false;}">
 			<?php if( usces_is_cart() ) : ?>
 				<div id="cart">
-					<div class="upbutton"><?php _e('Press the `update` button when you change the amount of items.','usces'); ?><input name="upButton" type="submit" value="<?php _e('Quantity renewal','usces'); ?>" onclick="return uscesCart.upCart()" /></div>
+					<div class="upbutton"><?php _e('Press the `update` button when you change the amount of items.','usces'); ?><button name="upButton" class="s_button" type="submit" value="Change" onclick="return uscesCart.upCart()" />Change</button></div>
 					<table cellspacing="0" id="cart_table">
 						<thead>
 						<tr>
-							<th scope="row" class="num">No.</th>
-							<th class="thumbnail"> </th>
-							<th class="productname"><?php _e('item name','usces'); ?></th>
-							<th class="unitprice"><?php _e('Unit price','usces'); ?></th>
-							<th class="quantity"><?php _e('Quantity','usces'); ?></th>
-							<th class="subtotal"><?php _e('Amount','usces'); ?><?php usces_guid_tax(); ?></th>
-							<th class="stock"><?php _e('stock status','usces'); ?></th>
+							<th class="thumbnail">Images</th>
+							<th class="productname"><?php _e('Name',''); ?></th>
+							<th class="quantity"><?php _e('Quantity',''); ?></th>
+							<th class="subtotal"><?php _e('Price',''); ?></th>
+							<th class="stock"><?php _e('Stock status',''); ?></th>
 							<th class="action"></th>
 						</tr>
 						</thead>
@@ -52,22 +51,27 @@ get_header();
 						</tbody>
 						<tfoot>
 						<tr>
-							<th class="num"></th>
 							<th class="thumbnail"></th>
-							<th colspan="3" scope="row" class="aright"><?php _e('total items','usces'); ?><?php usces_guid_tax(); ?></th>
-							<th class="aright amount"><?php usces_crform(usces_total_price('return'), true, false); ?></th>
+							<th colspan="2" scope="row" class="aright red"><?php _e('Total',''); ?></th>
+							<th class="aright amount red"><?php usces_crform(usces_total_price('return'), false, false); ?> JPY</th>
 							<th class="stock"></th>
 							<th class="action"></th>
 						</tr>
 						</tfoot>
 					</table>
+<?
+if(0){
+?>
 					<div class="currency_code"><?php _e('Currency','usces'); ?> : <?php usces_crcode(); ?></div>
+<?
+}
+?>
 					<?php if( $usces_gp ) : ?>
 					<div class="gp"><img src="<?php bloginfo('template_directory'); ?>/images/gp.gif" alt="<?php _e('Business package discount','usces'); ?>" /><span><?php _e('The price with this mark applys to Business pack discount.','usces'); ?></span></div>
 					<?php endif; ?>
 				</div><!-- #cart -->
 			<?php else : ?>
-				<div class="no_cart"><?php _e('There are no items in your cart.','usces'); ?></div>
+				<div class="no_cart"><?php _e('There are no items in your cart.',''); ?></div>
 			<?php endif; ?>
 
 				<div class="send"><?php usces_get_cart_button(); ?></div>
