@@ -1,4 +1,4 @@
-red<?php
+<?php
 /**
  * @package Welcart
  * @subpackage Welcart_Basic
@@ -124,7 +124,13 @@ if(0){
 								<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','welcart_basic') ); ?></div>
 								<?php else : ?>
 								<div class="c-box">
+<?
+if(0){
+?>
 									<span class="quantity red"><?php _e('QTY', 'usces'); ?><?php usces_the_itemQuant(); ?><?php usces_the_itemSkuUnit(); ?></span>
+<?
+}
+?>
 									<span class="cart-button"><?php usces_the_itemSkuButton( __('Add to cart', 'usces' ), 0 ); ?></span>
 								</div>
 								<?php endif; ?>

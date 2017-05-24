@@ -14,16 +14,16 @@ usces_delivery_info_script();
 
 		<article class="post" id="wc_<?php usces_page_name(); ?>">
 
-			<h1 class="cart_page_title"><?php _e('Shipping / Payment options', 'usces'); ?></h1>
+			<h2><?php _e('Shipping / Payment <br>options', ''); ?></h2>
 
 			<div id="delivery-info">
 
 				<div class="cart_navi">
 					<ul>
-						<li><?php _e('1.Cart','usces'); ?></li>
-						<li><?php _e('2.Customer Info','usces'); ?></li>
-						<li class="current"><?php _e('3.Deli. & Pay.','usces'); ?></li>
-						<li><?php _e('4.Confirm','usces'); ?></li>
+						<li class="red"><?php _e('Cart',''); ?></li>
+						<li class="red"><?php _e('Customer Info',''); ?></li>
+						<li  class="current red"><?php _e('Deli. & Pay.',''); ?></li>
+						<li class="red"><?php _e('Confirm',''); ?></li>
 					</ul>
 				</div>
 
@@ -104,8 +104,8 @@ usces_delivery_info_script();
 
 					<div class="send">
 						<input name="offer[cus_id]" type="hidden" value="" />
-						<input name="backCustomer" type="submit" class="back_to_customer_button" value="<?php _e('Back', 'usces'); ?>"<?php echo apply_filters( 'usces_filter_deliveryinfo_prebutton', NULL ); ?> />&nbsp;&nbsp;
-						<input name="confirm" type="submit" class="to_confirm_button" value="<?php _e(' Next ', 'usces'); ?>"<?php echo apply_filters( 'usces_filter_deliveryinfo_nextbutton', NULL ); ?> />
+					<button name="backCustomer" type="submit" class="back_to_customer_button" value="<?php _e('Back', ''); ?>"<?php echo apply_filters( 'usces_filter_deliveryinfo_prebutton', NULL ); ?>>Back to shop</button>
+					<button name="confirm" type="submit" class="to_confirm_button" value="<?php _e(' Next ', ''); ?>"<?php echo apply_filters( 'usces_filter_deliveryinfo_nextbutton', NULL ); ?>>Next &gt;&gt;</button>
 					</div>
 					<?php do_action( 'usces_action_delivery_page_inform' ); ?>
 				</form>

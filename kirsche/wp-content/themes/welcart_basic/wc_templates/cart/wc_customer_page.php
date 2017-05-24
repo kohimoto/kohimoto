@@ -13,16 +13,16 @@ get_header(); ?>
 
 		<article class="post" id="wc_<?php usces_page_name(); ?>">
 
-			<h1 class="cart_page_title"><?php _e('Customer Information', 'usces'); ?></h1>
+			<h2><?php _e('Customer<br> Information', ''); ?></h2>
 
 			<div id="customer-info">
 
 				<div class="cart_navi">
 					<ul>
-						<li><?php _e('1.Cart','usces'); ?></li>
-						<li class="current"><?php _e('2.Customer Info','usces'); ?></li>
-						<li><?php _e('3.Deli. & Pay.','usces'); ?></li>
-						<li><?php _e('4.Confirm','usces'); ?></li>
+						<li class="red"><?php _e('Cart',''); ?></li>
+						<li class="current red"><?php _e('Customer Info',''); ?></li>
+						<li class="red"><?php _e('Deli. & Pay.',''); ?></li>
+						<li class="red"><?php _e('Confirm',''); ?></li>
 					</ul>
 				</div>
 
@@ -64,7 +64,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<?php if( !welcart_basic_have_ex_order() ) : ?>
-				<h5><?php _e('The nonmember please enter at here.','usces'); ?></h5>
+				<h5><?php if(0){ _e('The nonmember please enter at here.','usces'); }?></h5>
 
 				<form action="<?php echo USCES_CART_URL; ?>" method="post" name="customer_form" onKeyDown="if(event.keyCode == 13){return false;}">
 
