@@ -18,10 +18,10 @@ get_header();
 
 			<div class="cart_navi">
 				<ul>
-					<li class="current"><?php _e('1.Cart','usces'); ?></li>
-					<li><?php _e('2.Customer Info','usces'); ?></li>
-					<li><?php _e('3.Deli. & Pay.','usces'); ?></li>
-					<li><?php _e('4.Confirm','usces'); ?></li>
+					<li class="current"><?php _e('Cart',''); ?></li>
+					<li><?php _e('Customer Info',''); ?></li>
+					<li><?php _e('Deli. & Pay.',''); ?></li>
+					<li><?php _e('Confirm',''); ?></li>
 				</ul>
 			</div>
 
@@ -40,11 +40,11 @@ get_header();
 						<tr>
 							<th scope="row" class="num">No.</th>
 							<th class="thumbnail"> </th>
-							<th class="productname"><?php _e('item name','usces'); ?></th>
-							<th class="unitprice"><?php _e('Unit price','usces'); ?></th>
-							<th class="quantity"><?php _e('Quantity','usces'); ?></th>
-							<th class="subtotal"><?php _e('Amount','usces'); ?><?php usces_guid_tax(); ?></th>
-							<th class="stock"><?php _e('stock status','usces'); ?></th>
+							<th class="productname"><?php _e('Name',''); ?></th>
+							<th class="unitprice"><?php _e('Unit price',''); ?></th>
+							<th class="quantity"><?php _e('Quantity',''); ?></th>
+							<th class="subtotal"><?php _e('Price',''); ?></th>
+							<th class="stock"><?php _e('Stock status',''); ?></th>
 							<th class="action"></th>
 						</tr>
 						</thead>
@@ -55,14 +55,20 @@ get_header();
 						<tr>
 							<th class="num"></th>
 							<th class="thumbnail"></th>
-							<th colspan="3" scope="row" class="aright"><?php _e('total items','usces'); ?><?php usces_guid_tax(); ?></th>
+							<th colspan="3" scope="row" class="aright"><?php _e('Total',''); ?></th>
 							<th class="aright amount"><?php usces_crform(usces_total_price('return'), true, false); ?></th>
 							<th class="stock"></th>
 							<th class="action"></th>
 						</tr>
 						</tfoot>
 					</table>
+<?
+if(0){
+?>
 					<div class="currency_code"><?php _e('Currency','usces'); ?> : <?php usces_crcode(); ?></div>
+<?
+}
+?>
 					<?php if( $usces_gp ) : ?>
 					<div class="gp"><img src="<?php bloginfo('template_directory'); ?>/images/gp.gif" alt="<?php _e('Business package discount','usces'); ?>" /><span><?php _e('The price with this mark applys to Business pack discount.','usces'); ?></span></div>
 					<?php endif; ?>
