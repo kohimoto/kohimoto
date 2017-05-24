@@ -18,10 +18,10 @@ get_header();
 
 			<div class="cart_navi">
 				<ul>
-					<li class="current"><?php _e('Cart',''); ?></li>
-					<li><?php _e('Customer Info',''); ?></li>
-					<li><?php _e('Deli. & Pay.',''); ?></li>
-					<li><?php _e('Confirm',''); ?></li>
+					<li class="current red"><?php _e('Cart',''); ?></li>
+					<li class="red"><?php _e('Customer Info',''); ?></li>
+					<li class="red"><?php _e('Deli. & Pay.',''); ?></li>
+					<li class="red"><?php _e('Confirm',''); ?></li>
 				</ul>
 			</div>
 

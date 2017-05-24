@@ -2824,7 +2824,7 @@ function usces_get_cart_rows( $out = '' ) {
 		$skuZaikonum = $usces->getItemZaikonum($post_id, $sku_code);
 		$stockid = $usces->getItemZaikoStatusId($post_id, $sku_code);
 		$stock = $usces->getItemZaiko($post_id, $sku_code);
-		$red = (in_array($stock, array(__('sellout','usces'), __('Out Of Stock','usces'), __('Out of print','usces')))) ? 'class="signal_red stock"' : 'class="stock"';
+		$red = (in_array($stock, array(__('sellout','usces'), __('Out Of Stock','usces'), __('Out of print','usces')))) ? 'class="signal_red stock"' : 'class="stock red"';
 		$pictid = (int)$usces->get_mainpictid($itemCode);
 		$args = compact('cart', 'i', 'cart_row', 'post_id', 'sku' );
 		$row = '';
@@ -2833,12 +2833,12 @@ function usces_get_cart_rows( $out = '' ) {
 			$options =  array();
 		}
 		$row .= '<tr>
-			<td class="num">' . ($i + 1) . '</td>
-			<td class="thumbnail">';
+			<td class="num red">' . ($i + 1) . '</td>
+			<td class="thumbnail red">';
 			$cart_thumbnail = '<a href="' . get_permalink($post_id) . '">' . wp_get_attachment_image( $pictid, array(60, 60), true ) . '</a>';
 			$row .= apply_filters('usces_filter_cart_thumbnail', $cart_thumbnail, $post_id, $pictid, $i,$cart_row);
 			$row .= '</td>
-			<td class="aleft productname">' . apply_filters('usces_filter_cart_item_name', esc_html($cartItemName), $args ) . '<br />';
+			<td class="aleft productname red">' . apply_filters('usces_filter_cart_item_name', esc_html($cartItemName), $args ) . '<br />';
 		if( is_array($options) && count($options) > 0 ){
 			$optstr = '';
 			foreach($options as $key => $value){
@@ -2863,7 +2863,7 @@ function usces_get_cart_rows( $out = '' ) {
 		}
 		$row .= apply_filters( 'usces_filter_option_info_cart', '', $cart_row, $args );
 		$row .= '</td>
-			<td class="aright unitprice">';
+			<td class="aright unitprice red">';
 		if( usces_is_gptekiyo($post_id, $sku_code, $quantity) ) {
 			$usces_gp = 1;
 			$gp_src = file_exists(get_template_directory() . '/images/gp.gif') ? get_template_directory_uri() . '/images/gp.gif' : USCES_PLUGIN_URL . '/images/gp.gif';
@@ -2872,11 +2872,11 @@ function usces_get_cart_rows( $out = '' ) {
 		}
 		$row .= usces_crform($skuPrice, true, false, 'return') . '
 			</td>
-			<td class="quantity">';
-		$row_quant = '<input name="quant[' . $i . '][' . $post_id . '][' . $sku . ']" class="quantity" type="text" value="' . esc_attr($cart_row['quantity']) . '" />';
+			<td class="quantity red">';
+		$row_quant = '<input name="quant[' . $i . '][' . $post_id . '][' . $sku . ']" class="quantity red" type="text" value="' . esc_attr($cart_row['quantity']) . '" />';
 		$row .= apply_filters( 'usces_filter_cart_rows_quant', $row_quant, $args );
 		$row .= '</td>
-			<td class="aright subtotal">' . usces_crform(($skuPrice * $cart_row['quantity']), true, false, 'return') . '</td>
+			<td class="aright subtotal red">' . usces_crform(($skuPrice * $cart_row['quantity']), true, false, 'return') . '</td>
 			<td ' . $red . '>' . $stock . '</td>
 			<td class="action">';
 		foreach($options as $key => $value){
@@ -2896,7 +2896,7 @@ function usces_get_cart_rows( $out = '' ) {
 			<input name="zaikonum[' . $i . '][' . $post_id . '][' . $sku . ']" type="hidden" value="' . esc_attr($skuZaikonum) . '" />
 			<input name="skuPrice[' . $i . '][' . $post_id . '][' . $sku . ']" type="hidden" value="' . esc_attr($skuPrice) . '" />
 			<input name="advance[' . $i . '][' . $post_id . '][' . $sku . ']" type="hidden" value="' . esc_attr($advance) . '" />
-			<input name="delButton[' . $i . '][' . $post_id . '][' . $sku . ']" class="delButton" type="submit" value="' . __('Delete','') . '" />
+			<input name="delButton[' . $i . '][' . $post_id . '][' . $sku . ']" class="delButton red" type="submit" value="' . __('Delete','') . '" />
 			</td>
 		</tr>';
 		$materials = compact('i', 'cart_row', 'post_id', 'sku', 'sku_code', 'quantity', 'options', 'advance', 
