@@ -74,7 +74,7 @@ if(0){
 					<?php endif; ?>
 				</div><!-- #cart -->
 			<?php else : ?>
-				<div class="no_cart"><?php _e('There are no items in your cart.','usces'); ?></div>
+				<div class="no_cart"><?php _e('There are no items in your cart.',''); ?></div>
 			<?php endif; ?>
 
 				<div class="send"><?php usces_get_cart_button(); ?></div>
