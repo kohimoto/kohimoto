@@ -230,19 +230,23 @@
   }
 }
 /*** common ***/
+body,button,input,.item-info .skubutton{
+  font-family: 'Century Gothic', "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
 body{
   color:#000;
 }
-#main{
-  text-align: center;
-}
 h2{
   font-size: 4em;
+  font-weight: normal;
+  font-style: italic;
   line-height: 1.4285;
   padding-bottom: 1em;
+
 }
 h3{
   font-size: 2em;
+  font-weight: normal;
 }
 p{
   font-size: 1em;
@@ -269,6 +273,10 @@ a:hover{
   color: #ff0030;
   cursor: pointer;
 }
+a:focus,
+*:focus {
+  outline:none;
+}
 a img:hover{
   opacity: 1;
 }
@@ -278,6 +286,12 @@ h1.logo{
   top: 2em;
   left: 50%;
   margin-left: -2.7em;
+}
+#main h1.logo{
+  position: fixed;
+  margin: 0;
+  top: 2em;
+  left: auto;
 }
 .main-image{
   width: 100%;
@@ -290,10 +304,13 @@ h1.logo{
   max-width: 1140px;
   margin: 0 auto;
   padding-bottom: 7.1428em;
+  text-align: center;
 }
-.front-il{
-  letter-spacing: 80px;
+/***page top***/
+.fa-chevron-circle-up::before {
+  display: none;
 }
+
 @media screen and (min-width: 62.5em) {
 	header .inner {
 		width: 100%;
@@ -302,7 +319,6 @@ h1.logo{
     width: 100%;
   }
 }
-
 
 /*** header ***/
 header{
@@ -365,7 +381,7 @@ header{
   position: fixed;
   z-index: 42;
   top: 50%;
-  font-size: 20px;
+  font-size: 1.2857em;
 }
 .message_left{
   transform: translateX(-50%) rotate(-90deg);
@@ -385,13 +401,95 @@ header{
     left: 1em;
   }
 }
+
+
+/*** footer ***/
+footer {
+    background-color:inherit;
+    clear: both;
+    color: #000;
+    padding: 0 0 5.7142em;
+}
+
+/*** top ***/
+.front-il {
+    letter-spacing: 0;
+    text-align: left;
+}
 .front-il article {
-    width: 33.3333%;
-    margin: 0;
+    width: 30%;
+    margin: 0 4% 0 0;
     padding: 0;
 }
 .front-il .itemimg {
-    margin-bottom: 0.357143em;
+    margin-bottom: 3em;
     text-align: center;
+    height: 30%;
 }
-/*** contents ***/
+.front-il article:nth-child(3n) {
+    margin-right:0;
+}
+.front-il .itemname {
+  font-size: 1.2857em;
+  font-weight:bold;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.front-il .itemprice {
+  text-align: center;
+  padding-bottom: 4.2857em;
+}
+/*** detail ***/
+#primary{
+  text-align: left;
+  margin: 2em 0 0;
+}
+
+#main.two-column #content {
+    width: 100%;
+}
+#itempage #img-box {
+  width: 45%;
+  margin-right: 5%;
+  padding-bottom: 7.1428em;
+}
+.detail-box {
+  width: 50%;
+  padding-bottom: 7.1428em;
+}
+.detail-box h3{
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+.detail-box p.red{
+  padding-bottom: 2em;
+  font-weight: bold;
+}
+.field_price{
+  color: #ff0030;
+  padding-bottom: 1em;
+  text-align: left;
+}
+.item-info .skubutton{
+  background-color:#fff;
+  border: 1px solid #ff0030;
+  color: #ff0030;
+  padding: 0.714286em 2.14286em;
+}
+.item-info .skubutton:hover{
+  background-color:#ff0030;
+  color: #fff;
+}
+.skuform{
+  overflow: hidden;
+}
+.skuform .field{
+  float: left;
+  vertical-align: middle;
+}
+.skuform .c-box{
+  float: right;
+}
+.item-info .c-box {
+    clear: none;
+}
