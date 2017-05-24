@@ -31,7 +31,7 @@ get_header(); ?>
 							</div>
 							<div class="itemprice"><?php usces_crform( usces_the_firstPrice('return'), true, false ); usces_guid_tax(); ?></div>
 							<?php if(! usces_have_zaiko_anyone() ) : ?>
-							<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
+							<div class="itemsoldout"><?php _e('Sold Out', '' ); ?></div>
 							<?php endif; ?>
 							<div class="itemname"><a href="<?php the_permalink() ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
 
