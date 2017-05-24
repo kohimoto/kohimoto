@@ -4,7 +4,14 @@
  * @subpackage Welcart_Basic
  */
 
-get_header();
+//2017.05.24 kohinata tileタグ変更
+ob_start();
+$header = get_header();
+$head_title = "Cart Check please!";
+$head = ob_get_contents();
+$head = preg_replace("/<title>.*<\/title>/","<title>".$head_title." | kirsche</title>",$head);
+ob_end_clean();
+echo $head;
 ?>
 <h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 <div id="primary" class="site-content">

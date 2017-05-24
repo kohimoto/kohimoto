@@ -4012,7 +4012,7 @@ function usces_get_cart_button( $out = '' ) {
 //2017.05.24 kohinata	
 	if( $usces->use_js){
 //		$res .= '<input name="previous" type="button" id="previouscart" class="continue_shopping_button" value="' . __('continue shopping','usces') . '"' . apply_filters('usces_filter_cart_prebutton', ' onclick="uscesCart.previousCart();"') . ' />&nbsp;&nbsp;';
-		$res .= '<button name="previous" type="button" id="previouscart" class="continue_shopping_button" value="' . __('Back to shop','') . '"' . apply_filters('usces_filter_cart_prebutton', ' onclick="uscesCart.previousCart();"') . ' />Back to shop</button>';
+		$res .= '<button name="previous" type="button" id="previouscart" class="continue_shopping_button" value="' . __('Back to shop','') . '"' . apply_filters('usces_filter_cart_prebutton', ' onclick="uscesCart.previousCart();"') . ' />&lt;&lt; Back</button>';
 		if( usces_is_cart() ) {
 //			$res .= '<input name="customerinfo" type="submit" class="to_customerinfo_button" value="' . __(' Next ','usces') . '"' . apply_filters('usces_filter_cart_nextbutton', ' onclick="return uscesCart.cartNext();"') . ' />';
 			$res .= '<button name="customerinfo" type="submit" class="to_customerinfo_button" value="' . __(' Next ','') . '"' . apply_filters('usces_filter_cart_nextbutton', ' onclick="return uscesCart.cartNext();"') . ' />Next &gt;&gt;</button>';
@@ -4039,7 +4039,7 @@ function usces_get_customer_button( $out = '' ) {
 	$res = '';
 	
 //	$res = '<input name="backCart" type="submit" class="back_cart_button" value="'.__('Back', 'usces').'" />&nbsp;&nbsp;';
-	$res = '<button name="backCart" type="submit" class="back_cart_button" value="'.__('Back', 'usces').'" />Back to shop</button>';
+	$res = '<button name="backCart" type="submit" class="back_cart_button" value="'.__('Back', 'usces').'" />&lt;&lt; Back</button>';
 	
 //	$button = '<input name="deliveryinfo" type="submit" class="to_deliveryinfo_button" value="'.__(' Next ', 'usces').'" />&nbsp;&nbsp;';
 	$button = '<button name="deliveryinfo" type="submit" class="to_deliveryinfo_button" value="'.__(' Next ', 'usces').'" />Next &gt;&gt;</button>';

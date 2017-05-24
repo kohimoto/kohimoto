@@ -4,7 +4,14 @@
  * @subpackage Welcart_Basic
  */
 
-get_header();
+//2017.05.24 kohinata tileタグ変更
+ob_start();
+$header = get_header();
+$head_title = "Confirmation";
+$head = ob_get_contents();
+$head = preg_replace("/<title>.*<\/title>/","<title>".$head_title." | kirsche</title>",$head);
+ob_end_clean();
+echo $head;
 ?>
 <div id="primary" class="site-content">
 	<div id="content" class="cart-page" role="main">

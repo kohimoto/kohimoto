@@ -4,8 +4,18 @@
  * @subpackage Welcart_Basic
  */
 
-get_header();
+
+//2017.05.24 kohinata tileタグ変更
+ob_start();
+$header = get_header();
+$head_title = "Shipping / Payment options";
+$head = ob_get_contents();
+$head = preg_replace("/<title>.*<\/title>/","<title>".$head_title." | kirsche</title>",$head);
+ob_end_clean();
+echo $head;
+
 usces_delivery_info_script();
+
 ?>
 <div id="primary" class="site-content">
 	<div id="content" class="cart-page" role="main">
@@ -104,7 +114,7 @@ usces_delivery_info_script();
 
 					<div class="send">
 						<input name="offer[cus_id]" type="hidden" value="" />
-					<button name="backCustomer" type="submit" class="back_to_customer_button" value="<?php _e('Back', ''); ?>"<?php echo apply_filters( 'usces_filter_deliveryinfo_prebutton', NULL ); ?>>Back to shop</button>
+					<button name="backCustomer" type="submit" class="back_to_customer_button" value="<?php _e('Back', ''); ?>"<?php echo apply_filters( 'usces_filter_deliveryinfo_prebutton', NULL ); ?>>&lt;&lt; Back</button>
 					<button name="confirm" type="submit" class="to_confirm_button" value="<?php _e(' Next ', ''); ?>"<?php echo apply_filters( 'usces_filter_deliveryinfo_nextbutton', NULL ); ?>>Next &gt;&gt;</button>
 					</div>
 					<?php do_action( 'usces_action_delivery_page_inform' ); ?>
