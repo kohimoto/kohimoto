@@ -18,6 +18,7 @@
 
 <body <?php body_class(); ?>>
 
+<?php if(! welcart_basic_is_cart_page()): ?>
 	<header id="masthead" class="site-header" role="banner">
 		
 		<div class="inner cf">
@@ -57,6 +58,7 @@
 		
 
 	</header><!-- #masthead -->
+<?php endif; ?>
 
 	<?php if( ( is_front_page() || is_home() ) && get_header_image() ): ?>
 	<div class="main-image">

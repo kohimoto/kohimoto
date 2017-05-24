@@ -13,7 +13,6 @@ $head = preg_replace("/<title>.*<\/title>/","<title>".$head_title." | kirsche</t
 ob_end_clean();
 echo $head;
 ?>
-<h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 <div id="primary" class="site-content">
 	<div id="content" class="cart-page" role="main">
 
