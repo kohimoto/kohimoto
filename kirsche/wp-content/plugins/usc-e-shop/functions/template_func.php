@@ -719,7 +719,7 @@ function usces_the_itemQuant( $out = '' ) {
 	$post_id = $post->ID;
 	$sku = esc_attr(urlencode($usces->itemsku['code']));
 	$value = isset( $_SESSION['usces_singleitem']['quant'][$post_id][$sku] ) ? esc_attr($_SESSION['usces_singleitem']['quant'][$post_id][$sku]) : 1;
-	$quant = "<input name=\"quant[{$post_id}][" . $sku . "]\" type=\"text\" id=\"quant[{$post_id}][" . $sku . "]\" class=\"skuquantity\" value=\"" . $value . "\" onKeyDown=\"if (event.keyCode == 13) {return false;}\" />";
+	$quant = "<input name=\"quant[{$post_id}][" . $sku . "]\" type=\"text\" id=\"quant[{$post_id}][" . $sku . "]\" class=\"skuquantity red\" value=\"" . $value . "\" onKeyDown=\"if (event.keyCode == 13) {return false;}\" />";
 	$html = apply_filters('usces_filter_the_itemQuant', $quant, $post);
 		
 	if( $out == 'return' ){
