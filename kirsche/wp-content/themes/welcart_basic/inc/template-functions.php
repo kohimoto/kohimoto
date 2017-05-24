@@ -146,7 +146,7 @@ function welcart_basic_action_single_item_outform() {
 			</div>
 
 			<?php if( !usces_have_zaiko() ) : ?>
-			<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','welcart_basic') ); ?></div>
+			<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','') ); ?></div>
 			<?php else : ?>
 			<div class="c-box">
 				<span class="quantity"><?php _e('Quantity', 'usces'); ?><?php wcad_the_itemQuant(); ?><?php usces_the_itemSkuUnit(); ?></span>
@@ -237,7 +237,7 @@ function welcart_basic_single_item_autodelivery_sku_select(){
 			</div>
 
 			<div id="checkout_box">
-				<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','welcart_basic') ); ?></div>
+				<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','') ); ?></div>
 				<div class="c-box">
 					<span class="quantity"><?php _e('Quantity', 'usces'); ?><?php wcad_the_itemQuant(); ?><?php usces_the_itemSkuUnit(); ?></span>
 					<span class="cart-button"><?php wcad_the_itemSkuButton( '&#xf07a;&nbsp;&nbsp;'.__('Apply for a regular purchase', 'autodelivery'), 0 ); ?></span>

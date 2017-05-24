@@ -2867,7 +2867,6 @@ function usces_get_cart_rows( $out = '' ) {
 		$row .= apply_filters( 'usces_filter_cart_rows_quant', $row_quant, $args );
 		$row .= '</td>
 			<td class="aright subtotal red">' . usces_crform(($skuPrice * $cart_row['quantity']), false, false, 'return') . ' JPY</td>
-			<td ' . $red . '>' . $stock . '</td>
 			<td class="action">';
 		foreach($options as $key => $value){
 			//$row .= '<input name="itemOption[' . $i . '][' . $post_id . '][' . $sku . '][' . $key . ']" type="hidden" value="' . $value . '" />';

@@ -121,7 +121,7 @@ if(0){
 								</div>
 
 								<?php if( !usces_have_zaiko() ) : ?>
-								<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','welcart_basic') ); ?></div>
+								<div class="itemsoldout red"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','') ); ?></div>
 								<?php else : ?>
 								<div class="c-box">
 <?
@@ -197,7 +197,7 @@ query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish');
 		<?php welcart_basic_campaign_message(); ?>
 	</div>
 	<?php if( !usces_have_zaiko_anyone() ) : ?>
-	<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
+	<div class="itemsoldout red"><?php _e('Sold Out', '' ); ?></div>
 	<?php endif; ?>
 	<div class="itemname"><a href="<?php the_permalink(); ?>"  rel="bookmark" class="red"><?php usces_the_itemName(); ?></a></div>
 	<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), false, false ); ?> JPY</div>

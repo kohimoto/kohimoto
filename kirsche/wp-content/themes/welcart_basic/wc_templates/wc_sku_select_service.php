@@ -104,7 +104,7 @@ get_header();
 								</div><!-- .field -->
 
 								<div id="checkout_box">
-									<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','welcart_basic') ); ?></div>
+									<div class="itemsoldout"><?php echo apply_filters( 'usces_filters_single_sku_zaiko_message', __('At present we cannot deal with this product.','') ); ?></div>
 									<div class="c-box">
 										<span class="cart-button"><?php usces_the_itemSkuButton( '&#xf07a;&nbsp;&nbsp;' . __('Add to Shopping Cart', 'usces' ), 0); ?></span>
 									</div>
