@@ -328,7 +328,7 @@ function usces_the_itemCprice($out = '') {
 
 function usces_the_itemPriceCr($out = '') {
 	global $usces;
-	$res = esc_html($usces->get_currency($usces->itemsku['price'], true, false ));
+	$res = esc_html($usces->get_currency($usces->itemsku['price'], false, false ));
 	$res = apply_filters( 'usces_filter_the_item_price_cr', $res, $usces->itemsku['price'], $out );
 	if($out == 'return'){
 		return $res;
@@ -2866,7 +2866,7 @@ function usces_get_cart_rows( $out = '' ) {
 		$row_quant = '<input name="quant[' . $i . '][' . $post_id . '][' . $sku . ']" class="quantity red" type="text" value="' . esc_attr($cart_row['quantity']) . '" />';
 		$row .= apply_filters( 'usces_filter_cart_rows_quant', $row_quant, $args );
 		$row .= '</td>
-			<td class="aright subtotal red">' . usces_crform(($skuPrice * $cart_row['quantity']), true, false, 'return') . '</td>
+			<td class="aright subtotal red">' . usces_crform(($skuPrice * $cart_row['quantity']), false, false, 'return') . ' JPY</td>
 			<td ' . $red . '>' . $stock . '</td>
 			<td class="action">';
 		foreach($options as $key => $value){

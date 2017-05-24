@@ -53,7 +53,7 @@ get_header();
 						<tr>
 							<th class="thumbnail"></th>
 							<th colspan="2" scope="row" class="aright red"><?php _e('Total',''); ?></th>
-							<th class="aright amount red"><?php usces_crform(usces_total_price('return'), true, false); ?></th>
+							<th class="aright amount red"><?php usces_crform(usces_total_price('return'), false, false); ?> JPY</th>
 							<th class="stock"></th>
 							<th class="action"></th>
 						</tr>

@@ -116,7 +116,7 @@ if(0){
 									<?php if( usces_the_itemCprice('return') > 0 ) : ?>
 										<span class="field_cprice"><?php usces_the_itemCpriceCr(); ?></span>
 									<?php endif; ?>
-										<?php usces_the_itemPriceCr(); ?><?php if(0){ usces_guid_tax(); }?> JPY
+										<?php usces_the_itemPriceCr(); ?> JPY
 									</div>
 								</div>
 
@@ -194,7 +194,7 @@ query_posts('posts_per_page=3&cat='.$cat_id.'&post_status=publish');
 	<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
 	<?php endif; ?>
 	<div class="itemname"><a href="<?php the_permalink(); ?>"  rel="bookmark" class="red"><?php usces_the_itemName(); ?></a></div>
-	<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), true, false ); ?> JPY</div>
+	<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), false, false ); ?> JPY</div>
 	</article>
 	<?php endwhile; ?>
 	<?php else: ?>

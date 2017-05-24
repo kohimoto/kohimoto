@@ -42,7 +42,7 @@
 							<div class="itemsoldout"><?php _e('Sold Out', 'usces' ); ?></div>
 							<?php endif; ?>
 							<div class="itemname red"><a href="<?php the_permalink(); ?>"  rel="bookmark" class="red"><?php usces_the_itemName(); ?></a></div>
-							<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), true, false ); ?> JPY</div>
+							<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), false, false ); ?> JPY</div>
 						
 						</article>
 					
