@@ -14,7 +14,7 @@ get_header();
 
 		<article class="post" id="wc_<?php usces_page_name(); ?>">
 
-			<h2 class="cart_page_title">Cart<br> Check please!</h2>
+			<h2>Cart<br> Check please!</h2>
 
 			<div class="cart_navi">
 				<ul>
@@ -38,10 +38,8 @@ get_header();
 					<table cellspacing="0" id="cart_table">
 						<thead>
 						<tr>
-							<th scope="row" class="num">No.</th>
-							<th class="thumbnail"> </th>
+							<th class="thumbnail">Images</th>
 							<th class="productname"><?php _e('Name',''); ?></th>
-							<th class="unitprice"><?php _e('Unit price',''); ?></th>
 							<th class="quantity"><?php _e('Quantity',''); ?></th>
 							<th class="subtotal"><?php _e('Price',''); ?></th>
 							<th class="stock"><?php _e('Stock status',''); ?></th>
@@ -53,10 +51,9 @@ get_header();
 						</tbody>
 						<tfoot>
 						<tr>
-							<th class="num"></th>
 							<th class="thumbnail"></th>
-							<th colspan="3" scope="row" class="aright"><?php _e('Total',''); ?></th>
-							<th class="aright amount"><?php usces_crform(usces_total_price('return'), true, false); ?></th>
+							<th colspan="2" scope="row" class="aright red"><?php _e('Total',''); ?></th>
+							<th class="aright amount red"><?php usces_crform(usces_total_price('return'), true, false); ?></th>
 							<th class="stock"></th>
 							<th class="action"></th>
 						</tr>

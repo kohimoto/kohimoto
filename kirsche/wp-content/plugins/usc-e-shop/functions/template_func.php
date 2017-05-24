@@ -2833,7 +2833,6 @@ function usces_get_cart_rows( $out = '' ) {
 			$options =  array();
 		}
 		$row .= '<tr>
-			<td class="num red">' . ($i + 1) . '</td>
 			<td class="thumbnail red">';
 			$cart_thumbnail = '<a href="' . get_permalink($post_id) . '">' . wp_get_attachment_image( $pictid, array(60, 60), true ) . '</a>';
 			$row .= apply_filters('usces_filter_cart_thumbnail', $cart_thumbnail, $post_id, $pictid, $i,$cart_row);
@@ -2863,15 +2862,6 @@ function usces_get_cart_rows( $out = '' ) {
 		}
 		$row .= apply_filters( 'usces_filter_option_info_cart', '', $cart_row, $args );
 		$row .= '</td>
-			<td class="aright unitprice red">';
-		if( usces_is_gptekiyo($post_id, $sku_code, $quantity) ) {
-			$usces_gp = 1;
-			$gp_src = file_exists(get_template_directory() . '/images/gp.gif') ? get_template_directory_uri() . '/images/gp.gif' : USCES_PLUGIN_URL . '/images/gp.gif';
-			$Business_pack_mark = '<img src="' . $gp_src . '" alt="' . __('Business package discount','usces') . '" /><br />';
-			$row .= apply_filters('usces_filter_itemGpExp_cart_mark', $Business_pack_mark);
-		}
-		$row .= usces_crform($skuPrice, true, false, 'return') . '
-			</td>
 			<td class="quantity red">';
 		$row_quant = '<input name="quant[' . $i . '][' . $post_id . '][' . $sku . ']" class="quantity red" type="text" value="' . esc_attr($cart_row['quantity']) . '" />';
 		$row .= apply_filters( 'usces_filter_cart_rows_quant', $row_quant, $args );
