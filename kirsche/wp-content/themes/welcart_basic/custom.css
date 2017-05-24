@@ -636,9 +636,22 @@ div.cart_navi li.current::after {
   font-weight: bold;
   padding: 0.571428em;
 }
-#wc_cart .send button{
+.send button{
   float: left;
 }
-#wc_cart .send button:last-child{
+.send button:last-child{
   float: right;
+}
+
+#customer-info h5 {
+  border-bottom: 1px solid #000;
+}
+
+.customer_form th {
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
+.customer_form td {
+  padding: 2em 1.07143em;
+  border: 1px solid #aaa;
 }
