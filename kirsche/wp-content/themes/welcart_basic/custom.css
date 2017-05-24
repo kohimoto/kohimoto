@@ -470,6 +470,23 @@ footer {
   padding-bottom: 1em;
   text-align: left;
 }
+#itempage .itemimg {
+  padding-bottom: 4em;
+}
+#itempage .itemsubimg {
+  margin: 0;
+}
+#img-box .itemsubimg a {
+  width: 100%;
+}
+#img-box .itemsubimg a {
+  width: 100%;
+}
+#itempage .itemsubimg a {
+  float: none;
+  margin: 0;
+  padding-bottom: 4em;
+}
 .item-info .skubutton{
   background-color:#fff;
   border: 1px solid #ff0030;
@@ -493,3 +510,26 @@ footer {
 .item-info .c-box {
     clear: none;
 }
+.item-info .zaikostatus,
+.item-info .field_price {
+    margin: 0;
+    padding: 0.5em 1em 0 0;
+}
+.item-info .field {
+    padding: 0 1em 0 0;
+}
+.item-info .itemsoldout{
+  color: #fff;
+  background-color: #ff0030;
+  display: inline-block;
+  padding: 0.714286em 2.14286em;
+  text-align: center;
+  border-radius: 3px;
+  float: right;
+}
+.front-il .itemsoldout {
+    color: #000;
+}
+
+
+/*** cart ***/
