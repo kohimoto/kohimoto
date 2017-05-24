@@ -6,6 +6,7 @@
 
 get_header();
 ?>
+<h1 class="logo"><a href="/kirsche"><img src="/kirsche/wp-content/themes/welcart_basic/images/logo.png"></a></h1>
 <div id="primary" class="site-content">
 	<div id="content" class="cart-page" role="main">
 
@@ -13,7 +14,7 @@ get_header();
 
 		<article class="post" id="wc_<?php usces_page_name(); ?>">
 
-			<h1 class="cart_page_title"><?php _e('In the cart', 'usces'); ?></h1>
+			<h2 class="cart_page_title">Cart<br> Check please!</h2>
 
 			<div class="cart_navi">
 				<ul>
@@ -33,7 +34,7 @@ get_header();
 			<form action="<?php usces_url('cart'); ?>" method="post" onKeyDown="if(event.keyCode == 13){return false;}">
 			<?php if( usces_is_cart() ) : ?>
 				<div id="cart">
-					<div class="upbutton"><?php _e('Press the `update` button when you change the amount of items.','usces'); ?><input name="upButton" type="submit" value="<?php _e('Quantity renewal','usces'); ?>" onclick="return uscesCart.upCart()" /></div>
+					<div class="upbutton"><?php _e('Press the `update` button when you change the amount of items.','usces'); ?><button name="upButton" class="s_button" type="submit" value="Change" onclick="return uscesCart.upCart()" />Change</button></div>
 					<table cellspacing="0" id="cart_table">
 						<thead>
 						<tr>
