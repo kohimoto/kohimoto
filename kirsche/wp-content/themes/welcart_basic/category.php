@@ -10,8 +10,9 @@ get_header(); ?>
 		<div id="content" role="main">
 
 			<header class="page-header">
+				<h2>Shop</h2>
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					//the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -29,11 +30,11 @@ get_header(); ?>
 								<a href="<?php the_permalink() ?>"><?php usces_the_itemImage(0, 300, 300); ?></a>
 								<?php welcart_basic_campaign_message(); ?>
 							</div>
-							<div class="itemprice"><?php usces_crform( usces_the_firstPrice('return'), true, false ); usces_guid_tax(); ?></div>
+							<div class="itemprice red"><?php usces_crform( usces_the_firstPrice('return'), false, false ); if(0){usces_guid_tax();} ?></div>
 							<?php if(! usces_have_zaiko_anyone() ) : ?>
-							<div class="itemsoldout"><?php _e('Sold Out', '' ); ?></div>
+							<div class="itemsoldout red"><?php _e('Sold Out', '' ); ?></div>
 							<?php endif; ?>
-							<div class="itemname"><a href="<?php the_permalink() ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
+							<div class="itemname"><a class="red" href="<?php the_permalink() ?>"  rel="bookmark"><?php usces_the_itemName(); ?></a></div>
 
 						</article>
 					<?php endwhile; ?>

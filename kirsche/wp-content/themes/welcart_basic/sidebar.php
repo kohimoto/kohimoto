@@ -4,6 +4,7 @@
  * @subpackage Welcart_Basic
  */
 
+if(0){
 global $usces; ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
@@ -41,3 +42,7 @@ global $usces; ?>
 	
 <?php endif; ?>
 </aside><!-- #secondary -->
+
+<?
+}
+?>
