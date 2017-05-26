@@ -20,15 +20,15 @@
 
 <?php if(! welcart_basic_is_cart_page()): ?>
 	<header id="masthead" class="site-header" role="banner">
-		
+
 		<div class="inner cf">
 
 			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 
 		<nav id="nav" role="navigation">
 		<a href="#" class="nav-toggle nav-toggle active"><i></i></a>
-		<div class="table">
-		<div class="table-cell">
+		<div class="js-fullheight table">
+		<div class="js-fullheight table-cell">
 		<ul>
 		<li><a href="#">TOP</a></li>
 		<li><a href="#">ABOUT US</a></li>
@@ -42,7 +42,7 @@
 			<a href="#" class="nav-toggle o-nav-toggle"><i></i></a>
 		</div>
 			<?php if(! welcart_basic_is_cart_page()): ?>
-			
+
 			<div class="snav cf">
 
 				<div class="incart-btn">
@@ -51,11 +51,11 @@
 			</div><!-- .snav -->
 
 			<?php endif; ?>
-			
+
 		</div><!-- .inner -->
 		<div class="message_left message"><a>papyrus</a></div>
 		<div class="message_right message"><a>Goods day!</a></div>
-		
+
 
 	</header><!-- #masthead -->
 <?php endif; ?>
@@ -66,13 +66,13 @@
 		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php bloginfo('name'); ?>">
 	</div><!-- main-image -->
 	<?php endif; ?>
-	
-	<?php 
+
+	<?php
 		if( is_front_page() || is_home() || welcart_basic_is_cart_page() || welcart_basic_is_member_page() ) {
-			$class = 'one-column';	
+			$class = 'one-column';
 		}else {
 			$class = 'two-column right-set';
 		};
 	?>
-	
+
 	<div id="main" class="wrapper <?php echo $class;?>">
