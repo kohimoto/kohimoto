@@ -60,7 +60,7 @@ $c{'FROM'} = 'info@kohimoto.com';   #本番
 #  【設定例】
 #    $c{'REDIRECT_URL'} = 'http://www.futomi.com/other/thanx.html';
 #--------------------------------------------------------------------
-$c{'REDIRECT_URL'} = 'http://kohimoto-stg.tk/contact/thanx.html';  #開発
+$c{'REDIRECT_URL'} = 'https://kohimoto-stg.tk/contact/thanx.html';  #開発
 #$c{'REDIRECT_URL'} = 'https://kohimoto.com/contact/thanx.html'; #本番
 
 #--------------------------------------------------------------------
