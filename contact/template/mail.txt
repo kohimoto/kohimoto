@@ -1,0 +1,24 @@
+テンプレートファイルを使った場合のサンプル
+
+【シリアル】
+$SIRIAL$
+
+【おなまえ】
+$name$
+
+【メールアドレス】
+$mailaddress$
+
+【感想】
+$opinion$
+
+【ファイル添付】
+$attachment$
+
+
+【送信者情報】 
+・ブラウザー      : $USERAGENT$
+・送信元IPアドレス: $REMOTE_ADDR$
+・送信元ホスト名  : $REMOTE_HOST$
+・送信日時        : $DATE$
+

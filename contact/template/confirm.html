@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=Shift_JIS">
+<title>futomi's CGI Cafe - MP Form Mail CGI Standard版 - 確認画面サンプル</title>
+<style type="text/css">
+<!--
+table   { font-size: 12px; }
+a:hover { color: red;}
+a       { font-size: 12px; }
+form    { font-size: 12px; }
+textarea{ font-size: 12px; }
+p       { font-size: 12px; }
+h1 {
+  font-size: 14px;
+  color: #555533;
+}
+#input_table {
+  border-collapse: collapse;
+  border: 2px solid #444422;
+  width: 500px;
+}
+#input_table th {
+  background-color: #f5f5dc;
+  color: #555533;
+  font-weight: normal;
+  text-align: left;
+  padding: 5px;
+  border-top: none;
+  border-bottom: 1px solid #444422;
+  border-left:none;
+  border-right: 1px solid #444422;
+  width: 120px;
+}
+#input_table td {
+  background-color: #f8f8ff;
+  padding: 5px;
+  border-top: none;
+  border-bottom: 1px solid #444422;
+  border-left:none;
+  border-right: 1px solid #444422;
+}
+-->
+</style>
+</head>
+
+<body bgcolor="#ffffff">
+<h1>▼ 確認画面サンプル</h1>
+<form action="$cgiurl$" method="post">
+$hidden$
+<table id="input_table">
+<tr>
+	<th>お名前</th>
+	<td>$name$</td>
+</tr>
+<tr>
+	<th>メールアドレス</th>
+	<td>$mailaddress$</td>
+</tr>
+<tr>
+	<th>会社名</th>
+	<td>$company$</td>
+</tr>
+<tr>
+	<th>タイトル</th>
+	<td>$subject$</td>
+</tr>
+<tr>
+	<th>感想</th>
+	<td>$opinion$</td>
+</tr>
+</table>
+<p><input type="submit" name="sendBtn" value="　送　信　"></p>
+</form>
+</body>
+
+</html>
