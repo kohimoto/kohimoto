@@ -192,7 +192,7 @@ header .get {
 }
 .list_dtl {
   float: left;
-  width: calc(50% - 3.5714em);
+  width: calc(50% - 3.5714em / 2);
   margin-left: 3.5714em;
   padding-bottom: 4.2857em;
   border-bottom: 1px solid #000;
