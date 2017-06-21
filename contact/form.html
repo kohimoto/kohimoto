@@ -1,37 +1,42 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html;charset=Shift_JIS">
 <title>KOHIMOTO | CONTACT</title>
+<style>
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+::-webkit-input-placeholder {
+    color: #1c18c4; }
+
+/* Firefox 18- */
+:-moz-placeholder {
+    color: #1c18c4; opacity: 1; }
+
+/* Firefox 19+ */
+::-moz-placeholder {
+    color: #1c18c4; opacity: 1; }
+
+/* IE 10+ */
+:-ms-input-placeholder {
+    color: #1c18c4; }
+</style>
 </head>
 <body>
-
-<h1>▼ フォームHTMLサンプル</h1>
+<header>
+</header>
+<div class="big-c">
+<div class=".content">
+<section>
+</section>
 <form action="mpmail.cgi" method="post" enctype="multipart/form-data">
-<table id="input_table">
-<tr>
-	<th>お名前（必須）</th>
- 	<td><input type="text" name="name" size="58" border="0"></td>
-</tr>
-<tr>
-	<th>メールアドレス（必須）</th>
-	<td><input type="text" name="mailaddress" size="58" border="0"></td>
-</tr>
-<tr>
-	<th>会社名（必須）</th>
-	<td><input type="text" name="company" size="58" border="0"></td>
-</tr>
-<tr>
-	<th>件名</th>
-	<td><input type="text" name="subject" size="58" border="0"></td>
-</tr>
-<tr>
-	<th>内容</th>
-	<td><textarea name="opinion" rows="4" cols="50"></textarea></td>
-</tr>
-</table>
-<p><input type="submit" name="sendBtn" value="　次　へ　"></p>
+<p><input type="text" name="name" border="0" placeholder="Name"></p>
+<p><input type="text" name="mailaddress" border="0" placeholder="E-mail"></p>
+<p><input type="text" name="company" border="0" placeholder="Company"></p>
+<p><input type="text" name="subject"  border="0" placeholder="Subject"></p>
+<p><input type="text" name="opinion"  placeholder="Discription"></textarea></p>
+<p><button type="submit" name="sendBtn">SUBMIT</button></p>
 </form>
+</div>
+</div>
 </body>
 </html>
