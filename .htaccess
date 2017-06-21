@@ -3,3 +3,7 @@ AuthGroupfile /dev/null
 AuthName "Please enter your ID and password"
 AuthType Basic
 require valid-user
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
