@@ -1,0 +1,5 @@
+AuthUserfile /home/kohimoto/www/pass/.htpasswd_kohimoto
+AuthGroupfile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user
