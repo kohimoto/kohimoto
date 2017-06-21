@@ -99,7 +99,7 @@ header{
   margin: 0 auto;
 }
 header h1{
-  padding: 2em 7.1428em;
+  padding: 2.2em 7.1428em;
 }
 header .g_fix{
   max-width: 107.1428em;
@@ -120,9 +120,11 @@ header .menu {
   position: absolute;
   right: 0%;
 }
-header .menu {
-  position: absolute;
-  right: 0%;
+header .menu ul{
+  overflow: hidden;
+}
+header .menu ul li{
+  float: left;
 }
 header .h_text{
   font-size: 0.8571em;
