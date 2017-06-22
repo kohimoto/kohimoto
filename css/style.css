@@ -47,7 +47,12 @@ input, select {
 /* =======================================================
 * font
 * ======================================================= */
-@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700);
+/* h3 セリフ */
+/*@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700);*/
+/*@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);*/
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica);
+/* h2 サンセリフ */
+@import url(https://fonts.googleapis.com/css?family=Poppins:700);
 /* =======================================================
 * common
 * ======================================================= */
@@ -64,6 +69,11 @@ a:hover{
   padding-bottom: 1px;
   border-bottom: 1px #000 dotted;
 }
+.arrow_d{
+  text-align: right;
+}
+a.arrow {
+}
 .content{
   padding: 0 7.1428em 7.1428em;
   margin: 0 auto;
@@ -73,6 +83,7 @@ h1{
   font-size: 1em;
 }
 h2{
+  font-family: 'Poppins', sans-serif;
   font-size: 4em;
   padding-bottom: 0.3928em;
 }
@@ -80,10 +91,11 @@ p.h2_cap{
   padding-bottom: 5.7142em;
 }
 h2.heading{
-  font-family: 'Gentium Book Basic', serif;
+  font-family: 'IM Fell DW Pica', serif;
 }
 h3{
   font-size: 2.8571em;
+  font-family: 'Gentium Book Basic', serif;
 }
 h4{
   font-size: 6.1428em;
@@ -167,6 +179,7 @@ header .get {
   padding-bottom: 0.7142em;
 }
 .foot_d .link_m ul li{
+  font-size: 0.8571em;
   float: left;
   width: 21.4285em;
 }
@@ -183,6 +196,7 @@ header .get {
   overflow: hidden;
 }
 .foot_d .link_s ul li{
+  font-size: 0.8571em;
   float: left;
 }
 .foot_d .link_s ul li:nth-child(1){
@@ -231,6 +245,19 @@ header .get {
 }
 .bg_top{
   background-color: #f0f3f9;
+  margin-bottom: 5.7142em;
+}
+.btm h2 {
+    margin-top: -0.7em;
+    padding-bottom: 0.3928em;
+    position: absolute;
+}
+.btm{
+  margin: 0em;
+  padding-bottom: 4em;
+}
+.btm + footer{
+  background-color: #f0f3f9;
 }
 /* =======================================================
 * contact
@@ -267,7 +294,7 @@ header .get {
 }
 #spectrumPlugin textarea{
   width: 100%;
-  height: 5.286em; 
+  height: 5.286em;
   overflow-x: hidden;
   border-radius: 5px;
   border: 1px solid #1c18c4;
