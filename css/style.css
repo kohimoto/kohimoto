@@ -263,7 +263,7 @@ header .get {
   width: 100%;
   border: 1px solid #1c18c4;
   border-radius: 5px;
-  box-shadow: none;
+  border-shadow: none;
 }
 #spectrumPlugin textarea{
   width: 100%;
@@ -271,7 +271,7 @@ header .get {
   overflow-x: hidden;
   border-radius: 5px;
   border: 1px solid #1c18c4;
-  box-shadow: none;
+  border-shadow: none;
 }
 #spectrumPlugin .button{
   text-align: center;
@@ -304,7 +304,7 @@ header .get {
 {
   background-color: rgba(255,255,255,0.5);
   outline: 0;
-  box-shadow: none;
+  border-shadow: none;
   border: 3px solid rgba(255,255,255,0.3);
 }
 .form-label{
