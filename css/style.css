@@ -285,6 +285,25 @@ header .get {
   border-radius: 5px;
   background-color: transparent;
 }
+#spectrumPlugin button[name="sendBtn"]:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+#spectrumPlugin  form p{
+  margin-bottom: -10px;
+}
+#spectrumPlugin  h2.heading{
+  color: #1c18c4;
+}
+.spectrumHeader{
+  transition: background-color 4s ease;
+}
+#spectrumPlugin form input:focus,
+#spectrumPlugin form textarea:focus
+{
+  background-color: rgba(255,255,255,0.5);
+  outline: 0;
+  border: 3px solid rgba(255,255,255,0.3);
+}
 .form-label{
   position: relative;
   top: 32px;
@@ -296,14 +315,4 @@ header .get {
 .text-input{
   padding: 1em 0 0.7em 0.5em;
   font-size: 30px;
-}
-#spectrumPlugin  form p{
-  margin-bottom: -10px;
-}
-#spectrumPlugin  h2.heading{
-  color: #1c18c4;
-}
-
-.spectrumHeader{
-  transition: background-color 4s ease;
 }
