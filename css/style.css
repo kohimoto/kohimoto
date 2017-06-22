@@ -277,7 +277,7 @@ header .get {
   text-align: center;
   padding-top: 40px;
 }
-#spectrumPlugin button[name="sendBtn"]{
+#spectrumPlugin button{
   cursor: pointer;
   color: #1c18c4;
   border: 2px solid #1c18c4;
@@ -286,8 +286,9 @@ header .get {
   font-weight: bold;
   border-radius: 5px;
   background-color: transparent;
+  margin: 0 10px;
 }
-#spectrumPlugin button[name="sendBtn"]:hover{
+#spectrumPlugin button:hover{
   background-color: rgba(255,255,255,0.3);
 }
 #spectrumPlugin  form p{
@@ -307,6 +308,12 @@ header .get {
   border: 3px solid rgba(255,255,255,0.3);
   -webkit-appearance: none;
 }
+#spectrumPlugin form .conf_input{
+  background-color: rgba(255,255,255,0.5);
+  outline: 0;
+  border: 3px solid rgba(255,255,255,0.3);
+  -webkit-appearance: none;
+} 
 .form-label{
   position: relative;
   top: 32px;
