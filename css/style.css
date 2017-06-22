@@ -246,16 +246,18 @@ header .get {
   margin: 2.000em auto;
   padding: 0 10px 80px 10px;
 }
-#spectrumPlugin h2{
+#spectrumPlugin h2:not(.heading){
   position: relative;
   top: -34px;
   color: #dd4752;
+  padding-bottom: 0;
 }
 #spectrumPlugin h3.heading{
   font-family: 'Gentium Book Basic', serif;
 }
 #spectrumPlugin p.heading{
   font-family: 'Gentium Book Basic', serif;
+  padding-bottom: 40px;
 }
 #spectrumPlugin input{
   width: 100%;
