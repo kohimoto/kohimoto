@@ -193,6 +193,12 @@ header .get {
 /* =======================================================
 * top
 * ======================================================= */
+.art_g h2{
+  padding: 0.5em 0 1em;
+}
+.flexslider .slides {
+    padding: 0 0 3em;
+}
 .list ul{
   overflow: hidden;
 }
