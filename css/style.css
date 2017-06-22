@@ -270,24 +270,27 @@ header .get {
 }
 #spectrumPlugin .content{
   max-width: 81.25em;
-  margin: 5.000em auto;
+  margin: 2.000em auto;
   padding: 0 10px 80px 10px;
 }
-#spectrumPlugin h2{
+#spectrumPlugin h2:not(.heading){
   position: relative;
   top: -34px;
   color: #dd4752;
+  padding-bottom: 0;
 }
 #spectrumPlugin h3.heading{
   font-family: 'Gentium Book Basic', serif;
 }
 #spectrumPlugin p.heading{
   font-family: 'Gentium Book Basic', serif;
+  padding-bottom: 40px;
 }
 #spectrumPlugin input{
   width: 100%;
   border: 1px solid #1c18c4;
   border-radius: 5px;
+  -webkit-appearance: none;
 }
 #spectrumPlugin textarea{
   width: 100%;
@@ -295,6 +298,7 @@ header .get {
   overflow-x: hidden;
   border-radius: 5px;
   border: 1px solid #1c18c4;
+  -webkit-appearance: none;
 }
 #spectrumPlugin .button{
   text-align: center;
@@ -310,6 +314,26 @@ header .get {
   border-radius: 5px;
   background-color: transparent;
 }
+#spectrumPlugin button[name="sendBtn"]:hover{
+  background-color: rgba(255,255,255,0.3);
+}
+#spectrumPlugin  form p{
+  margin-bottom: -10px;
+}
+#spectrumPlugin  h2.heading{
+  color: #1c18c4;
+}
+.spectrumHeader{
+  transition: background-color 4s ease;
+}
+#spectrumPlugin form input:focus,
+#spectrumPlugin form textarea:focus
+{
+  background-color: rgba(255,255,255,0.5);
+  outline: 0;
+  border: 3px solid rgba(255,255,255,0.3);
+  -webkit-appearance: none;
+}
 .form-label{
   position: relative;
   top: 32px;
@@ -321,14 +345,4 @@ header .get {
 .text-input{
   padding: 1em 0 0.7em 0.5em;
   font-size: 30px;
-}
-#spectrumPlugin  form p{
-  margin-bottom: -10px;
-}
-#spectrumPlugin  h2.heading{
-  color: #1c18c4;
-}
-
-.spectrumHeader{
-  transition: background-color 4s ease;
 }
