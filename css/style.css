@@ -58,6 +58,11 @@ body {
 }
 a, a:hover, a:visited {
   color: #000;
+  text-decoration: none;
+}
+a:hover{
+  padding-bottom: 1px;
+  border-bottom: 1px #000 dotted;
 }
 .content{
   padding: 0 7.1428em 7.1428em;
@@ -106,6 +111,7 @@ header .g_fix{
   position: fixed;
   width: 100%;
   top: 2em;
+  z-index: 10;
 }
 header .g_fix_w{
   position: relative;
@@ -216,4 +222,7 @@ header .get {
 }
 .list_des p{
   float: right;
+}
+.bg_top{
+  background-color: #f0f3f9;
 }
