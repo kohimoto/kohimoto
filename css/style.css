@@ -230,43 +230,44 @@ header .get {
 * contact
 * ======================================================= */
 .bg-c{
-  color: #1c18c4;
   background: #f5c9cc;
 }
-.bg-c .content{
+#spectrumPlugin{
+  color: #1c18c4;
+}
+#spectrumPlugin .content{
   max-width: 81.25em;
   margin: 5.000em auto;
   padding: 0 10px 80px 10px;
 }
-
-.bg-c h2{
+#spectrumPlugin h2{
   position: relative;
   top: -34px;
   color: #dd4752;
 }
-.bg-c h3.heading{
+#spectrumPlugin h3.heading{
   font-family: 'Gentium Book Basic', serif;
 }
-.bg-c p.heading{
+#spectrumPlugin p.heading{
   font-family: 'Gentium Book Basic', serif;
 }
-.bg-c input{
+#spectrumPlugin input{
   width: 100%;
   border: 1px solid #1c18c4;
   border-radius: 5px;
 }
-.bg-c textarea{
+#spectrumPlugin textarea{
   width: 100%;
   height: 5.286em; 
   overflow-x: hidden;
   border-radius: 5px;
   border: 1px solid #1c18c4;
 }
-.bg-c .button{
+#spectrumPlugin .button{
   text-align: center;
   padding-top: 40px;
 }
-.bg-c button[name="sendBtn"]{
+#spectrumPlugin button[name="sendBtn"]{
   cursor: pointer;
   color: #1c18c4;
   border: 2px solid #1c18c4;
@@ -288,10 +289,10 @@ header .get {
   padding: 1em 0 0.7em 0.5em;
   font-size: 30px;
 }
-.bg-c form p{
+#spectrumPlugin  form p{
   margin-bottom: -10px;
 }
-.bg-c h2.heading{
+#spectrumPlugin  h2.heading{
   color: #1c18c4;
 }
 
