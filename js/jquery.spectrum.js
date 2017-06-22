@@ -9,31 +9,31 @@ $.fn.spectrum = function(options) {
 		// Colour 1 - Orange
 	    {
 	        src: 'colour1',
-	        colour: 'rgb(252,115,49)'
+	        colour: 'rgb(240, 243, 249)'
 	    },
 
 	    // Colour 2 - Pink
 	    {
 	        src: 'colour2',
-	        colour: 'rgb(236,0,140)'
+	        colour: 'rgb(239, 255, 242)'
 	    },
 
 	    // Colour 3 - Yellow
 	    {
 	       	src: 'colour3',
-	        colour: 'rgb(241,196,15)'
+	        colour: 'rgb(255, 242, 243)'
 	    },
 
 	    // Colour 4 - Green
 	   	{
 	        src: 'colour4',
-	        colour: 'rgb(95,178,106)'
+	        colour: 'rgb(240, 243, 249)'
 	    },
 
 	    // Colour 5 - Blue
 	    {
 	        src: 'colour5',
-	        colour: 'rgb(113,137,255)'
+	        colour: 'rgb(239, 255, 242)'
 	    }
 	];
 
