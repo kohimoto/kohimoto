@@ -452,7 +452,7 @@ figure.img_h.hover figcaption p {
   background-color: #1c18c4;
 }
 .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
- .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
    background-color: #1c18c4;
 }
 span:not(.conf_input) .mCSB_draggerContainer{
@@ -461,3 +461,4 @@ span:not(.conf_input) .mCSB_draggerContainer{
 .mCSB_inside > .mCSB_container{
   margin-right: 0px;
 }
+
