@@ -65,6 +65,7 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 a:hover{
+  padding-bottom: 1px;
   border-bottom: 1px #000 dotted;
 }
 .arrow_d{
@@ -214,9 +215,6 @@ header .get {
 /* =======================================================
 * top
 * ======================================================= */
-.art_d {
-  margin-bottom: 4em;
-}
 .art_g h2{
   padding: 0.5em 0 1em;
 }
@@ -452,10 +450,11 @@ figure.img_h.hover figcaption p {
 .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
   background-color: #1c18c4;
 }
-.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+ .mCS-dark-thin.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
    background-color: #1c18c4;
 }
-.mCSB_draggerContainer{
+span:not(.conf_input) .mCSB_draggerContainer{
   margin: 13px 0;
 }
 .mCSB_inside > .mCSB_container{
