@@ -221,7 +221,8 @@ html[xmlns] .flexslider .slides {
   background: #333;
   background: rgba(0, 0, 0, 0.7);
 }
-.flex-control-paging li a:hover {
+.flex-control-paging li a:hover,
+.flex-control-paging li a:visited {
   text-decoration: none;
   border: 0;
 /*  background: #333;
