@@ -1,10 +1,10 @@
-@charset "UTF-8";
 /* =======================================================
 *
 * 2017/06/21
 *	Kohimoto Edit
 *
 * ======================================================= */
+@charset "UTF-8";
 /* =======================================================
 * reset
 * ======================================================= */
@@ -50,6 +50,12 @@ input, select {
 /* =======================================================
 * font
 * ======================================================= */
+/* h3 セリフ */
+/*@import url(https://fonts.googleapis.com/css?family=Gentium+Book+Basic:700);*/
+/*@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);*/
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica);
+/* h2 サンセリフ */
+@import url(https://fonts.googleapis.com/css?family=Poppins:700);
 /* =======================================================
 * common
 * ======================================================= */
@@ -57,8 +63,6 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: #000;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
 }
 a, a:hover, a:visited {
   color: #000;
@@ -70,7 +74,6 @@ a:hover{
 }
 .arrow_d{
   text-align: right;
-  font-family: 'Libre Baskerville', serif;
 }
 a.arrow {
 }
@@ -84,7 +87,6 @@ h1{
 }
 h2{
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
   font-size: 4em;
   padding-bottom: 0.2em;
 }
@@ -92,11 +94,11 @@ p.h2_cap{
   padding-bottom: 5.7142em;
 }
 h2.heading{
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'IM Fell DW Pica', serif;
 }
 h3{
   font-size: 2.8571em;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Gentium Book Basic', serif;
 }
 h4{
   font-size: 6.1428em;
@@ -202,7 +204,6 @@ header .get {
 }
 .foot_d .link_s ul li{
   font-size: 0.8571em;
-  font-family: 'Libre Baskerville', serif;
   float: left;
 }
 .foot_d .link_s ul li:nth-child(1){
@@ -317,7 +318,7 @@ figure.img_h.hover figcaption p {
 * contact
 * ======================================================= */
 .bg-c{
-  background: #f5c9cc;
+  background: #fff2f3;
 }
 #spectrumPlugin{
   color: #1c18c4;
@@ -394,6 +395,15 @@ figure.img_h.hover figcaption p {
   outline: 0;
   border: 3px solid rgba(255,255,255,0.3);
   -webkit-appearance: none;
+<<<<<<< HEAD
+=======
+} 
+#spectrumPlugin form span.conf_input{
+  display: block;
+  word-break: break-all;
+  overflow-y: scroll;
+  height: 5.286em;
+>>>>>>> bf4b5e5f94e1274673718316cccf04c07a684537
 }
 .form-label{
   position: relative;

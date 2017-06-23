@@ -1,43 +1,69 @@
-<?
-$head = file_get_contents("../../header.html");
-$head_t = preg_replace("/<title>.*<\/title>/","<title>KOHIMOTO | CONTACT</title>",$head);
-$head_c = preg_replace("/utf-8/","Shift_JIS",$head_t);
-echo $head_c;
-?>
-<?
-if(0){
-?>
-<body bgcolor="#ffffff">
-<h1>▼ 確認画面サンプル</h1>
-<form action="$cgiurl$" method="post">
-$hidden$
-<table id="input_table">
-<tr>
-	<th>お名前</th>
-	<td>$name$</td>
-</tr>
-<tr>
-	<th>メールアドレス</th>
-	<td>$mailaddress$</td>
-</tr>
-<tr>
-	<th>会社名</th>
-	<td>$company$</td>
-</tr>
-<tr>
-	<th>タイトル</th>
-	<td>$subject$</td>
-</tr>
-<tr>
-	<th>感想</th>
-	<td>$opinion$</td>
-</tr>
-</table>
-<p><input type="submit" name="sendBtn" value="　送　信　"></p>
-</form>
-<?
-}
-?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="Shift_JIS">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KOHIMOTO</title>
+<meta name='keywords' content=''>
+<meta name='description' content=''>
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.gif">
+
+<meta property='og:title' content=''>
+<meta property='og:image' content='/images/og.png'>
+<meta property='og:site_name' content=''>
+<meta property='og:url' content=''>
+<meta property='og:type' content='article'>
+<meta property='og:description' content=''>
+<meta property='og:email' content='info@kohimoto.com'>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+<!-- Use Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,700" rel="stylesheet"> 
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/flexslider.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Modernizr JS -->
+<script src="/js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1><a href="/"><img src="/images/header/kohimoto_logo.png" alt="kohimoto_logo"></a></h1>
+  <div class="g_fix">
+    <div class="g_fix_w">
+    <div class="cherry">
+    <a href="/"><img src="/images/header/cherry.png" alt="cherry"></a>
+    </div>
+    <div class="menu">
+    <ul>
+      <li><a href="/work">WORKS</a>&nbsp;/&nbsp;</li>
+      <li><a href="/about">ABOUT</a>&nbsp;/&nbsp;</li>
+      <li><a href="/contact">CONTACT</a></li>
+    </ul>
+    </div>
+    <div class="h_text copyright">
+      <p>&copy;&nbsp;2017&nbsp;<a href="https://kohimoto.com/">Kohimoto</a>.</p>
+    </div>
+    <div class="h_text get">
+      <p><a href="/contact">Get in touch</a></p>
+    </div>
+    </div>
+  </div>
+</header>
 <div class="spectrumHeader bg-c" id="spectrumPlugin">
 <div class="content">
 <h2>CONTACT</h2>
@@ -51,11 +77,44 @@ $hidden$
 <p><label class="form-label" for="E-mail">E-mail</label><input type="text" name="mailaddress" class="conf_input text-input" value="$mailaddress$" readonly="readonly"></p>
 <p><label class="form-label" for="Company">Company</label><input type="text" name="company" class="conf_input text-input" value="$company$" readonly="readonly"></p>
 <p><label class="form-label" for="Subject">Subject</label><input type="text" name="subject" class="conf_input text-input" value="$subject$" readonly="readonly"></p>
-<p><label class="form-label" for="description">Project description</label><textarea name="opinion" class="conf_input conf_input text-input" readonly="readonly">$opinions$</textarea></p>
+<p><label class="form-label" for="description">Project description</label><span name="opinion" class="conf_input conf_input text-input" readonly="readonly">$opinion$</span></p>
 <p class="button"><button name="backBtn" onclick="history.back()">BACK</button><button type="submit" name="sendBtn">SUBMIT</button></p>
 </form>
 </div>
 </div>
-<?
-include_once("../../footer.html");
-?>
+<footer>
+  <div class="content">
+    <h1><img src="/images/header/kohimoto_logo.png" alt="kohimoto_logo"></h1>
+    <span class="line_s"></span>
+    <div class="foot_d">
+      <div class="link_m">
+        <ul>
+          <li><span>MAIL</span>info@kohimoto.com</li>
+          <li><span>URL</span>kohimoto.com</li>
+        </ul>
+        <ul>
+          <li><span>ADD</span>Kichijyoji&nbsp;Musashino&nbsp;Tokyo</li>
+          <li><span>BLOG</span>kohimoto&nbsp;labo</li>
+        </ul>
+      </div>
+      <div class="link_s">
+        <ul>
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.flexslider-min.js"></script>
+<script src="/js/jquery.spectrum.js"></script>
+<script>
+$(document).ready(function(){
+  $('.bg-c').spectrum();
+});
+</script>
+</body>
+</html>
