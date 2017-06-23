@@ -345,6 +345,7 @@ header .get {
   display: block;
   word-break: break-all;
   overflow-y: scroll;
+  height: 5.286em;
 }
 .form-label{
   position: relative;
