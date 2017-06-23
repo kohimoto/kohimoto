@@ -296,6 +296,7 @@ header .get {
   width: 100%;
   height: 5.286em;
   overflow-x: hidden;
+  overflow-y: auto;
   border-radius: 5px;
   border: 1px solid #1c18c4;
   -webkit-appearance: none;
@@ -344,7 +345,7 @@ header .get {
 #spectrumPlugin form span.conf_input{
   display: block;
   word-break: break-all;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 5.286em;
 }
 .form-label{

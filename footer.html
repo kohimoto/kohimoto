@@ -27,9 +27,15 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/jquery.flexslider-min.js"></script>
 <script src="/js/jquery.spectrum.js"></script>
+<script src="/js/jquery.mCustomScrollbar.js"></script>
 <script>
 $(document).ready(function(){
   $('.bg-c').spectrum();
+  $(window).load(function(){
+    $('.description').mCustomScrollbar({
+      theme: "rounded-dots-dark"
+    });
+  });
 });
 </script>
 </body>

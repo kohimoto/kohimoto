@@ -31,6 +31,7 @@
 <link rel="stylesheet" href="/css/bootstrap.css">
 <link rel="stylesheet" href="/css/flexslider.css">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/jquery.mCustomScrollbar.css">
 
 <!-- Modernizr JS -->
 <script src="/js/modernizr-2.6.2.min.js"></script>
@@ -77,7 +78,7 @@ $hidden$
 <p><label class="form-label" for="E-mail">E-mail</label><input type="text" name="mailaddress" class="conf_input text-input" value="$mailaddress$" readonly="readonly"></p>
 <p><label class="form-label" for="Company">Company</label><input type="text" name="company" class="conf_input text-input" value="$company$" readonly="readonly"></p>
 <p><label class="form-label" for="Subject">Subject</label><input type="text" name="subject" class="conf_input text-input" value="$subject$" readonly="readonly"></p>
-<p><label class="form-label" for="description">Project description</label><span name="opinion" class="conf_input conf_input text-input" readonly="readonly">$opinion$</span></p>
+<p><label class="form-label" for="description">Project description</label><span name="opinion" class="conf_input conf_input text-input description" readonly="readonly">$opinion$</span></p>
 <p class="button"><button name="backBtn" onclick="history.back()">BACK</button><button type="submit" name="sendBtn">SUBMIT</button></p>
 </form>
 </div>
@@ -111,9 +112,15 @@ $hidden$
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/jquery.flexslider-min.js"></script>
 <script src="/js/jquery.spectrum.js"></script>
+<script src="/js/jquery.mCustomScrollbar.js"></script>
 <script>
 $(document).ready(function(){
   $('.bg-c').spectrum();
+  $(window).load(function(){
+    $('.description').mCustomScrollbar({
+      theme: "rounded-dots-dark"
+    });
+  });
 });
 </script>
 </body>
