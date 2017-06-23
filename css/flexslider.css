@@ -12,6 +12,7 @@
 /* ====================================================================================================================
  * FONT-FACE
  * ====================================================================================================================*/
+/*
 @font-face {
   font-family: 'flexslider-icon';
   src: url('fonts/flexslider-icon.eot');
@@ -19,6 +20,7 @@
   font-weight: normal;
   font-style: normal;
 }
+*/
 /* ====================================================================================================================
  * RESETS
  * ====================================================================================================================*/
@@ -134,6 +136,7 @@ html[xmlns] .flexslider .slides {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+/*
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
   font-size: 40px;
@@ -142,6 +145,7 @@ html[xmlns] .flexslider .slides {
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
+*/
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
 }
