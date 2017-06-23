@@ -1,8 +1,7 @@
 <?
 header("Content-Type: text/html;charset=Shift_JIS");
 include_once("../header.html");
-$data= file_get_contents('template/thanx.html'); // ¿¿¿JIS¿¿¿¿¿¿¿¿
-//$str = mb_convert_encoding($data,"utf-8","sjis"); // ¿¿¿JIS¿¿UTF-8¿¿¿
-echo $data; // ¿¿¿¿¿¿¿¿¿
+$data= file_get_contents('template/thanx.html'); 
+echo $data; 
 include_once("../footer.html");
 ?>
