@@ -213,6 +213,9 @@ header .get {
 /* =======================================================
 * top
 * ======================================================= */
+.art_d {
+  margin-bottom: 4em;
+}
 .art_g h2{
   padding: 0.5em 0 1em;
 }
@@ -395,7 +398,7 @@ figure.img_h.hover figcaption p {
   outline: 0;
   border: 3px solid rgba(255,255,255,0.3);
   -webkit-appearance: none;
-} 
+}
 #spectrumPlugin form span.conf_input{
   display: block;
   word-break: break-all;
