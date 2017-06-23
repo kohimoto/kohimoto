@@ -336,7 +336,7 @@ figure.img_h.hover figcaption p {
 * contact
 * ======================================================= */
 .bg-c{
-  background: #f5c9cc;
+  background: #fff2f3;
 }
 #spectrumPlugin{
   color: #1c18c4;
@@ -370,14 +370,6 @@ figure.img_h.hover figcaption p {
   overflow-y: hidden;
   height: 10.000em;
   border: none;
-/*
-  height: 5.286em;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  border-radius: 5px;
-  border: 1px solid #1c18c4;
-  -webkit-appearance: none;
-*/
 }
 #spectrumPlugin .button{
   text-align: center;
@@ -414,14 +406,6 @@ figure.img_h.hover figcaption p {
   /*border: 3px solid rgba(255,255,255,0.3);*/
   -webkit-appearance: none;
 }
-#spectrumPlugin form .conf_input{
-  background-color: rgba(255,255,255,0.5);
-  outline: 0;
-  border: 3px solid rgba(255,255,255,0.3);
-  -webkit-appearance: none;
-  display: block;
-  border-radius: 5px;
-} 
 #spectrumPlugin form span.description{
   display: block;
   word-break: break-all;
@@ -461,6 +445,20 @@ span:not(.conf_input) .mCSB_draggerContainer{
 .mCSB_inside > .mCSB_container{
   margin-right: 0px;
 }
+/* =======================================================
+* contact confirm
+* ======================================================= */
+#spectrumPlugin form .conf_input{
+  background-color: rgba(255,255,255,0.5);
+  outline: 0;
+  border: 3px solid rgba(255,255,255,0.8);
+  -webkit-appearance: none;
+  display: block;
+  border-radius: 5px;
+} 
+/* =======================================================
+* contact error
+* ======================================================= */
 .error p{
   color: red;
   padding-bottom: 30px;
