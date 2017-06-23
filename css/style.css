@@ -99,6 +99,8 @@ h3{
 }
 h4{
   font-size: 6.1428em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 .line_s{
   display: block;
@@ -316,6 +318,23 @@ figure.img_h.hover figcaption p {
   background-color: #f0f3f9;
 }
 /* =======================================================
+* work_detail
+* ======================================================= */
+.works_d{
+  width: 100%;
+  height: 100%;
+  max-height: 52em;
+}
+.works_head_img{
+  background-color: #999;
+  background-image: url('../images/work/2017/kirsche/main.jpg');
+  height: 52em;
+  width: 100%;
+}
+
+
+
+/* =======================================================
 * contact
 * ======================================================= */
 .bg-c{
@@ -403,7 +422,7 @@ figure.img_h.hover figcaption p {
   border: 3px solid rgba(255,255,255,0.3);
   -webkit-appearance: none;
   display: block;
-} 
+}
 #spectrumPlugin form span.description{
   display: block;
   word-break: break-all;
