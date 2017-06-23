@@ -395,15 +395,6 @@ figure.img_h.hover figcaption p {
   outline: 0;
   border: 3px solid rgba(255,255,255,0.3);
   -webkit-appearance: none;
-<<<<<<< HEAD
-=======
-} 
-#spectrumPlugin form span.conf_input{
-  display: block;
-  word-break: break-all;
-  overflow-y: scroll;
-  height: 5.286em;
->>>>>>> bf4b5e5f94e1274673718316cccf04c07a684537
 }
 .form-label{
   position: relative;
