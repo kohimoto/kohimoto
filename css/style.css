@@ -65,7 +65,6 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 a:hover{
-  padding-bottom: 1px;
   border-bottom: 1px #000 dotted;
 }
 .arrow_d{
@@ -213,6 +212,9 @@ header .get {
 /* =======================================================
 * top
 * ======================================================= */
+.art_d {
+  margin-bottom: 4em;
+}
 .art_g h2{
   padding: 0.5em 0 1em;
 }
@@ -400,8 +402,13 @@ figure.img_h.hover figcaption p {
   outline: 0;
   border: 3px solid rgba(255,255,255,0.3);
   -webkit-appearance: none;
+<<<<<<< HEAD
 } 
 #spectrumPlugin form span.description{
+=======
+}
+#spectrumPlugin form span.conf_input{
+>>>>>>> 4e34d6b0f2d90eb460d1acb73bc276cba843e22b
   display: block;
   word-break: break-all;
   overflow-y: hidden;
