@@ -101,10 +101,10 @@ $c{'NAMES'} = [
 #
 #  【設定例】
 #    $c{'NAME_MAP'} = {
-#      'name'        => 'お名前',
-#      'mailaddress' => 'メールアドレス',
-#      'subject'     => 'サブジェクト',
-#      'opinion'     => '感想',
+#      'name'        => 'Name',
+#      'mailaddress' => 'E-mail',
+#      'subject'     => 'Subject',
+#      'opinion'     => 'Project description',
 #      'attachment'  => '添付ファイル'
 #    };
 #--------------------------------------------------------------------
