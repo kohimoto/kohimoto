@@ -74,10 +74,10 @@
 </section>
 <form action="$cgiurl$" method="post">
 $hidden$
-<p><label class="form-label" for="Name">Name</label><input type="text" name="name" class="conf_input text-input" value="$name$" readonly="readonly"></p>
-<p><label class="form-label" for="E-mail">E-mail</label><input type="text" name="mailaddress" class="conf_input text-input" value="$mailaddress$" readonly="readonly"></p>
-<p><label class="form-label" for="Company">Company</label><input type="text" name="company" class="conf_input text-input" value="$company$" readonly="readonly"></p>
-<p><label class="form-label" for="Subject">Subject</label><input type="text" name="subject" class="conf_input text-input" value="$subject$" readonly="readonly"></p>
+<p><label class="form-label" for="Name">Name</label><span class="conf_input text-input">$name$</span></p>
+<p><label class="form-label" for="E-mail">E-mail</label><span class="conf_input text-input">$mailaddress$</span></p>
+<p><label class="form-label" for="Company">Company</label><span class="conf_input text-input">$company$</span></p>
+<p><label class="form-label" for="Subject">Subject</label><span class="conf_input text-input">$subject$</span></p>
 <p><label class="form-label" for="description">Project description</label><span name="opinion" class="conf_input conf_input text-input description" readonly="readonly">$opinion$</span></p>
 <p class="button"><button name="backBtn" onclick="history.back()">BACK</button><button type="submit" name="sendBtn">SUBMIT</button></p>
 </form>
