@@ -402,13 +402,9 @@ figure.img_h.hover figcaption p {
   outline: 0;
   border: 3px solid rgba(255,255,255,0.3);
   -webkit-appearance: none;
-<<<<<<< HEAD
+  display: block;
 } 
 #spectrumPlugin form span.description{
-=======
-}
-#spectrumPlugin form span.conf_input{
->>>>>>> 4e34d6b0f2d90eb460d1acb73bc276cba843e22b
   display: block;
   word-break: break-all;
   overflow-y: hidden;
