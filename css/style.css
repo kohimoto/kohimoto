@@ -545,6 +545,21 @@ span:not(.conf_input) .mCSB_draggerContainer{
 #spectrumPlugin ul li:not(.add) span{
   font-size: 80%;
 }
+@media (max-width: 766px) {
+  #spectrumPlugin ul li.add{
+    display: block; 
+    float: left;
+    width: 50%;
+    padding-bottom: 10px;
+  }
+  section br{
+    clear: both;
+  }
+  #spectrumPlugin li.add:before{
+    content: "・";
+    padding: 0 8px 0 5px;
+  }
+}
 @media (max-width: 760px) {
   #spectrumPlugin ul li:not(.add){
     display: block; 
