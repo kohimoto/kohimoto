@@ -57,7 +57,7 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: #000;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins',"Yu Gothic",YuGothic, sans-serif;
   font-weight: 300;
 }
 a, a:hover, a:visited {
@@ -356,24 +356,146 @@ figure.img_h.hover figcaption p {
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
   transform: translate(-50%, -50%);
 }
-.bg_d{
-  background-color: #fdffdf;
-}
 
-/*==================== work_kirsche ===================== */
-.device_pc {
+.bg_d{
+  background-color: #fff2f3;
+}
+.devise_title {
+  padding: 6em 0 4em;
+}
+.devise_title h2 {
+  color: #1c18c4;
   text-align: center;
 }
-.device_sp {
+.devise_detail {
+  height: auto;
   text-align: center;
+  position: relative;
+  padding-bottom: 4em;
 }
 .device_pc svg {
+  z-index: 2;
   width: 1200px;
 }
+.device_pc .video {
+  position: absolute;
+  top: 5%;
+  left: 4.4%;
+  width: 91.2%;
+}
+.device_pc .video video {
+  width: 1098px;
+}
 .device_sp svg {
+  z-index: 2;
   width: 400px;
 }
+.device_sp .video {
+  position: absolute;
+  top: 11.2%;
+  left: 6.4%;
+  width: 87%;
+  z-index: 1;
+}
+.device_sp .video video {
+  width: 348.5px;
+}
 
+.works_f {
+  overflow: hidden;
+  color: #1c18c4;
+}
+.works_f .line_s{
+  border-bottom: 1px solid #1c18c4;
+}
+.works_f .link_m{
+  float: left;
+  vertical-align: bottom;
+}
+.works_f .link_m ul{
+  overflow: hidden;
+  padding-bottom: 0.7142em;
+}
+.works_f .link_m ul li{
+  font-size: 0.8571em;
+}
+.works_f .link_m ul li span{
+  width: 6em;
+  display: inline-block;
+}
+.works_f .color{
+  float: right;
+  vertical-align: bottom;
+}
+.works_f .color ul{
+  overflow: hidden;
+}
+.works_f .color ul li{
+  font-size: 0.8571em;
+  font-family: 'Libre Baskerville', serif;
+  float: left;
+}
+.works_f .color ul li:nth-child(1){
+  padding-right: 1em;
+  border-right: 1px solid #1c18c4;
+  margin-right: 1em;
+}
+.works_c {
+  border: 2px solid #1c18c4;
+  background-color: #fff;
+  padding: 4em;
+}
+.works_c .works_c_d{
+  color: #1c18c4;
+  overflow: hidden;
+  padding-bottom: 2em;
+}
+.works_c .works_c_d .works_c_dd{
+  font-family: 'Libre Baskerville', serif;
+  width: 15%;
+  float: left;
+}
+.works_c .works_c_d .works_c_dt{
+  float: left;
+  width: 85%;
+}
+.bg_d_n {
+  background-color: #141240;
+  z-index: 5;
+}
+.bg_d_n .content{
+  padding: 0;
+}
+.works_d_f{
+  position: relative;
+}
+.works_d_f a {
+  color: #fff;
+  text-align: center;
+}
+.works_d_f .arrow_d{
+  padding-bottom: 2em;
+  text-align: center;
+}
+.works_d_f .works_foot_img{
+  background-image: url('../images/work/2017/kirsche/main.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: #141240;
+  height: 26.4285em;
+  opacity: 0;
+
+}
+.works_d_f .works_foot_img:hover {
+  opacity: 0.5;
+}
+.works_d_f .works_foot_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%); /* Safari用 */
+  transform: translate(-50%, -50%);
+}
 /*====================work_detail ---- PAD SP===================== */
 @media (max-width: 1024px) {
   .works_d {
