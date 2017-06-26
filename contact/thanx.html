@@ -1,6 +1,8 @@
 <?
 header("Content-Type: text/html;charset=Shift_JIS");
-include_once("../header.html");
+$head_c = file_get_contents("../header.html");
+$head = preg_replace("/<title>.*<\/title>/","<title>KOHIMOTO | CONTACT</title>",$head_c);
+echo $head;
 $data= file_get_contents('template/thanx.html'); 
 echo $data; 
 include_once("../footer.html");
