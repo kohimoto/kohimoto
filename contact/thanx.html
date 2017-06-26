@@ -1,11 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html;charset=Shift_JIS">
-<title>ああ</title>
-</head>
-<body>
-
-<h1>お問い合わせありがとうございました。</h1>
-</body>
-</html>
+<?
+header("Content-Type: text/html;charset=Shift_JIS");
+include_once("../header.html");
+$data= file_get_contents('template/thanx.html'); 
+echo $data; 
+include_once("../footer.html");
+?>

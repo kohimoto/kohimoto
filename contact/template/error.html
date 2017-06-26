@@ -1,33 +1,120 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Language" content="ja">
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
-<title>futomi's CGI Cafe - MP Form Mail CGI Standard版 - エラー</title>
-<style type="text/css">
-<!--
-table   { font-size: 12px; }
-a:hover { color: red; }
-a       { font-size: 12px; }
-form    { font-size: 12px; }
-p       { font-size: 12px; }
-#err_box {
-  background-color: #f5f5dc;
-  font-size: 12px;
-  color: #990033;
-  width: 500px;
-  padding: 12px;
-  border: 1px solid #444422;
-}
--->
-</style>
+<meta charset="Shift_JIS">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KOHIMOTO</title>
+<meta name='keywords' content=''>
+<meta name='description' content=''>
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.gif">
+
+<meta property='og:title' content=''>
+<meta property='og:image' content='/images/og.png'>
+<meta property='og:site_name' content=''>
+<meta property='og:url' content=''>
+<meta property='og:type' content='article'>
+<meta property='og:description' content=''>
+<meta property='og:email' content='info@kohimoto.com'>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+<!-- Use Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,700" rel="stylesheet"> 
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="/css/animate.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/flexslider.css">
+<link rel="stylesheet" href="/css/jquery.mCustomScrollbar.css">
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Modernizr JS -->
+<script src="/js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
 </head>
 <body>
-
-<p>　</p>
-<div id="err_box">$error$</div>
-<p><button name="backBtn" onclick="javascript:history.back()">戻る</button></p>
-<hr>
-<div><a href="http://www.futomi.com/">futomi's CGI Cafe - MP Form Mail CGI Standard版</a></div>
-
+<div class="wrap">
+<header>
+  <h1><a href="/"><img src="/images/header/kohimoto_logo.png" alt="kohimoto_logo"></a></h1>
+  <div class="g_fix">
+    <div class="g_fix_w">
+    <div class="cherry">
+    <a href="/"><img src="/images/header/cherry.png" alt="cherry"></a>
+    </div>
+    <div class="menu">
+    <ul>
+      <li><a href="/work">WORKS</a>&nbsp;/&nbsp;</li>
+      <li><a href="/about">ABOUT</a>&nbsp;/&nbsp;</li>
+      <li><a href="/contact">CONTACT</a></li>
+    </ul>
+    </div>
+    <div class="h_text copyright">
+      <p>&copy;&nbsp;2017&nbsp;<a href="https://kohimoto.com/">Kohimoto</a>.</p>
+    </div>
+    <div class="h_text get">
+      <p><a href="/contact">Get in touch</a></p>
+    </div>
+    </div>
+  </div>
+</header>
+<div class="spectrumHeader bg-c" id="spectrumPlugin">
+<div class="content error">
+<h2>CONTACT</h2>
+<section>
+<h2 class="heading">The following items are required.</h2>
+</section>
+<p>$error$</p>
+<p class="button"><button name="backBtn" onclick="history.back()">BACK</button></p>
+</div>
+</div>
+<footer>
+  <div class="content">
+    <h1><img src="/images/header/kohimoto_logo.png" alt="kohimoto_logo"></h1>
+    <span class="line_s"></span>
+    <div class="foot_d">
+      <div class="link_m">
+        <ul>
+          <li><span>MAIL</span>info@kohimoto.com</li>
+          <li><span>URL</span>kohimoto.com</li>
+        </ul>
+        <ul>
+          <li><span>ADD</span>Kichijyoji&nbsp;Musashino&nbsp;Tokyo</li>
+          <li><span>BLOG</span>kohimoto&nbsp;labo</li>
+        </ul>
+      </div>
+      <div class="link_s">
+        <ul>
+          <li>Instagram</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.flexslider-min.js"></script>
+<script src="/js/jquery.spectrum.js"></script>
+<script src="/js/jquery.mCustomScrollbar.js"></script>
+<script>
+$(document).ready(function(){
+  $('.bg-c').spectrum();
+  $(window).load(function(){
+    $('.description').mCustomScrollbar({
+     advanced:{updateOnContentResize: true},
+     theme: "dark-thin"
+    });
+  });
+});
+</script>
 </body>
 </html>
