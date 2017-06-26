@@ -540,3 +540,6 @@ span:not(.conf_input) .mCSB_draggerContainer{
   background: #fff;
   margin-left: -1em;
 }
+#spectrumPlugin ul li:not(.add) span{
+  font-size: 80%;
+}
