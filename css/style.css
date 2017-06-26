@@ -149,6 +149,7 @@ header .menu ul{
   overflow: hidden;
 }
 header .menu ul li{
+  font-family: 'Libre Baskerville', serif;
   float: left;
 }
 header .h_text{
