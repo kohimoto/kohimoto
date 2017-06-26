@@ -552,5 +552,6 @@ span:not(.conf_input) .mCSB_draggerContainer{
   }
   #spectrumPlugin ul li:not(.add):not(:first-child){
     margin-left: 0;
+    border-top: none;
   }
 }
