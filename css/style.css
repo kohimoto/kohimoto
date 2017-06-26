@@ -399,14 +399,14 @@ figure.img_h.hover figcaption p {
   color: #1c18c4;
 }
 #spectrumPlugin .content{
-  max-width: 81.25em;
+  /*max-width: 81.25em;*/
   margin: 2.000em auto;
-  padding: 0 10px 80px 10px;
+ /* padding: 0 10px 80px 10px;*/
 }
 #spectrumPlugin h2:not(.heading){
   position: relative;
   top: -34px;
-  color: #dd4752;
+  color: #f71137;
   padding-bottom: 0;
 }
 #spectrumPlugin h3.heading{
@@ -414,7 +414,6 @@ figure.img_h.hover figcaption p {
 }
 #spectrumPlugin p.heading{
   font-family: 'Gentium Book Basic', serif;
-  padding-bottom: 40px;
 }
 #spectrumPlugin input{
   width: 100%;
@@ -460,7 +459,6 @@ figure.img_h.hover figcaption p {
 {
   background-color: rgba(255,255,255,0.5);
   outline: 0;
-  /*border: 3px solid rgba(255,255,255,0.3);*/
   -webkit-appearance: none;
 }
 #spectrumPlugin form span.description{
@@ -529,4 +527,55 @@ span:not(.conf_input) .mCSB_draggerContainer{
 }
 .error li{
   padding: 10px 0 10px 10px;
+}
+
+/* =======================================================
+* about
+* ======================================================= */
+#spectrumPlugin .about ul li{
+  display: inline-block;
+}
+#spectrumPlugin .about li.add:not(:nth-child(1)):before{
+  content: "・";
+  padding: 0 8px 0 5px;
+}
+#spectrumPlugin section{
+  padding-bottom: 40px;
+}
+#spectrumPlugin .about ul li:not(.add){
+  border: 1px solid;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+#spectrumPlugin .about ul li:not(.add):not(:first-child){
+  margin-left: -1em;
+}
+#spectrumPlugin .about ul li:not(.add) span{
+  font-size: 80%;
+}
+@media (max-width: 856px) {
+  #spectrumPlugin .about ul li.add{
+    display: block;
+    float: left;
+    width: 50%;
+    padding-bottom: 10px;
+  }
+  .about section br{
+    clear: both;
+  }
+  #spectrumPlugin .about li.add:before{
+    content: "・";
+    padding: 0 8px 0 5px;
+  }
+}
+@media (max-width: 940px) {
+  #spectrumPlugin .about ul li:not(.add){
+    display: block;
+    width: 100%;
+  }
+  #spectrumPlugin .about ul li:not(.add):not(:first-child){
+    margin-left: 0;
+    border-top: none;
+  }
 }
