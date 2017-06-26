@@ -396,7 +396,7 @@ figure.img_h.hover figcaption p {
 #spectrumPlugin h2:not(.heading){
   position: relative;
   top: -34px;
-  color: #dd4752;
+  color: #f71137;
   padding-bottom: 0;
 }
 #spectrumPlugin h3.heading{
@@ -501,7 +501,7 @@ span:not(.conf_input) .mCSB_draggerContainer{
   -webkit-appearance: none;
   display: block;
   border-radius: 5px;
-} 
+}
 /* =======================================================
 * contact error
 * ======================================================= */
@@ -524,7 +524,7 @@ span:not(.conf_input) .mCSB_draggerContainer{
 * about
 * ======================================================= */
 #spectrumPlugin ul li{
-  display: inline-block; 
+  display: inline-block;
 }
 #spectrumPlugin li.add:not(:nth-child(1)):before{
   content: "・";
@@ -547,7 +547,7 @@ span:not(.conf_input) .mCSB_draggerContainer{
 }
 @media (max-width: 766px) {
   #spectrumPlugin ul li.add{
-    display: block; 
+    display: block;
     float: left;
     width: 50%;
     padding-bottom: 10px;
@@ -562,7 +562,7 @@ span:not(.conf_input) .mCSB_draggerContainer{
 }
 @media (max-width: 760px) {
   #spectrumPlugin ul li:not(.add){
-    display: block; 
+    display: block;
     width: 100%;
   }
   #spectrumPlugin ul li:not(.add):not(:first-child){
