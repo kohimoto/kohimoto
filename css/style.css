@@ -102,6 +102,7 @@ h4{
   font-size: 6.1428em;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
+  white-space: nowrap;
 }
 .line_s{
   display: block;
@@ -329,11 +330,6 @@ figure.img_h.hover figcaption p {
   background-position: center center;
   height: 728px;
 }
-.works_d:hover {
-  background-image: url('../images/work/2017/kirsche/main.jpg');
-  background-size: cover;
-  background-position: center center;
-}
 .works_d .works_head_text {
   position: absolute;
   top: 50%;
@@ -356,15 +352,10 @@ figure.img_h.hover figcaption p {
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
   transform: translate(-50%, -50%);
 }
-
-.bg_d{
-  background-color: #fff2f3;
-}
 .devise_title {
   padding: 6em 0 4em;
 }
 .devise_title h2 {
-  color: #1c18c4;
   text-align: center;
 }
 .devise_detail {
@@ -400,13 +391,8 @@ figure.img_h.hover figcaption p {
 .device_sp .video video {
   width: 348.5px;
 }
-
 .works_f {
   overflow: hidden;
-  color: #1c18c4;
-}
-.works_f .line_s{
-  border-bottom: 1px solid #1c18c4;
 }
 .works_f .link_m{
   float: left;
@@ -437,16 +423,12 @@ figure.img_h.hover figcaption p {
 }
 .works_f .color ul li:nth-child(1){
   padding-right: 1em;
-  border-right: 1px solid #1c18c4;
   margin-right: 1em;
 }
 .works_c {
-  border: 2px solid #1c18c4;
-  background-color: #fff;
   padding: 4em;
 }
 .works_c .works_c_d{
-  color: #1c18c4;
   overflow: hidden;
   padding-bottom: 2em;
 }
@@ -460,17 +442,15 @@ figure.img_h.hover figcaption p {
   width: 85%;
 }
 .bg_d_n {
-  background-color: #141240;
   z-index: 5;
 }
 .bg_d_n .content{
-  padding: 0;
+  padding: 0 7.1428em;
 }
 .works_d_f{
   position: relative;
 }
 .works_d_f a {
-  color: #fff;
   text-align: center;
 }
 .works_d_f .arrow_d{
@@ -478,16 +458,15 @@ figure.img_h.hover figcaption p {
   text-align: center;
 }
 .works_d_f .works_foot_img{
-  background-image: url('../images/work/2017/kirsche/main.jpg');
   background-size: cover;
   background-position: center center;
-  background-color: #141240;
   height: 26.4285em;
+  width: 92.8571em;
+  text-align: center;
   opacity: 0;
-
 }
 .works_d_f .works_foot_img:hover {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .works_d_f .works_foot_text {
   position: absolute;
@@ -496,6 +475,86 @@ figure.img_h.hover figcaption p {
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
   transform: translate(-50%, -50%);
 }
+/*==================== kirsche_detail ---- PAD SP===================== */
+.kirsche .works_d {
+  background-image: url('../images/work/2017/kirsche/main.jpg');
+}
+.kirsche .works_d:hover {
+  background-image: none;
+}
+.kirsche .bg_d {
+  background-color: #fff2f3;
+}
+.kirsche .devise_title h2 {
+  color: #1c18c4;
+}
+.kirsche .works_f {
+  color: #1c18c4;
+}
+.kirsche .works_f .line_s{
+  border-bottom: 1px solid #1c18c4;
+}
+.kirsche .works_f .color ul li:nth-child(1){
+  border-right: 1px solid #1c18c4;
+}
+.kirsche .works_c {
+  border: 2px solid #1c18c4;
+  background-color: #fff;
+}
+.kirsche .works_c .works_c_d{
+  color: #1c18c4;
+}
+.kirsche .bg_d_n {
+  background-color: #141240;
+}
+.kirsche .works_d_f a {
+  color: #fff;
+}
+.kirsche .works_d_f .works_foot_img{
+  background-image: url('../images/work/2017/risakoyamada/main.jpg');
+  background-color: #141240;
+}
+
+/*==================== risakoyamada_detail ---- PAD SP===================== */
+.risakoyamada .works_d {
+  background-image: url('../images/work/2017/risakoyamada/main.jpg');
+}
+.risakoyamada .works_d:hover {
+  background-image: none;
+}
+.risakoyamada .bg_d {
+  background-color: #141240;
+}
+.risakoyamada .devise_title h2 {
+  color: #1EEA77;
+}
+.risakoyamada .works_f {
+  color: #1EEA77;
+}
+.risakoyamada .works_f .line_s{
+  border-bottom: 1px solid #1EEA77;
+}
+.risakoyamada .works_f .color ul li:nth-child(1){
+  border-right: 1px solid #1EEA77;
+}
+.risakoyamada .works_c {
+  border: 2px solid #1EEA77;
+  /*background-color: #fff;*/
+}
+.risakoyamada .works_c .works_c_d{
+  color: #1EEA77;
+}
+.risakoyamada .bg_d_n {
+  background-color: #fdfad8;
+}
+.risakoyamada .works_d_f a {
+  color: #fff;
+}
+.risakoyamada .works_d_f .works_foot_img{
+  background-image: url('../images/work/2017/');
+  background-color: #fdfad8;
+}
+
 /*====================work_detail ---- PAD SP===================== */
 @media (max-width: 1024px) {
   .works_d {
