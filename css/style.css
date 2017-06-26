@@ -404,7 +404,6 @@ figure.img_h.hover figcaption p {
 }
 #spectrumPlugin p.heading{
   font-family: 'Gentium Book Basic', serif;
-  padding-bottom: 40px;
 }
 #spectrumPlugin input{
   width: 100%;
@@ -521,3 +520,23 @@ span:not(.conf_input) .mCSB_draggerContainer{
   padding: 10px 0 10px 10px;
 }
 
+/* =======================================================
+* about
+* ======================================================= */
+#spectrumPlugin ul li{
+  display: inline-block; 
+}
+#spectrumPlugin li.add:not(:nth-child(1)):before{
+  content: "・";
+  padding: 0 8px 0 5px;
+}
+#spectrumPlugin section{
+  padding-bottom: 40px;
+}
+#spectrumPlugin ul li:not(.add){
+  border: 1px solid;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-left: -1em;
+}
