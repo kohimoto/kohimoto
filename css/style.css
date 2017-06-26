@@ -360,9 +360,19 @@ figure.img_h.hover figcaption p {
 }
 
 /*==================== work_kirsche ===================== */
-.devise_detail svg #imac.svg{
-  fill: #1c18c4;
+.device_pc {
+  text-align: center;
 }
+.device_sp {
+  text-align: center;
+}
+.device_pc svg {
+  width: 1200px;
+}
+.device_sp svg {
+  width: 400px;
+}
+
 /*====================work_detail ---- PAD SP===================== */
 @media (max-width: 1024px) {
   .works_d {
