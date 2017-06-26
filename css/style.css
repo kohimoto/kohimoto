@@ -389,9 +389,9 @@ figure.img_h.hover figcaption p {
   color: #1c18c4;
 }
 #spectrumPlugin .content{
-  max-width: 81.25em;
+  /*max-width: 81.25em;*/
   margin: 2.000em auto;
-  padding: 0 10px 80px 10px;
+ /* padding: 0 10px 80px 10px;*/
 }
 #spectrumPlugin h2:not(.heading){
   position: relative;
@@ -449,7 +449,6 @@ figure.img_h.hover figcaption p {
 {
   background-color: rgba(255,255,255,0.5);
   outline: 0;
-  /*border: 3px solid rgba(255,255,255,0.3);*/
   -webkit-appearance: none;
 }
 #spectrumPlugin form span.description{
