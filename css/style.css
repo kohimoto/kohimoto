@@ -116,6 +116,9 @@ h4{
   .content{
     padding: 0 4em 6em;
   }
+  h4{
+    font-size: 5em;
+  }
 }
 @media (max-width: 768px) {
   body {
@@ -130,10 +133,16 @@ h4{
   h3{
     font-size: 2.5em;
   }
+  h4{
+    font-size: 4em;
+  }
 }
 @media (max-width: 375px) {
   body {
     font-size: 10px;
+  }
+  h4{
+    font-size: 2.8em;
   }
 }
 
@@ -151,7 +160,6 @@ header h1{
   padding: 2.2em 7.1428em;
 }
 header .g_fix{
- /* max-width: 107.1428em;*/
   position: fixed;
   width: 100%;
   top: 2em;
@@ -159,15 +167,13 @@ header .g_fix{
 }
 header .g_fix_w{
   position: relative;
-/*  display: block;*/
   height: 100%;
   width: 100%;
   max-width: 107.1428em;
 }
 header .cherry {
-  /*position: absolute;*/
   position: fixed;
-  /*left: 0%;*/
+  left: 1em;
 }
 header .cherry a:hover,
 header .cherry a:active {
@@ -175,7 +181,7 @@ header .cherry a:active {
 }
 header .menu {
   position: absolute;
-  right: 0%;
+  right: 1.5em;
 }
 header .menu ul{
   overflow: hidden;
@@ -191,11 +197,9 @@ header .side-menu{
   z-index: 2;
 }
 header .copyright {
-  /*left: 0%;*/
-  bottom: 40vh;
+  bottom: 45vh;
   position: absolute;
-  left: 0;
-  bottom: 40vh;
+  left: 1.5em;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   margin-top: 0;
@@ -203,12 +207,12 @@ header .copyright {
   writing-mode: vertical-lr;
   -webkit-writing-mode: vertical-lr;
   white-space: nowrap;
+  font-size: 0.8571em;
 }
 header .get {
-  /*right: 0%;*/
   position: absolute;
-  right: 0;
-  bottom: 40vh;
+  right: 1.5em;
+  bottom: 45vh;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   margin-top: 0;
@@ -216,9 +220,14 @@ header .get {
   writing-mode: vertical-lr;
   -webkit-writing-mode: vertical-lr;
   white-space: nowrap;
-
+  font-size: 0.8571em;
 }
 /*====================header ---- SP===================== */
+@media (max-width: 1500px) {
+  header h1 {
+      padding: 2.2em 4em;
+  }
+}
 @media (max-width: 1024px) {
   header h1 {
       padding: 2.2em 4em;
@@ -226,11 +235,28 @@ header .get {
 }
 @media (max-width: 768px) {
   header h1 {
-      padding: 2.2em 3em;
+      padding: 2em 2em;
   }
   header h1 img{
-    width: 70px;
+    width: 78px;
   }
+  header .menu {
+    right: 0.5em;
+    font-size: 0.8571em;
+  }
+  header .cherry {
+    left: 0.5em;
+  }
+  header .cherry img{
+    width: 1em;
+  }
+  header .copyright {
+    left: 0.5em;
+  }
+  header .get {
+    right: 0.5em;
+  }
+
 }
 /* =======================================================
 * footer
@@ -345,8 +371,8 @@ figure.img_h figcaption p {
   opacity: 0;
 }
 figure.img_h figcaption p {
-  top: 50%;
-  left: 35%;
+  left: 32%;
+  top: 45%;
   -webkit-transform: translate3d(0%, 100%, 0);
   transform: translate3d(0%, 100%, 0);
   font-family: 'Libre Baskerville', serif;
@@ -406,7 +432,7 @@ figure.img_h.hover figcaption p {
       margin-top: -1.8em;
   }
   .btm {
-      padding-bottom: 14em;
+      padding-bottom: 16em;
   }
 }
 @media (max-width: 375px) {
@@ -463,7 +489,7 @@ figure.img_h.hover figcaption p {
 }
 .device_pc svg {
   z-index: 2;
-  width: 1200px;
+  width: 1000px;
 }
 .device_pc .video {
   position: absolute;
@@ -472,22 +498,22 @@ figure.img_h.hover figcaption p {
   width: 91.2%;
 }
 .device_pc .video video {
-  width: 1098px;
+  width: 915px;
 }
 .device_sp svg {
   z-index: 2;
-  width: 400px;
+  width: 300px;
   position: relative;
 }
 .device_sp .video {
   position: absolute;
-  top: 11.2%;
+  top: 10.9%;
   left: 6.4%;
   width: 87%;
   z-index: 1;
 }
 .device_sp .video video {
-  width: 348.5px;
+  width: 261.375px;
 }
 .works_f {
   overflow: hidden;
@@ -559,7 +585,7 @@ figure.img_h.hover figcaption p {
   background-size: cover;
   background-position: center center;
   height: 26.4285em;
-  width: 92.8571em;
+  width: 100%;
   text-align: center;
   opacity: 0;
 }
@@ -573,7 +599,116 @@ figure.img_h.hover figcaption p {
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
   transform: translate(-50%, -50%);
 }
-/*==================== kirsche_detail ---- PAD SP===================== */
+/*==================== works_device detail ---- SP ===================== */
+@media (max-width: 1204px) {
+  .device_pc svg {
+    width: 760px;
+  }
+  .device_pc .video video {
+    width: 695.4px;
+  }
+}
+@media (max-width: 875px) {
+  .device_pc svg {
+    width: 560px;
+  }
+  .device_pc .video video {
+    width: 512px;
+  }
+  .device_sp svg {
+    width: 240px;
+  }
+  .device_sp .video video {
+    width: 209.1px;
+  }
+}
+@media (max-width: 600px) {
+  .device_pc svg {
+    width: 400px;
+  }
+  .device_pc .video video {
+    width: 366px;
+  }
+  .device_sp svg {
+    width: 200px;
+  }
+  .device_sp .video video {
+    width: 174.5px;
+  }
+}
+@media (max-width: 440px) {
+  .device_pc svg {
+    width: 240px;
+  }
+  .device_pc .video video {
+    width: 219.6px;
+  }
+  .device_sp svg {
+    width: 140px;
+  }
+  .device_sp .video video {
+    width: 121.975px;
+  }
+}
+/*==================== works detail ---- SP ===================== */
+
+@media (max-width: 1024px) {
+  .works_d {
+    height: 573px;
+  }
+  .bg_d_n .content {
+      padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .works_d{
+    height: 380px;
+  }
+  .works_d .works_head_text h2{
+    font-size: 2em;
+  }
+  .devise_title {
+      padding: 4em 0 3em;
+  }
+  .devise_title h2 {
+    font-size: 3em;
+  }
+  .works_f .link_m {
+      float: none;
+  }
+  .works_f .color {
+      float: none;
+      font-size: 0.8333em;
+  }
+  .works_c {
+      padding: 3em;
+  }
+  .works_c .works_c_d .works_c_dd {
+    width: 25%;
+  }
+  .works_c .works_c_d .works_c_dt {
+    width: 75%;
+  }
+  .works_d_f .works_head_text h2{
+    font-size: 3em;
+    padding-bottom: 0.5em;
+  }
+}
+@media (max-width: 375px) {
+  .works_d {
+    height: 210px;
+  }
+  .works_c .works_c_d .works_c_dd {
+    width: 30%;
+  }
+  .works_c .works_c_d .works_c_dt {
+    width: 70%;
+  }
+  .works_d_f .works_head_text h2{
+    font-size: 2.5em;
+  }
+}
+/*==================== kirsche_detail ===================== */
 .kirsche .works_d {
   background-image: url('../images/works/2017/kirsche/main.jpg');
 }
@@ -621,7 +756,7 @@ opacity:0;
   background-color: #3d4c74;
 }
 
-/*==================== risakoyamada_detail ---- PAD SP===================== */
+/*==================== risakoyamada_detail ===================== */
 .risakoyamada .works_d {
   background-image: url('../images/works/2017/risakoyamada/main.jpg');
 }
@@ -644,10 +779,6 @@ opacity:0;
   border-right: 1px solid #F51F72;
 }
 .risakoyamada .works_c {
-  border: 2px solid #21CBE3;
-  border: 2px solid #F51F72;
-  /*background-color: #fff;*/
-=======
   border: 2px solid #F51F72;
   background-color: #fff;
 }
@@ -664,7 +795,7 @@ opacity:0;
   background-image: url('../images/works/2017/llll/main.jpg');
   background-color: #fdfad8;
 }
-/*==================== llll_detail ---- PAD SP===================== */
+/*==================== llll_detail ===================== */
 .llll .works_d {
   background-image: url('../images/works/2017/llll/main.jpg');
 }
@@ -687,15 +818,8 @@ opacity:0;
   border-right: 1px solid #7C682A;
 }
 .llll .works_c {
-  border: 2px solid #af9678;
-=======
-  border: 2px solid #7C682A;
->>>>>>> parent of 8653193... 位置修正
-  /*background-color: #fff;*/
-=======
   border: 2px solid #7C682A;
   background-color: #fff;
->>>>>>> 9472e86826bb20a784566a61ae46b784d85b2e5d
 }
 .llll .works_c .works_c_d{
   color: #7C682A;
@@ -707,17 +831,10 @@ opacity:0;
   color: #000;
 }
 .llll .works_d_f .works_foot_img{
-<<<<<<< HEAD
-<<<<<<< HEAD
-  background-image: url('../images/work/2017/');
-  background-color: #fdfad8;
-=======
-=======
->>>>>>> parent of 8653193... 位置修正
   background-image: url('../images/works/2017/cocooilmask/main.jpg');
   background-color: #f0f3f9;
 }
-/*==================== cocooilmask_detail ---- PAD SP===================== */
+/*==================== cocooilmask_detail ===================== */
 .cocooilmask .works_d {
   background-image: url('../images/works/2017/cocooilmask/main.jpg');
 }
@@ -741,11 +858,7 @@ opacity:0;
 }
 .cocooilmask .works_c {
   border: 2px solid #3D837E;
-<<<<<<< HEAD
   background-color: #fff;
-=======
-  /*background-color: #fff;*/
->>>>>>> parent of 8653193... 位置修正
 }
 .cocooilmask .works_c .works_c_d{
   color: #3D837E;
@@ -759,27 +872,8 @@ opacity:0;
 .cocooilmask .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/kirsche/main.jpg');
   background-color: #fff2f3;
-<<<<<<< HEAD
->>>>>>> 9472e86826bb20a784566a61ae46b784d85b2e5d
-=======
->>>>>>> parent of 8653193... 位置修正
 }
-/*====================work_detail ---- PAD SP===================== */
-@media (max-width: 1024px) {
-  .works_d {
-    height: 573px;
-  }
-}
-@media (max-width: 768px) {
-  .works_d{
-    height: 430px;
-  }
-}
-@media (max-width: 375px) {
-  .works_d {
-    height: 210px;
-  }
-}
+
 /* =======================================================
 * contact
 * ======================================================= */
