@@ -380,6 +380,7 @@ figure.img_h.hover figcaption p {
 .device_sp svg {
   z-index: 2;
   width: 400px;
+  position: relative;
 }
 .device_sp .video {
   position: absolute;
