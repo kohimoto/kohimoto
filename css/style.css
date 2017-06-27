@@ -172,7 +172,7 @@ header .g_fix_w{
   max-width: 107.1428em;
 }
 header .cherry {
-  position: fixed;
+  position: absolute;
   left: 1em;
 }
 header .cherry a:hover,
