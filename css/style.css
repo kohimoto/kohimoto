@@ -346,7 +346,7 @@ figure.img_h figcaption p {
 }
 figure.img_h figcaption p {
   top: 50%;
-  left: 1.4285em;
+  left: 35%;
   -webkit-transform: translate3d(0%, 100%, 0);
   transform: translate3d(0%, 100%, 0);
   font-family: 'Libre Baskerville', serif;
@@ -636,17 +636,12 @@ figure.img_h.hover figcaption p {
   border-right: 1px solid #F51F72;
 }
 .risakoyamada .works_c {
-<<<<<<< HEAD
-<<<<<<< HEAD
   border: 2px solid #21CBE3;
-=======
   border: 2px solid #F51F72;
->>>>>>> parent of 8653193... 位置修正
   /*background-color: #fff;*/
 =======
   border: 2px solid #F51F72;
   background-color: #fff;
->>>>>>> 9472e86826bb20a784566a61ae46b784d85b2e5d
 }
 .risakoyamada .works_c .works_c_d{
   color: #F51F72;
@@ -684,8 +679,6 @@ figure.img_h.hover figcaption p {
   border-right: 1px solid #7C682A;
 }
 .llll .works_c {
-<<<<<<< HEAD
-<<<<<<< HEAD
   border: 2px solid #af9678;
 =======
   border: 2px solid #7C682A;
