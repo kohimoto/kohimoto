@@ -636,10 +636,6 @@ figure.img_h.hover figcaption p {
   border-right: 1px solid #F51F72;
 }
 .risakoyamada .works_c {
-  border: 2px solid #21CBE3;
-  border: 2px solid #F51F72;
-  /*background-color: #fff;*/
-=======
   border: 2px solid #F51F72;
   background-color: #fff;
 }
@@ -679,15 +675,8 @@ figure.img_h.hover figcaption p {
   border-right: 1px solid #7C682A;
 }
 .llll .works_c {
-  border: 2px solid #af9678;
-=======
-  border: 2px solid #7C682A;
->>>>>>> parent of 8653193... 位置修正
-  /*background-color: #fff;*/
-=======
   border: 2px solid #7C682A;
   background-color: #fff;
->>>>>>> 9472e86826bb20a784566a61ae46b784d85b2e5d
 }
 .llll .works_c .works_c_d{
   color: #7C682A;
@@ -699,13 +688,6 @@ figure.img_h.hover figcaption p {
   color: #000;
 }
 .llll .works_d_f .works_foot_img{
-<<<<<<< HEAD
-<<<<<<< HEAD
-  background-image: url('../images/work/2017/');
-  background-color: #fdfad8;
-=======
-=======
->>>>>>> parent of 8653193... 位置修正
   background-image: url('../images/works/2017/cocooilmask/main.jpg');
   background-color: #f0f3f9;
 }
@@ -733,11 +715,7 @@ figure.img_h.hover figcaption p {
 }
 .cocooilmask .works_c {
   border: 2px solid #3D837E;
-<<<<<<< HEAD
   background-color: #fff;
-=======
-  /*background-color: #fff;*/
->>>>>>> parent of 8653193... 位置修正
 }
 .cocooilmask .works_c .works_c_d{
   color: #3D837E;
@@ -751,10 +729,6 @@ figure.img_h.hover figcaption p {
 .cocooilmask .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/kirsche/main.jpg');
   background-color: #fff2f3;
-<<<<<<< HEAD
->>>>>>> 9472e86826bb20a784566a61ae46b784d85b2e5d
-=======
->>>>>>> parent of 8653193... 位置修正
 }
 /*====================work_detail ---- PAD SP===================== */
 @media (max-width: 1024px) {
