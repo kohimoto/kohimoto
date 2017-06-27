@@ -345,8 +345,8 @@ figure.img_h figcaption p {
   opacity: 0;
 }
 figure.img_h figcaption p {
-  top: 50%;
-  left: 35%;
+  left: 32%;
+  top: 45%;
   -webkit-transform: translate3d(0%, 100%, 0);
   transform: translate3d(0%, 100%, 0);
   font-family: 'Libre Baskerville', serif;
