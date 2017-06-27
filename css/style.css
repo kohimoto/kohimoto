@@ -712,8 +712,16 @@ figure.img_h.hover figcaption p {
 .kirsche .works_d {
   background-image: url('../images/works/2017/kirsche/main.jpg');
 }
+.kirsche .works_d > img{
+opacity:0;
+}
+/*
+.kirsche .works_d > img:hover{
+  opacity:1.0;
+}
+*/
 .kirsche .works_d:hover {
-  background-image: none;
+  /*background-image: none;*/
 }
 .kirsche .bg_d {
   background-color: #fff2f3;
