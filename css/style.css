@@ -114,7 +114,7 @@ h4{
 /*====================common ---- SP===================== */
 @media (max-width: 1024px) {
   .content{
-    padding: 0 4em 4em;
+    padding: 0 4em 6em;
   }
 }
 @media (max-width: 768px) {
@@ -122,7 +122,7 @@ h4{
     font-size: 12px;
   }
   .content{
-    padding: 0 2em 2em;
+    padding: 0 2em 3em;
   }
   h2{
     font-size: 3.5em;
@@ -197,8 +197,17 @@ header .get {
 
 }
 /*====================header ---- SP===================== */
+@media (max-width: 1024px) {
+  header h1 {
+      padding: 2.2em 4em;
+  }
+}
 @media (max-width: 768px) {
-  header {
+  header h1 {
+      padding: 2.2em 3em;
+  }
+  header h1 img{
+    width: 70px;
   }
 }
 /* =======================================================
@@ -241,6 +250,16 @@ header .get {
   padding-right: 1em;
   border-right: 1px solid #000;
   margin-right: 1em;
+}
+/*==================== footer ---- SP===================== */
+@media (max-width: 768px) {
+  .foot_d .link_m{
+    float: none;
+  }
+  .foot_d .link_s{
+    float: none;
+    font-size: 0.8333em;
+  }
 }
 /* =======================================================
 * top
@@ -347,6 +366,12 @@ figure.img_h.hover figcaption p {
 }
 /*==================== top ---- SP ===================== */
 @media (max-width: 768px) {
+  .list .content{
+    padding: 0 2em 6em;
+  }
+  .flex-control-nav {
+      bottom: 0;
+  }
   .list_dtl {
       width: 100%;
       margin-left: 0;
@@ -358,9 +383,14 @@ figure.img_h.hover figcaption p {
   .list_des {
       margin-top: -1.8em;
   }
+  .btm {
+      padding-bottom: 14em;
+  }
 }
 @media (max-width: 375px) {
-
+  .btm {
+      padding-bottom: 20em;
+  }
 }
 /* =======================================================
 * work_detail
