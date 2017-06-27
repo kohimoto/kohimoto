@@ -581,6 +581,11 @@ figure.img_h.hover figcaption p {
   padding-bottom: 2em;
   text-align: center;
 }
+.works_d_f .works_foot_img img{
+  opacity: 0;
+
+
+}
 .works_d_f .works_foot_img{
   background-size: cover;
   background-position: center center;
@@ -588,9 +593,10 @@ figure.img_h.hover figcaption p {
   width: 100%;
   text-align: center;
   opacity: 0;
+  overflow: hidden;
 }
 .works_d_f .works_foot_img:hover {
-  opacity: 0.4;
+/*  opacity: 0.4;*/
 }
 .works_d_f .works_foot_text {
   position: absolute;
@@ -750,7 +756,6 @@ opacity:0;
   background-image: url('../images/works/2017/risakoyamada/main.jpg');
   background-color: #3d4c74;
 }
-
 /*==================== risakoyamada_detail ===================== */
 .risakoyamada .works_d {
   background-image: url('../images/works/2017/risakoyamada/main.jpg');
