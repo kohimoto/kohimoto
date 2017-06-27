@@ -111,6 +111,34 @@ h4{
   border-bottom: 1px solid #000;
   margin-bottom: 2em;
 }
+/*====================common ---- SP===================== */
+@media (max-width: 1024px) {
+  .content{
+    padding: 0 4em 4em;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .content{
+    padding: 0 2em 2em;
+  }
+  h2{
+    font-size: 3.5em;
+  }
+  h3{
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+
+
 /* =======================================================
 * header
 * ======================================================= */
@@ -316,6 +344,23 @@ figure.img_h.hover figcaption p {
 }
 .btm + footer{
   background-color: #f0f3f9;
+}
+/*==================== top ---- SP ===================== */
+@media (max-width: 768px) {
+  .list_dtl {
+      width: 100%;
+      margin-left: 0;
+  }
+  .img_h {
+      max-height: 100%;
+      max-width: 100%;
+  }
+  .list_des {
+      margin-top: -1.8em;
+  }
+}
+@media (max-width: 375px) {
+
 }
 /* =======================================================
 * work_detail
