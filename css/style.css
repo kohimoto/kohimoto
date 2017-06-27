@@ -477,7 +477,7 @@ figure.img_h.hover figcaption p {
 }
 /*==================== kirsche_detail ---- PAD SP===================== */
 .kirsche .works_d {
-  background-image: url('../images/work/2017/kirsche/main.jpg');
+  background-image: url('../images/works/2017/kirsche/main.jpg');
 }
 .kirsche .works_d:hover {
   background-image: none;
@@ -511,13 +511,13 @@ figure.img_h.hover figcaption p {
   color: #fff;
 }
 .kirsche .works_d_f .works_foot_img{
-  background-image: url('../images/work/2017/risakoyamada/main.jpg');
+  background-image: url('../images/works/2017/risakoyamada/main.jpg');
   background-color: #3d4c74;
 }
 
 /*==================== risakoyamada_detail ---- PAD SP===================== */
 .risakoyamada .works_d {
-  background-image: url('../images/work/2017/risakoyamada/main.jpg');
+  background-image: url('../images/works/2017/risakoyamada/main.jpg');
 }
 .risakoyamada .works_d:hover {
   background-image: none;
@@ -551,12 +551,12 @@ figure.img_h.hover figcaption p {
   color: #000;
 }
 .risakoyamada .works_d_f .works_foot_img{
-  background-image: url('../images/work/2017/llll/main.jpg');
+  background-image: url('../images/works/2017/llll/main.jpg');
   background-color: #fdfad8;
 }
 /*==================== llll_detail ---- PAD SP===================== */
 .llll .works_d {
-  background-image: url('../images/work/2017/llll/main.jpg');
+  background-image: url('../images/works/2017/llll/main.jpg');
 }
 .llll .works_d:hover {
   background-image: none;
@@ -565,35 +565,73 @@ figure.img_h.hover figcaption p {
   background-color: #fdfad8;
 }
 .llll .devise_title h2 {
-  color: #af9678;
+  color: #B8A66E;
 }
 .llll .works_f {
-  color: #af9678;
+  color: #B8A66E;
 }
 .llll .works_f .line_s{
-  border-bottom: 1px solid #af9678;
+  border-bottom: 1px solid #B8A66E;
 }
 .llll .works_f .color ul li:nth-child(1){
-  border-right: 1px solid #af9678;
+  border-right: 1px solid #B8A66E;
 }
 .llll .works_c {
-  border: 2px solid #af9678;
+  border: 2px solid #B8A66E;
   /*background-color: #fff;*/
 }
 .llll .works_c .works_c_d{
-  color: #af9678;
+  color: #B8A66E;
 }
 .llll .bg_d_n {
-  background-color: #fffef0;
+  background-color: #f0f3f9;
 }
 .llll .works_d_f a {
   color: #000;
 }
 .llll .works_d_f .works_foot_img{
-  background-image: url('../images/work/2017/');
-  background-color: #fdfad8;
+  background-image: url('../images/works/2017/cocooilmask/main.jpg');
+  background-color: #f0f3f9;
 }
-
+/*==================== cocooilmask_detail ---- PAD SP===================== */
+.cocooilmask .works_d {
+  background-image: url('../images/works/2017/cocooilmask/main.jpg');
+}
+.cocooilmask .works_d:hover {
+  background-image: none;
+}
+.cocooilmask .bg_d {
+  background-color: #f0f3f9;
+}
+.cocooilmask .devise_title h2 {
+  color: #97C5C2;
+}
+.cocooilmask .works_f {
+  color: #97C5C2;
+}
+.cocooilmask .works_f .line_s{
+  border-bottom: 1px solid #97C5C2;
+}
+.cocooilmask .works_f .color ul li:nth-child(1){
+  border-right: 1px solid #97C5C2;
+}
+.cocooilmask .works_c {
+  border: 2px solid #97C5C2;
+  /*background-color: #fff;*/
+}
+.cocooilmask .works_c .works_c_d{
+  color: #97C5C2;
+}
+.cocooilmask .bg_d_n {
+  background-color: #fff2f3;
+}
+.cocooilmask .works_d_f a {
+  color: #000;
+}
+.cocooilmask .works_d_f .works_foot_img{
+  background-image: url('../images/works/2017/kirsche/main.jpg');
+  background-color: #fff2f3;
+}
 /*====================work_detail ---- PAD SP===================== */
 @media (max-width: 1024px) {
   .works_d {
