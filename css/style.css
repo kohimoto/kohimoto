@@ -561,8 +561,13 @@ figure.img_h.hover figcaption p {
   border-right: 1px solid #21CBE3;
 }
 .risakoyamada .works_c {
+<<<<<<< HEAD
   border: 2px solid #21CBE3;
   /*background-color: #fff;*/
+=======
+  border: 2px solid #F51F72;
+  background-color: #fff;
+>>>>>>> 9472e86826bb20a784566a61ae46b784d85b2e5d
 }
 .risakoyamada .works_c .works_c_d{
   color: #21CBE3;
@@ -600,8 +605,13 @@ figure.img_h.hover figcaption p {
   border-right: 1px solid #af9678;
 }
 .llll .works_c {
+<<<<<<< HEAD
   border: 2px solid #af9678;
   /*background-color: #fff;*/
+=======
+  border: 2px solid #7C682A;
+  background-color: #fff;
+>>>>>>> 9472e86826bb20a784566a61ae46b784d85b2e5d
 }
 .llll .works_c .works_c_d{
   color: #af9678;
@@ -613,8 +623,52 @@ figure.img_h.hover figcaption p {
   color: #000;
 }
 .llll .works_d_f .works_foot_img{
+<<<<<<< HEAD
   background-image: url('../images/work/2017/');
   background-color: #fdfad8;
+=======
+  background-image: url('../images/works/2017/cocooilmask/main.jpg');
+  background-color: #f0f3f9;
+}
+/*==================== cocooilmask_detail ---- PAD SP===================== */
+.cocooilmask .works_d {
+  background-image: url('../images/works/2017/cocooilmask/main.jpg');
+}
+.cocooilmask .works_d:hover {
+  background-image: none;
+}
+.cocooilmask .bg_d {
+  background-color: #f0f3f9;
+}
+.cocooilmask .devise_title h2 {
+  color: #3D837E;
+}
+.cocooilmask .works_f {
+  color: #3D837E;
+}
+.cocooilmask .works_f .line_s{
+  border-bottom: 1px solid #3D837E;
+}
+.cocooilmask .works_f .color ul li:nth-child(1){
+  border-right: 1px solid #3D837E;
+}
+.cocooilmask .works_c {
+  border: 2px solid #3D837E;
+  background-color: #fff;
+}
+.cocooilmask .works_c .works_c_d{
+  color: #3D837E;
+}
+.cocooilmask .bg_d_n {
+  background-color: #fff2f3;
+}
+.cocooilmask .works_d_f a {
+  color: #000;
+}
+.cocooilmask .works_d_f .works_foot_img{
+  background-image: url('../images/works/2017/kirsche/main.jpg');
+  background-color: #fff2f3;
+>>>>>>> 9472e86826bb20a784566a61ae46b784d85b2e5d
 }
 
 /*====================work_detail ---- PAD SP===================== */
