@@ -197,7 +197,7 @@ header .side-menu{
   z-index: 2;
 }
 header .copyright {
-  bottom: 40vh;
+  bottom: 45vh;
   position: absolute;
   left: 1.5em;
   transform: rotate(180deg);
@@ -212,7 +212,7 @@ header .copyright {
 header .get {
   position: absolute;
   right: 1.5em;
-  bottom: 40vh;
+  bottom: 45vh;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   margin-top: 0;
@@ -585,7 +585,7 @@ figure.img_h.hover figcaption p {
   background-size: cover;
   background-position: center center;
   height: 26.4285em;
-  width: 92.8571em;
+  width: 100%;
   text-align: center;
   opacity: 0;
 }
@@ -599,7 +599,7 @@ figure.img_h.hover figcaption p {
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
   transform: translate(-50%, -50%);
 }
-/*==================== works_detail ---- SP ===================== */
+/*==================== works_device detail ---- SP ===================== */
 @media (max-width: 1204px) {
   .device_pc svg {
     width: 760px;
@@ -650,11 +650,14 @@ figure.img_h.hover figcaption p {
     width: 121.975px;
   }
 }
-
+/*==================== works detail ---- SP ===================== */
 
 @media (max-width: 1024px) {
   .works_d {
     height: 573px;
+  }
+  .bg_d_n .content {
+      padding: 0;
   }
 }
 @media (max-width: 768px) {
@@ -681,15 +684,28 @@ figure.img_h.hover figcaption p {
       padding: 3em;
   }
   .works_c .works_c_d .works_c_dd {
-    width: 30%;
+    width: 25%;
   }
   .works_c .works_c_d .works_c_dt {
-    width: 70%;
+    width: 75%;
+  }
+  .works_d_f .works_head_text h2{
+    font-size: 3em;
+    padding-bottom: 0.5em;
   }
 }
 @media (max-width: 375px) {
   .works_d {
     height: 210px;
+  }
+  .works_c .works_c_d .works_c_dd {
+    width: 30%;
+  }
+  .works_c .works_c_d .works_c_dt {
+    width: 70%;
+  }
+  .works_d_f .works_head_text h2{
+    font-size: 2.5em;
   }
 }
 /*==================== kirsche_detail ===================== */
