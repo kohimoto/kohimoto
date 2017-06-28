@@ -111,6 +111,13 @@ h4{
   border-bottom: 1px solid #000;
   margin-bottom: 2em;
 }
+.line_l{
+  display: block;
+  width: 100%;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #000;
+  margin-bottom: 2em;
+}
 /*====================common ---- SP===================== */
 @media (max-width: 1024px) {
   .content{
@@ -1073,4 +1080,48 @@ span:not(.conf_input) .mCSB_draggerContainer {
     margin-left: 0;
     border-top: none;
   }
+}
+/* =======================================================
+* gallery
+* ======================================================= */
+.gallery_f {
+  overflow: hidden;
+  padding: 4em 0;
+}
+.gallery_f .link_m{
+  float: left;
+  vertical-align: bottom;
+}
+.gallery_f .link_m ul{
+  overflow: hidden;
+  padding-bottom: 0.7142em;
+}
+.gallery_f .link_m ul li{
+  font-size: 0.8571em;
+}
+.gallery_f .link_m ul li span{
+  width: 6em;
+  display: inline-block;
+}
+.gallery_f .color{
+  float: right;
+  vertical-align: bottom;
+}
+.gallery_f .color ul{
+  overflow: hidden;
+}
+.gallery_f .color ul li{
+  font-size: 0.8571em;
+  font-family: 'Libre Baskerville', serif;
+  float: left;
+}
+.gallery_f .color ul li{
+  padding-left: 1em;
+  border-left: 1px solid #000;
+  margin-left: 1em;
+}
+.gallery_f .color ul li:nth-child(1){
+  padding-left: 0;
+  border-left: 0;
+  margin-left: 0;
 }
