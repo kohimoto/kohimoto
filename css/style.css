@@ -111,6 +111,13 @@ h4{
   border-bottom: 1px solid #000;
   margin-bottom: 2em;
 }
+.line_l{
+  display: block;
+  width: 100%;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #000;
+  margin-bottom: 2em;
+}
 /*====================common ---- SP===================== */
 @media (max-width: 1024px) {
   .content{
@@ -763,14 +770,14 @@ opacity:0;
   color: #1c18c4;
 }
 .kirsche .bg_d_n {
-  background-color: #3d4c74;
+  background-color: #f0f3f9;
 }
 .kirsche .works_d_f a {
-  color: #fff;
+  color: #000;
 }
 .kirsche .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/risakoyamada/main.jpg');
-  background-color: #3d4c74;
+  background-color: #f0f3f9;
 }
 /*==================== risakoyamada_detail ===================== */
 .risakoyamada .works_d {
@@ -799,14 +806,14 @@ opacity:0;
   color: #F51F72;
 }
 .risakoyamada .bg_d_n {
-  background-color: #fdfad8;
+  background-color: #f0f3f9;
 }
 .risakoyamada .works_d_f a {
   color: #000;
 }
 .risakoyamada .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/llll/main.jpg');
-  background-color: #fdfad8;
+  background-color: #f0f3f9;
 }
 /*==================== llll_detail ===================== */
 .llll .works_d {
@@ -849,7 +856,7 @@ opacity:0;
   background-image: url('../images/works/2017/cocooilmask/main.jpg');
 }
 .cocooilmask .bg_d {
-  background-color: #f0f3f9;
+  background-color: #F2F1F9;
 }
 .cocooilmask .devise_title h2 {
   color: #3D837E;
@@ -871,14 +878,14 @@ opacity:0;
   color: #3D837E;
 }
 .cocooilmask .bg_d_n {
-  background-color: #fff2f3;
+  background-color: #f0f3f9;
 }
 .cocooilmask .works_d_f a {
   color: #000;
 }
 .cocooilmask .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/kirsche/main.jpg');
-  background-color: #fff2f3;
+  background-color: #f0f3f9;
 }
 
 /* =======================================================
@@ -1073,4 +1080,48 @@ span:not(.conf_input) .mCSB_draggerContainer {
     margin-left: 0;
     border-top: none;
   }
+}
+/* =======================================================
+* gallery
+* ======================================================= */
+.gallery_f {
+  overflow: hidden;
+  padding: 4em 0;
+}
+.gallery_f .link_m{
+  float: left;
+  vertical-align: bottom;
+}
+.gallery_f .link_m ul{
+  overflow: hidden;
+  padding-bottom: 0.7142em;
+}
+.gallery_f .link_m ul li{
+  font-size: 0.8571em;
+}
+.gallery_f .link_m ul li span{
+  width: 6em;
+  display: inline-block;
+}
+.gallery_f .color{
+  float: right;
+  vertical-align: bottom;
+}
+.gallery_f .color ul{
+  overflow: hidden;
+}
+.gallery_f .color ul li{
+  font-size: 0.8571em;
+  font-family: 'Libre Baskerville', serif;
+  float: left;
+}
+.gallery_f .color ul li{
+  padding-left: 1em;
+  border-left: 1px solid #000;
+  margin-left: 1em;
+}
+.gallery_f .color ul li:nth-child(1){
+  padding-left: 0;
+  border-left: 0;
+  margin-left: 0;
 }
