@@ -33,34 +33,10 @@
 <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.css">
 <link rel="stylesheet" href="/css/style.css">
 <script src="/js/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  //hover
-  $('.works_d > img').hover(
-    function(){
-    //on
-      $(this).stop().animate({opacity: 1},1000);
-      $(this).css('width', '100%');
-      $(this).css('height', '100%');
-    },
-    function(){
-    //out
-      $(this).stop().animate({opacity: 0},1000);
-    }
-  );
-  $('.works_foot_img').hover(
-    function(){
-    //on
-    $(this).stop().animate({opacity: 0.4},1000);
-    },
-    function(){
-    //out
-    $(this).stop().animate({opacity: 0},1000);
-    }
-  );
-});
-
-</script>
+<script src="/js/barba.js"></script>
+<script src="/js/nextprev.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+<script src="/js/barba_dispatcher.js"></script>
 
 <!-- Modernizr JS -->
 <script src="/js/modernizr-2.6.2.min.js"></script>
@@ -71,7 +47,9 @@ $(document).ready(function(){
 
 </head>
 <body>
-<div class="wrap">
+<div class="wrap" id="barba-wrapper">
+<div class="barba-container" data-prev="/" data-next="/contact" data-namespace="slider">
+
 <header>
   <h1><a href="/"><img src="/images/header/kohimoto_logo.png" alt="kohimoto_logo"></a></h1>
   <div class="g_fix">
@@ -89,10 +67,10 @@ $(document).ready(function(){
     </div>
     <div class="side-menu">
         <div class="h_text copyright">
-          <span>&copy;&nbsp;2017&nbsp;<a href="/">Kohimoto</a>.</span>
+          <span>&copy;&nbsp;2017&nbsp;<a class="prev" href="/">Kohimoto</a>.</span>
         </div>
         <div class="h_text get">
-          <span><a href="/contact">Get in touch</a></span>
+          <span><a class="next" href="/contact">Get in touch</a></span>
         </div>
     </div>
     </div>
