@@ -975,6 +975,9 @@ figure.img_h.hover figcaption p {
 #spectrumPlugin a.arrow {
   color: #1c18c4;
 }
+#spectrumPlugin a.arrow:hover {
+    border-bottom: 1px #1c18c4 dotted;
+}
 .form-label{
   position: relative;
   top: 32px;
