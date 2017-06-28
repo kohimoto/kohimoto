@@ -6,31 +6,32 @@ $.fn.spectrum = function(options) {
 // Array of Colours
 	var colourArray = [
 
-		// Colour 1 - Orange
+		// Colour 1 - Pink
 	    {
 	        src: 'colour1',
-	        colour: 'rgb(240, 243, 249)'
+		      colour: 'rgb(255, 242, 243)'
+
 	    },
 
-	    // Colour 2 - Pink
+	    // Colour 2 - green
 	    {
 	        src: 'colour2',
 	        colour: 'rgb(239, 255, 242)'
 	    },
 
-	    // Colour 3 - Yellow
+	    // Colour 3 - blue
 	    {
 	       	src: 'colour3',
-	        colour: 'rgb(255, 242, 243)'
-	    },
-
-	    // Colour 4 - Green
-	   	{
-	        src: 'colour4',
 	        colour: 'rgb(240, 243, 249)'
 	    },
 
-	    // Colour 5 - Blue
+	    // Colour 4 - Pink
+	   	{
+	        src: 'colour4',
+		      colour: 'rgb(255, 242, 243)'
+	    },
+
+	    // Colour 5 - green
 	    {
 	        src: 'colour5',
 	        colour: 'rgb(239, 255, 242)'
@@ -38,10 +39,10 @@ $.fn.spectrum = function(options) {
 	];
 
 	//Use set interval to go through our colourArray
-	//Each interval change the background colour of the element 
+	//Each interval change the background colour of the element
 	//Plugin is on, and increment the index.
 	setInterval(function() {
-		//Change background of selected $element to be 
+		//Change background of selected $element to be
 		//colourArray[index]
 		//Increment index
 		index = index + 1;
@@ -53,14 +54,14 @@ $.fn.spectrum = function(options) {
 	var style = $("<style>");
 
 	for (var i = 0; i < colourArray.length; i++) {
-		
+
 		// Append a CSS rule to the style tag
 		var currentColour = colourArray[i];
 		var colorStyle =  " ."+currentColour.src+ " { background: "+currentColour.colour+"; } \n\n";
 
 		style.append(colorStyle);
 		// console.log(colourArray[i]);
-	
+
 	}; // end for loop
 
 	var c = 0;
@@ -79,6 +80,6 @@ $.fn.spectrum = function(options) {
 	}, 4000);
 
 	// Appends the style tag in the body of the HTML document
-	$('body').append(style); 
+	$('body').append(style);
 
 };

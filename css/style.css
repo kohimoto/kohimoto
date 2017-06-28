@@ -892,7 +892,7 @@ opacity:0;
 * contact
 * ======================================================= */
 .bg-c {
-  background: #fff2f3;
+  background: #f0f3f9;
 }
 #spectrumPlugin {
   color: #1c18c4;
@@ -1034,6 +1034,21 @@ span:not(.conf_input) .mCSB_draggerContainer {
 /* =======================================================
 * about
 * ======================================================= */
+#spectrumPlugin .about h2{
+  color: #f71137;
+}
+#spectrumPlugin .about h2.heading {
+    color: #f71137;
+}
+#spectrumPlugin .about {
+    color: #f71137;
+}
+#spectrumPlugin .about .arrow_d a{
+    color: #f71137;
+}
+#spectrumPlugin .about .arrow_d a:hover{
+    border-bottom: 1px #f71137 dotted;
+}
 #spectrumPlugin .about ul li {
   display: inline-block;
 }
@@ -1080,6 +1095,24 @@ span:not(.conf_input) .mCSB_draggerContainer {
     margin-left: 0;
     border-top: none;
   }
+}
+/* =======================================================
+* member
+* ======================================================= */
+#spectrumPlugin .member h2{
+  color: #0ECCA2;
+}
+#spectrumPlugin .member h2.heading {
+    color: #0ECCA2;
+}
+#spectrumPlugin .member {
+    color: #0ECCA2;
+}
+#spectrumPlugin .member .arrow_d a{
+    color: #0ECCA2;
+}
+#spectrumPlugin .member .arrow_d a:hover{
+    border-bottom: 1px #0ECCA2 dotted;
 }
 /* =======================================================
 * gallery
