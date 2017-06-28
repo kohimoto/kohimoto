@@ -315,6 +315,9 @@ header .get {
 }
 /*==================== footer ---- SP===================== */
 @media (max-width: 768px) {
+  footer h1 img{
+    width: 90px;
+  }
   .foot_d .link_m{
     float: none;
   }
@@ -1171,4 +1174,14 @@ span:not(.conf_input) .mCSB_draggerContainer {
   padding-left: 0;
   border-left: 0;
   margin-left: 0;
+}
+@media (max-width: 340px) {
+  .gallery_f .link_m{
+    float: none;
+    vertical-align: baseline;
+  }
+  .gallery_f .color{
+    float: none;
+    vertical-align: baseline;
+  }
 }
