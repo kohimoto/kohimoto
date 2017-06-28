@@ -904,7 +904,7 @@ figure.img_h.hover figcaption p {
 #spectrumPlugin h2:not(.heading) {
   position: relative;
   top: -0.605em;
-  color: #f71137;
+  color: #1c18c4;
   padding-bottom: 0;
 }
 #spectrumPlugin h3.heading {
@@ -971,6 +971,9 @@ figure.img_h.hover figcaption p {
 }
 #spectrumPlugin form span.description:not(.conf_input) {
   border: 1px solid #1c18c4;
+}
+#spectrumPlugin a.arrow {
+  color: #1c18c4;
 }
 .form-label{
   position: relative;
