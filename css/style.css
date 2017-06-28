@@ -518,6 +518,26 @@ figure.img_h.hover figcaption p {
 .devise_title h2 {
   text-align: center;
 }
+/*
+.works_img_list {
+
+}
+.works_img_list ul {
+  overflow: hidden;
+}
+.works_img_list ul li{
+  float: left;
+  width: calc(33.3333% - 1em / 2);
+  margin-left: 1em;
+}
+.works_img_list ul li:nth-child(1),
+.works_img_list ul li:nth-child(4){
+  margin-left: 0em;
+}
+.works_img_list ul li img{
+  width: 100%;
+}
+*/
 .devise_detail {
   height: auto;
   text-align: center;
@@ -787,12 +807,12 @@ figure.img_h.hover figcaption p {
   color: #000;
 }
 .kirsche .works_d_f .works_foot_img{
-  background-image: url('../images/works/2017/risakoyamada/main.jpg');
+  background-image: url('../images/works/2017/risakoyamada/main_01.jpg');
   background-color: #f0f3f9;
 }
 /*==================== risakoyamada_detail ===================== */
 .risakoyamada .works_d {
-  background-image: url('../images/works/2017/risakoyamada/main.jpg');
+  background-image: url('../images/works/2017/risakoyamada/main_01.jpg');
 }
 .risakoyamada .bg_d {
   background-color: #3d4c74;
