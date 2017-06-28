@@ -290,7 +290,11 @@ sub PrintConfirm {
 	#Hiddenタグを一つのスカラー変数に格納する。
 	my $hidden = join("\n", @$hiddens_ref);
 	#確認画面テンプレートを読み取る
-	my $html = &ReadTemplate($c{'CONFIRM_TEMP_FILE'});
+        #kohinata costom
+	my $html = &ReadTemplate($c{'TEMP_HEADER_FILE'});
+	   $html .= &ReadTemplate($c{'CONFIRM_TEMP_FILE'});
+	   $html .= &ReadTemplate($c{'TEMP_FOOTER_FILE'});
+	#my $html = &ReadTemplate($c{'CONFIRM_TEMP_FILE'});
 	#hiddenタグを置換
 	if($html =~ /\$hidden\$/) {
 		$html =~ s/\$hidden\$/$hidden/;
@@ -569,6 +573,18 @@ sub ErrorPrint {
 	unless(-e $c{'ERROR_TEMP_FILE'}) {
 		&ErrorPrint2("テンプレートファイル $c{'ERROR_TEMP_FILE'} がありません。: $!");
 	}
+###### kohinata
+
+	unless(-e $c{'TEMP_HEADER_FILE'}) {
+		&ErrorPrint2("テンプレートファイル $c{'TEMP_HEADER_FILE'} がありません。: $!");
+	}
+	unless(-e $c{'TEMP_FOOTER_FILE'}) {
+		&ErrorPrint2("テンプレートファイル $c{'TEMP_FOOTER_FILE'} がありません。: $!");
+	}
+
+######
+
+
 	my $size = -s $c{'ERROR_TEMP_FILE'};
 	if(!open(FILE, "$c{'ERROR_TEMP_FILE'}")) {
 		&ErrorPrint2("テンプレートファイル <tt>$c{'ERROR_TEMP_FILE'}</tt> をオープンできませんでした。 : $!");
@@ -578,12 +594,43 @@ sub ErrorPrint {
 	my $html;
 	sysread(FILE, $html, $size);
 	close(FILE);
+###### kohinata
+	my $size_h = -s $c{'TEMP_HEADER_FILE'};
+	if(!open(FILE_h, "$c{'TEMP_HEADER_FILE'}")) {
+		&ErrorPrint2("テンプレートファイル <tt>$c{'TEMP_HEADER_FILE'}</tt> をオープンできませんでした。 : $!");
+		exit;
+	}
+	binmode(FILE_h);
+	my $html_h;
+	sysread(FILE_h, $html_h, $size_h);
+	close(FILE_h);
+
+	my $size_f = -s $c{'TEMP_FOOTER_FILE'};
+	if(!open(FILE_f, "$c{'TEMP_FOOTER_FILE'}")) {
+		&ErrorPrint2("テンプレートファイル <tt>$c{'TEMP_FOOTER_FILE'}</tt> をオープンできませんでした。 : $!");
+		exit;
+	}
+	binmode(FILE_f);
+	my $html_f;
+	sysread(FILE_f, $html_f, $size_f);
+	close(FILE_f);
+######
 	$html =~ s/\$ERROR\$/$msg/gi;
+###### kohinata
+	$html_h =~ s/\$ERROR\$/$msg/gi;
+	$html_f =~ s/\$ERROR\$/$msg/gi;
+######
 	my $content_length = length($html);
+###### kohinata
+	    $content_length += length($html_h);
+	    $content_length += length($html_f);
+######
 	print "Content-Length: $content_length\n";
 	print "Content-Type: text/html; charset=Shift_JIS\n";
 	print "\n";
+	print $html_h; #kohinata
 	print $html;
+	print $html_f; #kohinata
 	exit;
 }
 

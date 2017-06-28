@@ -589,6 +589,8 @@ $c{'MAIL_TEMP_FILE'} = './template/mail.txt';
 #  確認画面で表示するためのHTMLファイルを指定して下さい。確認画面用テ
 #  ンプレートの記述方法は、添付のマニュアルをご覧下さい。
 #--------------------------------------------------------------------
+$c{'TEMP_HEADER_FILE'} = './header.html';
+$c{'TEMP_FOOTER_FILE'} = './footer.html';
 $c{'CONFIRM_TEMP_FILE'} = './template/confirm.html';
 
 
