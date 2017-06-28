@@ -498,6 +498,10 @@ figure.img_h.hover figcaption p {
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
   transform: translate(-50%, -50%);
 }
+.works_d > img{
+  opacity:0;
+  width: 100%;
+}
 .devise_title {
   padding: 6em 0 4em;
 }
@@ -723,9 +727,6 @@ figure.img_h.hover figcaption p {
     padding-bottom: 0.5em;
   }
 }
-.works_d > img{
-opacity:0;
-}
 @media (max-width: 375px) {
   .works_d {
     height: 210px;
@@ -903,7 +904,7 @@ opacity:0;
 #spectrumPlugin h2:not(.heading) {
   position: relative;
   top: -0.605em;
-  color: #f71137;
+  color: #1c18c4;
   padding-bottom: 0;
 }
 #spectrumPlugin h3.heading {
@@ -970,6 +971,12 @@ opacity:0;
 }
 #spectrumPlugin form span.description:not(.conf_input) {
   border: 1px solid #1c18c4;
+}
+#spectrumPlugin a.arrow {
+  color: #1c18c4;
+}
+#spectrumPlugin a.arrow:hover {
+    border-bottom: 1px #1c18c4 dotted;
 }
 .form-label{
   position: relative;
