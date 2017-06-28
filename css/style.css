@@ -498,6 +498,10 @@ figure.img_h.hover figcaption p {
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
   transform: translate(-50%, -50%);
 }
+.works_d > img{
+  opacity:0;
+  width: 100%;
+}
 .devise_title {
   padding: 6em 0 4em;
 }
@@ -722,9 +726,6 @@ figure.img_h.hover figcaption p {
     font-size: 3em;
     padding-bottom: 0.5em;
   }
-}
-.works_d > img{
-opacity:0;
 }
 @media (max-width: 375px) {
   .works_d {
