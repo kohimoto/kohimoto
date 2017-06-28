@@ -46,9 +46,20 @@ $(document).ready(function(){
     function(){
     //out
       $(this).stop().animate({opacity: 0},1000);
-    } 
+    }
+  );
+  $('.works_foot_img').hover(
+    function(){
+    //on
+    $(this).stop().animate({opacity: 0.4},1000);
+    },
+    function(){
+    //out
+    $(this).stop().animate({opacity: 0},1000);
+    }
   );
 });
+
 </script>
 
 <!-- Modernizr JS -->
