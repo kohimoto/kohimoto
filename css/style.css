@@ -164,7 +164,11 @@ header{
   margin: 0 auto;
 }
 header h1{
-  padding: 2.2em 7.1428em;
+  padding: 2.2em 7.1428em 1em;
+}
+header p{
+  padding: 0 7.1428em 2.2em;
+  font-size: ;
 }
 header .g_fix{
   position: fixed;
@@ -231,21 +235,24 @@ header .get {
 }
 /*====================header ---- SP===================== */
 @media (max-width: 1500px) {
-  header h1 {
-      padding: 2.2em 4em;
-  }
 }
 @media (max-width: 1024px) {
   header h1 {
-      padding: 2.2em 4em;
+      padding: 2.2em 4em 1em;
+  }
+  header p{
+    padding: 0 4em 2.2em;
   }
 }
 @media (max-width: 768px) {
   header h1 {
-      padding: 2em 2em;
+      padding: 2em 2em 1em;
   }
   header h1 img{
     width: 78px;
+  }
+  header p{
+    padding: 0 2em 2em;
   }
   header .menu {
     right: 0.5em;
