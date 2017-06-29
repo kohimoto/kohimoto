@@ -472,6 +472,9 @@ figure.img_h.hover figcaption p {
   .btm {
       padding-bottom: 20em;
   }
+  figure.img_h figcaption p {
+      font-size: 1em;
+  }
 }
 /* =======================================================
 * work_detail
@@ -807,12 +810,12 @@ figure.img_h.hover figcaption p {
   color: #000;
 }
 .kirsche .works_d_f .works_foot_img{
-  background-image: url('../images/works/2017/risakoyamada/main_01.jpg');
+  background-image: url('/images/works/2017/risakoyamada/main_02.jpg');
   background-color: #f0f3f9;
 }
 /*==================== risakoyamada_detail ===================== */
 .risakoyamada .works_d {
-  background-image: url('../images/works/2017/risakoyamada/main_01.jpg');
+  background-image: url('/images/works/2017/risakoyamada/main_02.jpg');
 }
 .risakoyamada .bg_d {
   background-color: #3d4c74;
