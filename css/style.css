@@ -397,28 +397,21 @@ figure.img_h:hover figcaption {
   transition: all 4s ease-out;
 }
 figure.img_h figcaption p {
-  margin: 0 auto;
   position: absolute;
   width: 100%;
   left: 0;
-  opacity: 0;
-}
-figure.img_h figcaption p {
-  left: 32%;
+  text-align: center;
   top: 45%;
-  -webkit-transform: translate3d(0%, 100%, 0);
-  transform: translate3d(0%, 100%, 0);
-  font-family: 'Libre Baskerville', serif;
-  font-size: 1.5714em;
-}
-figure.img_h:hover figcaption p,
-figure.img_h.hover figcaption p {
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
+  font-size: 1.2857em;
+  font-weight: 700;
+  display: none;
 }
+
 figure.img_h:hover figcaption p,
 figure.img_h.hover figcaption p {
-  opacity: 1;
+  display: block;
 }
 .list_des{
   padding : 0 1.4285em;
