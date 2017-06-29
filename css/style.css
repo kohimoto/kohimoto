@@ -995,6 +995,7 @@ figure.img_h.hover figcaption p {
   overflow-y: hidden;
   border-radius: 5px;
   -webkit-appearance: none;
+  font-size: 20px;
 }
 #spectrumPlugin form span.description:not(.conf_input) {
   border: 1px solid #1c18c4;
