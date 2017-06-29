@@ -543,6 +543,7 @@ figure.img_h.hover figcaption p {
 .device_pc svg {
   z-index: 2;
   width: 1000px;
+  position: relative;
 }
 .device_pc .video {
   position: absolute;
