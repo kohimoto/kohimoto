@@ -709,6 +709,12 @@ figure.img_h.hover figcaption p {
   .device_sp .video video {
     width: 121.975px;
   }
+  .device_pc .video {
+    top: 4.7%;
+  }
+  .device_sp .video {
+    top: 10.4%;
+  }
 }
 /*==================== works detail ---- SP ===================== */
 
