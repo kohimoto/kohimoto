@@ -416,7 +416,6 @@ figure.img_h figcaption p {
   font-size: 1.2857em;
   font-weight: 700;
   display: none;
-  height: 100%;
 }
 
 figure.img_h:hover figcaption p,
