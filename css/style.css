@@ -390,9 +390,6 @@ figure.img_h figcaption {
   width: 100%;
   height: 100%;
 }
-figure.img_h a {
-  display: block;
-}
 figure.img_h:hover figcaption {
   background-color: #fff;
   opacity: 0.4;
