@@ -1042,6 +1042,11 @@ span:not(.conf_input) .mCSB_draggerContainer {
 .mCSB_inside > .mCSB_container {
   margin-right: 0px;
 }
+@media (max-width: 416px) {
+  #spectrumPlugin form span.description {
+    height: 200px;
+  }
+}
 /* =======================================================
 * contact confirm
 * ======================================================= */
