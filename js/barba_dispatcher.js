@@ -13,7 +13,7 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
       $('.open').click(function() {
         if( $('body').hasClass('menu-show') ) {
         } else {
-	  $('body').addClass('menu-show');
+	        $('body').addClass('menu-show');
           $('#fh5co-main-nav > .js-fh5co-nav-toggle').addClass('show');
         }
       });
@@ -56,9 +56,6 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
 
       //-----hover slider--------//
       $('.flexslider').flexslider();
-
-
-
 
       break;
 
