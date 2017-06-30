@@ -404,8 +404,8 @@ nav#fh5co-main-nav{
   #fh5co-main-nav ul li a {
     display: block;
     width: 100%;
-    color: black;
-    font-size: 30px;
+    color: #000;
+    font-size: 2em;
     padding: 10px 20px;
     border: none;
   }
