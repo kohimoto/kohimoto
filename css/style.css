@@ -1411,7 +1411,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
   display: inline-block;
 }
 #spectrumPlugin .about li.add:not(:nth-child(1)):before{
-  content: "・";
+  content: "&middot;";
   padding: 0 8px 0 5px;
 }
 #spectrumPlugin section {
