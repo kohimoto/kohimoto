@@ -616,6 +616,12 @@ nav#fh5co-main-nav{
 /* =======================================================
 * top
 * ======================================================= */
+.art_top .content {
+  padding-bottom: 2em; 
+}
+.art_g {
+  padding: 7.1428em 0 0;
+}
 .art_g h2{
   padding: 0.5em 0 1em;
 }
@@ -727,6 +733,9 @@ figure.img_h.hover figcaption p {
 }
 /*==================== top ---- SP ===================== */
 @media (max-width: 768px) {
+  .art_g {
+    padding: 6em 0 0;
+  }
   .list .content{
     padding: 0 2em 6em;
   }
@@ -749,6 +758,9 @@ figure.img_h.hover figcaption p {
   }
 }
 @media (max-width: 375px) {
+  .art_g {
+    padding: 3em 0 0;
+  }
   .btm {
       padding-bottom: 20em;
   }
