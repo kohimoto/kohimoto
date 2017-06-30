@@ -1526,3 +1526,24 @@ span:not(.conf_input) .mCSB_draggerContainer {
     vertical-align: baseline;
   }
 }
+/* =======================================================
+* loading
+* ======================================================= */
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #fff;
+  z-index: 1;
+  margin 0 auto;
+}
+#loader {
+  display: none;
+  position: relative;
+  top: 45%;
+  z-index: 2;
+  text-align: center;
+}
