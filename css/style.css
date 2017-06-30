@@ -1409,9 +1409,9 @@ span:not(.conf_input) .mCSB_draggerContainer {
 }
 #spectrumPlugin .about ul li {
   display: inline-block;
+  padding-right: 2em;
 }
 #spectrumPlugin .about li.add:not(:nth-child(1)):before{
-  content: "&middot;";
   padding: 0 8px 0 5px;
 }
 #spectrumPlugin section {
@@ -1438,10 +1438,6 @@ span:not(.conf_input) .mCSB_draggerContainer {
   }
   .about section br {
     clear: both;
-  }
-  #spectrumPlugin .about li.add:before {
-    content: "・";
-    padding: 0 8px 0 5px;
   }
 }
 @media (max-width: 940px) {
