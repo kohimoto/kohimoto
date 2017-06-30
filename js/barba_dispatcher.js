@@ -1,9 +1,28 @@
-$('body').removeClass('menu-show');
 Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
     switch(current.namespace)
   {
     case "slider":
-alert("hey!!");
+      //-----open nav--------//
+      //if menu_show is ,after moved slider remove.
+      $('body').removeClass('menu-show');
+
+      $('.js-fullheight').css('height', $(window).height());
+      $(window).resize(function(){
+      	$('.js-fullheight').css('height', $(window).height());
+      });
+      $('.open').click(function() {
+        if( $('body').hasClass('menu-show') ) {
+        } else {
+	  $('body').addClass('menu-show');
+          $('#fh5co-main-nav > .js-fh5co-nav-toggle').addClass('show');
+        }
+      });
+      $('.close').click(function() {
+        if( $('body').hasClass('menu-show') ) {
+          $('body').removeClass('menu-show');
+        } else {
+        }
+      });
       //-----hover top--------//
       $('.works_d > img').hover(
         function(){
@@ -38,29 +57,6 @@ alert("hey!!");
       //-----hover slider--------//
       $('.flexslider').flexslider();
 
-      //-----open nav--------//
-      //if menu_show is ,after moved slider remove.
-      $('body').removeClass('menu-show');
-
-      $('.js-fullheight').css('height', $(window).height());
-      $(window).resize(function(){
-      	$('.js-fullheight').css('height', $(window).height());
-      });
-      $('.js-fh5co-nav-toggle').on('click', function(event) {
-alert("start");
-        if( $('body').hasClass('menu-show') ) {
-alert("i have!");
-          $('body').removeClass('menu-show');
-alert("11");
-        } else {
-alert("don't have!");
-	  $('body').addClass('menu-show');
-alert("22");
-            setTimeout(function(){
-              $('#fh5co-main-nav > .js-fh5co-nav-toggle').addClass('show');
-            }, 900);
-        }
-      });
 
 
 
