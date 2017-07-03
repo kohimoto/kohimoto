@@ -1274,6 +1274,7 @@ figure.img_h.hover figcaption p {
   border: 2px solid #1c18c4;
   padding: 10px 25px;
   font-size: 30px;
+  line-height: 1;
   font-weight: bold;
   border-radius: 5px;
   background-color: transparent;
@@ -1373,6 +1374,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
     font-size: 1.5em;
     margin: 0 5px;
     padding: 10px;
+    line-height: 1;
   }
   #spectrumPlugin form .description {
     height: 170px;
