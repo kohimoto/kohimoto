@@ -56,8 +56,6 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
 
       //-----hover slider--------//
       $('.flexslider').flexslider();
-
       break;
-
-  }
-});
+      }
+      });
