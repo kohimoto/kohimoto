@@ -199,6 +199,7 @@ header .menu ul{
 }
 header .menu ul li{
   font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
   float: left;
 }
 header .side-menu{
@@ -1249,6 +1250,10 @@ figure.img_h.hover figcaption p {
 #spectrumPlugin .content {
   margin: 2.000em auto;
 }
+#spectrumPlugin h2 {
+  padding-bottom: 0.5em;
+}
+
 #spectrumPlugin h2:not(.heading) {
   position: relative;
   top: -0.605em;
@@ -1345,7 +1350,7 @@ figure.img_h.hover figcaption p {
 }
 textarea.text-input {
   -webkit-appearance: none;
-  padding: 1.8em 0 0.7em 0.5em;
+  padding: 1.8em 0 0.7em 0.8em;
   font-size: 30px;
 }
 .conf_input.description {
