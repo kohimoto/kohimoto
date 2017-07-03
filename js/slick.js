@@ -68,7 +68,7 @@
                 pauseOnHover: true,
                 pauseOnFocus: true,
                 pauseOnDotsHover: false,
-                respondTo: 'window',
+                respondTo: 'slide',
                 responsive: null,
                 rows: 1,
                 rtl: false,
