@@ -1439,7 +1439,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
   padding-bottom: 40px;
 }
 #spectrumPlugin .about ul li:not(.add) {
-  border: 1px solid;
+  border: 2px solid;
   text-align: center;
   padding: 20px;
   background: #fff;
