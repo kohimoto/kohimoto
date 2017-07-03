@@ -1374,7 +1374,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
     margin: 0 5px;
     padding: 10px;
   }
-  #spectrumPlugin form textarea {
+  #spectrumPlugin form .description {
     height: 170px;
   }
 }
