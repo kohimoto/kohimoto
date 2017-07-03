@@ -55,10 +55,13 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
       });
 
       //-----hover slider--------//
+      var conf = 1;
       $(window).load(function(){
-        $('.flexslider').flexslider();
+        conf = conf + 1;
       });
-
+      if(conf == 1){
+        $('.flexslider').flexslider();
+      }
       break;
 
   }
