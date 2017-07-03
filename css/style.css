@@ -199,7 +199,7 @@ header .menu ul{
 }
 header .menu ul li{
   font-family: 'Libre Baskerville', serif;
-  font-size: 14px;
+  font-size: 0.875em;
   float: left;
 }
 header .side-menu{
