@@ -4,9 +4,9 @@
 #AuthType Basic
 #require valid-user
 
-RewriteEngine On
-RewriteCond %{ENV:HTTPS} !^on$
-RewriteCond %{HTTP:X-Sakura-Forwarded-For} ^$
-RewriteCond %{REMOTE_ADDR} !=219.94.129.192
-RewriteCond %{REMOTE_ADDR} !=49.212.207.141
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+#RewriteEngine On
+#RewriteCond %{ENV:HTTPS} !^on$
+#RewriteCond %{HTTP:X-Sakura-Forwarded-For} ^$
+#RewriteCond %{REMOTE_ADDR} !=219.94.129.192
+#RewriteCond %{REMOTE_ADDR} !=49.212.207.141
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
