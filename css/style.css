@@ -1330,6 +1330,7 @@ figure.img_h.hover figcaption p {
   font-size: 30px;
 }
 textarea.text-input {
+  -webkit-appearance: none;
   padding: 1.8em 0 0.7em 0.5em;
   font-size: 30px;
 }
@@ -1351,8 +1352,8 @@ span:not(.conf_input) .mCSB_draggerContainer {
   margin-right: 0px;
 }
 @media (max-width: 416px) {
-  #spectrumPlugin form span.description {
-    height: 200px;
+  #spectrumPlugin form textarea {
+    height: 150px;
   }
 }
 /* =======================================================
