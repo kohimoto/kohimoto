@@ -1259,6 +1259,7 @@ figure.img_h.hover figcaption p {
   border: 1px solid #1c18c4;
   border-radius: 5px;
   width: 100%;
+  max-width: 1485px;
   overflow-y: auto;
   height: 280px;
   font-size: 20px;
