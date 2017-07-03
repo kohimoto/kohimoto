@@ -820,26 +820,9 @@ figure.img_h.hover figcaption p {
 .devise_title h2 {
   text-align: center;
 }
-/*
-.works_img_list {
-
+.works_d_f .works_head_text p{
+  word-break: break-all;
 }
-.works_img_list ul {
-  overflow: hidden;
-}
-.works_img_list ul li{
-  float: left;
-  width: calc(33.3333% - 1em / 2);
-  margin-left: 1em;
-}
-.works_img_list ul li:nth-child(1),
-.works_img_list ul li:nth-child(4){
-  margin-left: 0em;
-}
-.works_img_list ul li img{
-  width: 100%;
-}
-*/
 .devise_detail {
   height: auto;
   text-align: center;
@@ -943,8 +926,6 @@ figure.img_h.hover figcaption p {
 }
 .works_d_f .works_foot_img img{
   opacity: 0;
-
-
 }
 .works_d_f .works_foot_img{
   background-size: cover;
@@ -956,7 +937,6 @@ figure.img_h.hover figcaption p {
   overflow: hidden;
 }
 .works_d_f .works_foot_img:hover {
-/*  opacity: 0.4;*/
 }
 .works_d_f .works_foot_text {
   position: absolute;
@@ -1100,7 +1080,7 @@ figure.img_h.hover figcaption p {
   color: #1c18c4;
 }
 .kirsche .works_f a:hover {
-  border: none; 
+  border: none;
 }
 .kirsche .works_f .line_s{
   border-bottom: 1px solid #1c18c4;
