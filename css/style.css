@@ -1353,7 +1353,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 }
 @media (max-width: 416px) {
   #spectrumPlugin form textarea {
-    height: 150px;
+    height: 170px;
   }
 }
 /* =======================================================
