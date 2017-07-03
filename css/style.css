@@ -1370,6 +1370,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 }
 @media (max-width: 416px) {
   #spectrumPlugin button {
+    font-size: 2em;
     margin: 0 5px;
     padding: 10px 6px;
   }
