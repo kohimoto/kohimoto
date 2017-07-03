@@ -85,7 +85,7 @@ h1{
 h2{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 3.5em;
   padding-bottom: 0.2em;
 }
 p.h2_cap{
@@ -99,7 +99,7 @@ h3{
   font-family: 'Libre Baskerville', serif;
 }
 h4{
-  font-size: 6.1428em;
+  font-size: 5.375em;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   white-space: nowrap;
@@ -141,7 +141,7 @@ h4{
     font-size: 2.5em;
   }
   h4{
-    font-size: 4em;
+    font-size: 3.5em;
   }
 }
 @media (max-width: 375px) {
@@ -149,7 +149,7 @@ h4{
     font-size: 12px;
   }
   h4{
-    font-size: 2.8em;
+    font-size: 2.2em;
   }
 }
 
@@ -1034,7 +1034,7 @@ figure.img_h.hover figcaption p {
     height: 380px;
   }
   .works_d .works_head_text h2{
-    font-size: 2em;
+    font-size: 1.75em;
   }
   .devise_title {
       padding: 4em 0 3em;
