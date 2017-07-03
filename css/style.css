@@ -1322,7 +1322,7 @@ figure.img_h.hover figcaption p {
 .form-label{
   position: relative;
   top: 32px;
-  left: 10px;
+  left: 15px;
   font-size: 14px;
   display: block;
   z-index: 3;
