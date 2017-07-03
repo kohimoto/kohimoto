@@ -52,7 +52,7 @@
                 centerPadding: '50px',
                 cssEase: 'ease',
                 customPaging: function(slider, i) {
-                    return $('<button type="button" data-role="none" role="button" tabindex="0" />').text(i + 1);
+//                    return $('<button type="button" data-role="none" role="button" tabindex="0" />').text(i + 1);
                 },
                 dots: true,
                 dotsClass: 'slick-dots',
