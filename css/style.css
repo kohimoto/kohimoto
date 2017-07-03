@@ -1454,19 +1454,19 @@ span:not(.conf_input) .mCSB_draggerContainer {
 * member
 * ======================================================= */
 #spectrumPlugin .member h2{
-  color: #019a86;
+  color: #00C1A6;
 }
 #spectrumPlugin .member h2.heading {
-    color: #019a86;
+    color: #00C1A6;
 }
 #spectrumPlugin .member {
-    color: #019a86;
+    color: #00C1A6;
 }
 #spectrumPlugin .member .arrow_d a{
-    color: #019a86;
+    color: #00C1A6;
 }
 #spectrumPlugin .member .arrow_d a:hover{
-    border-bottom: 1px #019a86 dotted;
+    border-bottom: 1px #00C1A6 dotted;
 }
 /* =======================================================
 * gallery
