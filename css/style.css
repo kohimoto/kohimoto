@@ -1372,6 +1372,9 @@ span:not(.conf_input) .mCSB_draggerContainer {
     margin: 0 5px;
     padding: 10px 6px;
   }
+  #spectrumPlugin form textarea {
+    height: 170px;
+  }
 }
 /* =======================================================
 * contact error
