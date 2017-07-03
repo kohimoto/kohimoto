@@ -55,7 +55,9 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
       });
 
       //-----hover slider--------//
-      $('.flexslider').flexslider();
+      $(window).load(function(){
+        $('.flexslider').flexslider();
+      });
 
       break;
 
