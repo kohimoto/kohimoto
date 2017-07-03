@@ -940,6 +940,8 @@ figure.img_h.hover figcaption p {
 }
 .works_d_f .works_foot_text {
   position: absolute;
+  width: 100%;
+  padding: 0 1em;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
