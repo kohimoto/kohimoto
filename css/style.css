@@ -569,6 +569,9 @@ nav#fh5co-main-nav{
 /* =======================================================
 * footer
 * ======================================================= */
+footer .content {
+  padding: 0 7.1428em 4em;
+}
 .foot_d {
   overflow: hidden;
 }
@@ -820,26 +823,9 @@ figure.img_h.hover figcaption p {
 .devise_title h2 {
   text-align: center;
 }
-/*
-.works_img_list {
-
+.works_d_f .works_head_text p{
+  word-break: break-all;
 }
-.works_img_list ul {
-  overflow: hidden;
-}
-.works_img_list ul li{
-  float: left;
-  width: calc(33.3333% - 1em / 2);
-  margin-left: 1em;
-}
-.works_img_list ul li:nth-child(1),
-.works_img_list ul li:nth-child(4){
-  margin-left: 0em;
-}
-.works_img_list ul li img{
-  width: 100%;
-}
-*/
 .devise_detail {
   height: auto;
   text-align: center;
@@ -943,8 +929,6 @@ figure.img_h.hover figcaption p {
 }
 .works_d_f .works_foot_img img{
   opacity: 0;
-
-
 }
 .works_d_f .works_foot_img{
   background-size: cover;
@@ -956,10 +940,11 @@ figure.img_h.hover figcaption p {
   overflow: hidden;
 }
 .works_d_f .works_foot_img:hover {
-/*  opacity: 0.4;*/
 }
 .works_d_f .works_foot_text {
   position: absolute;
+  width: 100%;
+  padding: 0 1em;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
@@ -1100,7 +1085,7 @@ figure.img_h.hover figcaption p {
   color: #1c18c4;
 }
 .kirsche .works_f a:hover {
-  border: none; 
+  border: none;
 }
 .kirsche .works_f .line_s{
   border-bottom: 1px solid #1c18c4;
@@ -1217,29 +1202,29 @@ figure.img_h.hover figcaption p {
   background-color: #E7FBFA;
 }
 .cocooilmask .devise_title h2 {
-  color: #A79AD9;
+  color: #5C4BA0;
 }
 .cocooilmask .works_f {
-  color: #A79AD9;
+  color: #5C4BA0;
 }
 .cocooilmask .works_f a{
-  color: #A79AD9;
+  color: #5C4BA0;
 }
 .cocooilmask .works_f a:hover{
   border: none;
 }
 .cocooilmask .works_f .line_s{
-  border-bottom: 1px solid #A79AD9;
+  border-bottom: 1px solid #5C4BA0;
 }
 .cocooilmask .works_f .color ul li:nth-child(1){
-  border-right: 1px solid #A79AD9;
+  border-right: 1px solid #5C4BA0;
 }
 .cocooilmask .works_c {
-  border: 2px solid #A79AD9;
+  border: 2px solid #5C4BA0;
   background-color: #fff;
 }
 .cocooilmask .works_c .works_c_d{
-  color: #A79AD9;
+  color: #5C4BA0;
 }
 .cocooilmask .bg_d_n {
   background-color: #f0f3f9;

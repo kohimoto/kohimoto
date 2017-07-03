@@ -32,7 +32,7 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
           $(this).css('height', '100%');
         },
         function(){
-        //out
+        //outs
           $(this).stop().animate({opacity: 0},1000);
         }
       );
@@ -63,6 +63,5 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
         $('.flexslider').flexslider();
       }
       break;
-
-  }
-});
+      }
+      });
