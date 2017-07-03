@@ -707,7 +707,7 @@ figure.img_h figcaption p {
   top: 45%;
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
-  font-size: 1.2857em;
+  font-size: 1.125em;
   font-weight: 700;
   display: none;
 }
