@@ -207,6 +207,9 @@ header .side-menu{
   width: 100%;
   z-index: 2;
 }
+header .side-menu a:hover{
+  border: none;
+}
 header .copyright {
   bottom: 45vh;
   position: absolute;
