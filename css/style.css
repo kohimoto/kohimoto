@@ -1326,7 +1326,7 @@ figure.img_h.hover figcaption p {
   z-index: 3;
 }
 .text-input {
-  padding: 1em 0 0.7em 0.5em;
+  padding: 1.5em 0 0.7em 0.5em;
   font-size: 30px;
 }
 textarea.text-input {
@@ -1455,19 +1455,19 @@ span:not(.conf_input) .mCSB_draggerContainer {
 * member
 * ======================================================= */
 #spectrumPlugin .member h2{
-  color: #0ECCA2;
+  color: #019a86;
 }
 #spectrumPlugin .member h2.heading {
-    color: #0ECCA2;
+    color: #019a86;
 }
 #spectrumPlugin .member {
-    color: #0ECCA2;
+    color: #019a86;
 }
 #spectrumPlugin .member .arrow_d a{
-    color: #0ECCA2;
+    color: #019a86;
 }
 #spectrumPlugin .member .arrow_d a:hover{
-    border-bottom: 1px #0ECCA2 dotted;
+    border-bottom: 1px #019a86 dotted;
 }
 /* =======================================================
 * gallery
