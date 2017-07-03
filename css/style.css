@@ -1256,10 +1256,11 @@ figure.img_h.hover figcaption p {
   -webkit-appearance: none;
 }
 #spectrumPlugin textarea {
-  width: 105%;
+  border: 1px solid #1c18c4;
+  border-radius: 5px;
+  width: 100%;
   overflow-y: auto;
   height: 280px;
-  border: none;
   font-size: 20px;
 }
 #spectrumPlugin .button {
@@ -1328,7 +1329,7 @@ figure.img_h.hover figcaption p {
   padding: 1em 0 0.7em 0.5em;
   font-size: 30px;
 }
-.description .text-input {
+textarea.text-input {
   padding: 1.8em 0 0.7em 0.5em;
   font-size: 30px;
 }
