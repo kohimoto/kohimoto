@@ -54,7 +54,7 @@ input, select {
 * common
 * ======================================================= */
 body {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
   color: #000;
   font-family: 'Poppins',"Yu Gothic",YuGothic, sans-serif;
@@ -146,7 +146,7 @@ h4{
 }
 @media (max-width: 375px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
   h4{
     font-size: 2.8em;
@@ -578,7 +578,7 @@ nav#fh5co-main-nav{
   padding-bottom: 0.7142em;
 }
 .foot_d .link_m ul li{
-  font-size: 0.8571em;
+  font-size: 0.75em;
   float: left;
   width: 22.8571em;
 }
@@ -595,7 +595,7 @@ nav#fh5co-main-nav{
   overflow: hidden;
 }
 .foot_d .link_s ul li{
-  font-size: 0.8571em;
+  font-size: 0.75em;
   font-family: 'Libre Baskerville', serif;
   float: left;
 }
@@ -630,7 +630,7 @@ nav#fh5co-main-nav{
   padding: 0.5em 0 1em;
 }
 .flexslider .slides {
-    padding: 0 0 3em;
+  padding: 0 0 3em;
 }
 .list ul{
   overflow: hidden;
