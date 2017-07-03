@@ -1258,7 +1258,7 @@ figure.img_h.hover figcaption p {
 #spectrumPlugin textarea {
   width: 105%;
   overflow-y: auto;
-  height: 35.500em;
+  height: 280px;
   border: none;
   font-size: 20px;
 }
