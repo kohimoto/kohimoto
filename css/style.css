@@ -1093,6 +1093,12 @@ figure.img_h.hover figcaption p {
 .kirsche .works_f {
   color: #1c18c4;
 }
+.kirsche .works_f a {
+  color: #1c18c4;
+}
+.kirsche .works_f a:hover {
+  border: none; 
+}
 .kirsche .works_f .line_s{
   border-bottom: 1px solid #1c18c4;
 }
@@ -1128,6 +1134,12 @@ figure.img_h.hover figcaption p {
 }
 .risakoyamada .works_f {
   color: #F51F72;
+}
+.risakoyamada .works_f a{
+  color: #F51F72;
+}
+.risakoyamada .works_f a:hover{
+  border: none;
 }
 .risakoyamada .works_f .line_s{
   border-bottom: 1px solid #F51F72;
@@ -1165,6 +1177,12 @@ figure.img_h.hover figcaption p {
 .llll .works_f {
   color: #7C682A;
 }
+.llll .works_f a{
+  color: #7C682A;
+}
+.llll .works_f a:hover{
+  border: none;
+}
 .llll .works_f .line_s{
   border-bottom: 1px solid #7C682A;
 }
@@ -1200,6 +1218,12 @@ figure.img_h.hover figcaption p {
 }
 .cocooilmask .works_f {
   color: #A79AD9;
+}
+.cocooilmask .works_f a{
+  color: #A79AD9;
+}
+.cocooilmask .works_f a:hover{
+  border: none;
 }
 .cocooilmask .works_f .line_s{
   border-bottom: 1px solid #A79AD9;
