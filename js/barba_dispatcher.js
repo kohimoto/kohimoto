@@ -54,48 +54,8 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
        theme: "dark-thin"
       });
 
-      //-----hover slider--------//
-
-/*        $('.flexslider').flexslider({
-        });
-*/
-
       //------- slick ------//
       $('.slick-slider').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnDotsHover: true,
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        swipe: true,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
       });
 
 
