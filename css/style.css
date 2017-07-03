@@ -1376,7 +1376,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
     padding: 10px;
     line-height: 1;
   }
-  #spectrumPlugin form .description {
+  #spectrumPlugin form span.description {
     height: 170px;
   }
 }
