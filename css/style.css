@@ -873,7 +873,7 @@ and (min-color-index:0)
 {
   .device_pc .video {(;
     position: absolute;
-    top: 4.2%;
+    top: 6.6%;
     left: 4.4%;
     width: 91.2%;
   );}
@@ -898,7 +898,7 @@ and (min-color-index:0)
 {
   .device_sp .video {(;
     position: absolute;
-    top: 10.3%;
+    top: 20.4%;
     left: 6.4%;
     width: 87%;
     z-index: 1;
