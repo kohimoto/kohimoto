@@ -48,11 +48,11 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
         }
       );
 
-      //-----hover background--------//
-      $('.description').mCustomScrollbar({
-       advanced:{updateOnContentResize: true},
-       theme: "dark-thin"
-      });
+      //-----scrollbar--------//
+      //$('.description').mCustomScrollbar({
+      // advanced:{updateOnContentResize: true},
+      // theme: "dark-thin"
+      //});
 
       //------- slick ------//
       $('.slick-slider').slick({
