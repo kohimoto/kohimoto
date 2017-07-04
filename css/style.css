@@ -219,8 +219,8 @@ header .copyright {
   -webkit-transform: rotate(180deg);
   margin-top: 0;
   display: block;
-  writing-mode: vertical-lr;
-  -webkit-writing-mode: vertical-lr;
+  writing-mode: tb-rl;
+  -webkit-writing-mode: tb-rl;
   white-space: nowrap;
   font-size: 0.75em;
 }
