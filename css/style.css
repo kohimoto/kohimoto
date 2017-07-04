@@ -222,7 +222,7 @@ header .copyright {
   writing-mode: vertical-lr;
   -webkit-writing-mode: vertical-lr;
   white-space: nowrap;
-  font-size: 0.8571em;
+  font-size: 0.75em;
 }
 header .get {
   position: absolute;
@@ -235,7 +235,7 @@ header .get {
   writing-mode: vertical-lr;
   -webkit-writing-mode: vertical-lr;
   white-space: nowrap;
-  font-size: 0.8571em;
+  font-size: 0.75em;
 }
 /*===================header ---- nav===================== */
 header .head_menu{
@@ -631,18 +631,17 @@ footer .content {
   padding-bottom: 2em;
 }
 .art_g {
-  padding: 7.1428em 0 0;
 }
 .art_g h2{
   padding: 0.5em 0 1em;
 }
-
-.slick-arrow {
-  display: none;
+.slick-track {
+    border: 1px solid #000;
 }
 ul.slick-dots {
   overflow: hidden;
   margin: 0 auto;
+  padding: 4em 0 0;
   width: 10em;
 }
 ul.slick-dots li:nth-child(1) {
@@ -751,8 +750,10 @@ figure.img_h.hover figcaption p {
   float: right;
 }
 .bg_top{
+  background-color: #fff;
+}
+.list + .bg_top{
   background-color: #f0f3f9;
-  margin-bottom: 5.7142em;
 }
 .btm h2 {
     margin-top: -0.7em;
