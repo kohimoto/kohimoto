@@ -38,7 +38,7 @@
             var _ = this, dataSettings;
 
             _.defaults = {
-                accessibility: true,
+                accessibility: false,
                 adaptiveHeight: false,
                 appendArrows: $(element),
                 appendDots: $(element),
