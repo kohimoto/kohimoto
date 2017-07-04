@@ -1,5 +1,7 @@
 <?
-include_once("../../header.html");
+$head_c = file_get_contents("../../header.html");
+$head = preg_replace("/<title>.*<\/title>/","<title>GAETANO CARTONE | GALLERY</title>",$head_c);
+echo $head;
 ?>
 <div class="bg_top">
   <div class="content">

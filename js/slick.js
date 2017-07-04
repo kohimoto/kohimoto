@@ -49,7 +49,7 @@
                 nextArrow: '',
                 //nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
                 autoplay: true,
-                autoplaySpeed: 3000,
+                autoplaySpeed: 5000,
                 centerMode: false,
                 centerPadding: '50px',
                 cssEase: 'ease',
