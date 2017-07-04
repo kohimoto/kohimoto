@@ -1593,15 +1593,3 @@ span:not(.conf_input) .mCSB_draggerContainer {
   z-index: 2;
   text-align: center;
 }
-
-
-/* =======================================================
-* loading
-* ======================================================= */
-@media screen and (-webkit-min-device-pixel-ratio:0)
-and (min-color-index:0)
-{
-   .art_top h2{
-     color: #f00;
-   }
-}
