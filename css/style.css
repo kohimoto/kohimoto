@@ -233,7 +233,7 @@ header .copyright {
     -webkit-writing-mode: tb-rl;
   }
 }
-@media all and (-ms-high-contrast: none) { 
+@media all and (-ms-high-contrast: none) {
   header .copyright {
   transform: rotate(270deg);
   }
@@ -593,7 +593,7 @@ nav#fh5co-main-nav{
 * footer
 * ======================================================= */
 footer .content {
-  padding: 0 7.1428em 4em;
+  padding-bottom: 4em;
 }
 .foot_d {
   overflow: hidden;
