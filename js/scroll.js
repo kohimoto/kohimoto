@@ -7,7 +7,5 @@ $(document).ready(function(){
      advanced:{updateOnContentResize: true},
      theme: "dark-thin"
     });
-    //slider
-    $('.flexslider').flexslider();
   });
 });
