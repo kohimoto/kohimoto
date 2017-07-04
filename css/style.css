@@ -219,10 +219,18 @@ header .copyright {
   -webkit-transform: rotate(180deg);
   margin-top: 0;
   display: block;
-  writing-mode: tb-rl;
-  -webkit-writing-mode: tb-rl;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: tb-rl\9;
+  -webkit-writing-mode: tb-rl\9;
   white-space: nowrap;
   font-size: 0.75em;
+}
+@supports (-ms-ime-align:auto){
+  header .copyright {
+    writing-mode: tb-rl;
+    -webkit-writing-mode: tb-rl;
+  }
 }
 header .get {
   position: absolute;
@@ -234,6 +242,8 @@ header .get {
   display: block;
   writing-mode: vertical-lr;
   -webkit-writing-mode: vertical-lr;
+  writing-mode: tb-rl\9;
+  -webkit-writing-mode: tb-rl\9;
   white-space: nowrap;
   font-size: 0.75em;
 }
