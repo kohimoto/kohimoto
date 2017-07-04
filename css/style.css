@@ -226,10 +226,17 @@ header .copyright {
   white-space: nowrap;
   font-size: 0.75em;
 }
+/*for edge*/
 @supports (-ms-ime-align:auto){
   header .copyright {
     writing-mode: tb-rl;
     -webkit-writing-mode: tb-rl;
+  }
+}
+/*for over IE10*/
+@media all and (-ms-high-contrast: none) {
+  header .get {
+  transform: rotate(90deg);
   }
 }
 header .get {
@@ -246,6 +253,12 @@ header .get {
   -webkit-writing-mode: tb-rl\9;
   white-space: nowrap;
   font-size: 0.75em;
+}
+/*for over IE10*/
+@media all and (-ms-high-contrast: none) { 
+  header .copyright {
+  transform: rotate(270deg);
+  }
 }
 /*===================header ---- nav===================== */
 header .head_menu{
