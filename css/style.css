@@ -247,12 +247,6 @@ header .get {
   white-space: nowrap;
   font-size: 0.75em;
 }
-@supports (-ms-ime-align:auto){
-  header .get {
-    writing-mode: tb-rl;
-    -webkit-writing-mode: tb-rl;
-  }
-}
 /*===================header ---- nav===================== */
 header .head_menu{
   display: none;
