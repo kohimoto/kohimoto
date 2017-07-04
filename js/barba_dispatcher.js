@@ -33,7 +33,7 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
         },
         function(){
         //outs
-          $(this).stop().animate({opacity: 0},1000);
+          $(this).stop().animate({opacity: 0.5},1000);
         }
       );
       //-----hover foot--------//

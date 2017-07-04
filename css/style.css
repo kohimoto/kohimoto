@@ -839,7 +839,7 @@ figure.img_h.hover figcaption p {
   transform: translate(-50%, -50%);
 }
 .works_d > img{
-  opacity:0;
+  opacity: 0.5;
   width: 100%;
 }
 .devise_title {
