@@ -73,6 +73,7 @@ a:hover{
   font-family: 'Libre Baskerville', serif;
 }
 a.arrow {
+  font-size: 0.875em;
 }
 .content{
   padding: 0 7.1428em 7.1428em;
