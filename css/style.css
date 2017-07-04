@@ -233,10 +233,9 @@ header .copyright {
     -webkit-writing-mode: tb-rl;
   }
 }
-/*for over IE10*/
-@media all and (-ms-high-contrast: none) {
-  header .get {
-  transform: rotate(90deg);
+@media all and (-ms-high-contrast: none) { 
+  header .copyright {
+  transform: rotate(270deg);
   }
 }
 header .get {
@@ -255,9 +254,9 @@ header .get {
   font-size: 0.75em;
 }
 /*for over IE10*/
-@media all and (-ms-high-contrast: none) { 
-  header .copyright {
-  transform: rotate(270deg);
+@media all and (-ms-high-contrast: none) {
+  header .get {
+  transform: rotate(90deg);
   }
 }
 /*===================header ---- nav===================== */
