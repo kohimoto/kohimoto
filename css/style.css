@@ -868,6 +868,16 @@ figure.img_h.hover figcaption p {
   left: 4.4%;
   width: 91.2%;
 }
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-color-index:0)
+{
+  .device_pc .video {(;
+    position: absolute;
+    top: 4.2%;
+    left: 4.4%;
+    width: 91.2%;
+  );}
+}
 .device_pc .video video {
   width: 915px;
 }
@@ -882,6 +892,17 @@ figure.img_h.hover figcaption p {
   left: 6.4%;
   width: 87%;
   z-index: 1;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-color-index:0)
+{
+  .device_sp .video {(;
+    position: absolute;
+    top: 10.3%;
+    left: 6.4%;
+    width: 87%;
+    z-index: 1;
+  );}
 }
 .device_sp .video video {
   width: 261.375px;
