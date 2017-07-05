@@ -874,6 +874,7 @@ figure.img_h.hover figcaption p {
 }
 .works_d_f .works_head_text p{
   word-break: break-all;
+  line-height: 2;
 }
 .devise_detail {
   height: auto;
