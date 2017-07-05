@@ -204,6 +204,7 @@ header .menu ul li{
 }
 header .side-menu{
   font-family: 'Libre Baskerville', serif;
+  font-size: 0.75em;
   position: absolute;
   top: 100vh;
   width: 100%;
