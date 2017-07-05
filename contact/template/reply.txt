@@ -1,21 +1,33 @@
 $name$ 様
 
 お問い合わせありがとうございました。
+お返事につきまして、担当者からご連絡させていただきます。
 
-【シリアル】
-$SIRIAL$
 
-【おなまえ】
+●●●●●●●●●●●●送信内容●●●●●●●●●●●●
+
+〇Name
 $name$
 
-【メールアドレス】
+〇E-mail
 $mailaddress$
 
-【会社名】
+〇Company
 $company$
 
-【内容】
+〇Subject
+$subject$
+
+〇Project description
 $opinion$
 
-【送信日時】
+〇Date
 $DATE$
+
+
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●
+[ KOHIMOTO ]
+Mail : info@kohimoto.com
+Url : https://kohimoto.com
+Add : 4-22-16 Minamicyo, Kichijyoji, Musashinoshi, Tokyo
+●●●●●●●●●●●●●●●●●●●●●●●●●●●●

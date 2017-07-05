@@ -3,13 +3,16 @@
 yƒVƒŠƒAƒ‹z
 $SIRIAL$
 
-y‚¨‚È‚Ü‚¦z
+yNamez
 $name$
 
-yƒ[ƒ‹ƒAƒhƒŒƒXz
+yE-mailz
 $mailaddress$
 
-yŠ´‘zz
+ySubjectz
+$subject$
+
+yProject descriptionz
 $opinion$
 
 yƒtƒ@ƒCƒ‹“Y•tz
