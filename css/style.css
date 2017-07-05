@@ -874,6 +874,7 @@ figure.img_h.hover figcaption p {
 }
 .works_d_f .works_head_text p{
   word-break: break-all;
+  line-height: 2;
 }
 .devise_detail {
   height: auto;
@@ -1095,26 +1096,32 @@ and (min-color-index:0)
     font-size: 1.75em;
   }
   .devise_title {
-      padding: 4em 0 3em;
+    padding: 4em 0 3em;
   }
   .devise_title h2 {
     font-size: 3em;
   }
   .works_f .link_m {
-      float: none;
+    float: none;
   }
   .works_f .color {
-      float: none;
-      font-size: 0.8333em;
+    float: none;
+    font-size: 0.8333em;
   }
   .works_c {
-      padding: 3em;
+    padding: 3em;
+  }
+  .works_c .works_c_d{
+    overflow: visible;
   }
   .works_c .works_c_d .works_c_dd {
-    width: 25%;
+    float: none;
+    width: 100%;
+    padding: 0 0 0.5em;
   }
   .works_c .works_c_d .works_c_dt {
-    width: 75%;
+    float: none;
+    width: 100%;
   }
   .works_d_f .works_head_text h2{
     font-size: 3em;
@@ -1125,12 +1132,6 @@ and (min-color-index:0)
   .works_d {
     height: 210px;
   }
-  .works_c .works_c_d .works_c_dd {
-    width: 30%;
-  }
-  .works_c .works_c_d .works_c_dt {
-    width: 70%;
-  }
   .works_d_f .works_head_text h2{
     font-size: 2.5em;
   }
@@ -1140,7 +1141,6 @@ and (min-color-index:0)
   background-image: url('../images/works/2017/kirsche/main.jpg');
 }
 .kirsche .works_d:hover {
-  /*background-image: none;*/
 }
 .kirsche .bg_d {
   background-color: #fff2f3;
