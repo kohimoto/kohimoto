@@ -658,9 +658,6 @@ footer .content {
 .art_g h2{
   padding: 0.5em 0 1em;
 }
-.slick-track {
-    border: 1px solid #000;
-}
 ul.slick-dots {
   overflow: hidden;
   margin: 0 auto;
