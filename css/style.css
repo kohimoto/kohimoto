@@ -65,8 +65,7 @@ a, a:hover, a:visited {
   text-decoration: none;
 }
 a:hover{
-  padding-bottom: 1px;
-  border-bottom: 1px #000 dotted;
+  text-decoration: underline;
 }
 .arrow_d{
   text-align: right;
@@ -199,7 +198,7 @@ header .menu ul{
 }
 header .menu ul li{
   font-family: 'Libre Baskerville', serif;
-  font-size: 0.875em;
+  font-size: 0.75em;
   float: left;
 }
 header .side-menu{
@@ -212,6 +211,7 @@ header .side-menu{
 }
 header .side-menu a:hover{
   border: none;
+  text-decoration: none;
 }
 header .copyright {
   bottom: 45vh;
@@ -627,7 +627,6 @@ footer .content {
 }
 .foot_d .link_s ul li{
   font-size: 0.75em;
-  font-family: 'Libre Baskerville', serif;
   float: left;
 }
 .foot_d .link_s ul li:nth-child(1){
@@ -1402,9 +1401,6 @@ and (min-color-index:0)
 #spectrumPlugin a.arrow {
   color: #1c18c4;
 }
-#spectrumPlugin a.arrow:hover {
-    border-bottom: 1px #1c18c4 dotted;
-}
 .form-label{
   position: relative;
   top: 32px;
@@ -1499,9 +1495,6 @@ span:not(.conf_input) .mCSB_draggerContainer {
 #spectrumPlugin .about .arrow_d a{
     color: #f71137;
 }
-#spectrumPlugin .about .arrow_d a:hover{
-    border-bottom: 1px #f71137 dotted;
-}
 #spectrumPlugin .about ul li {
   display: inline-block;
   padding-right: 2em;
@@ -1559,9 +1552,6 @@ span:not(.conf_input) .mCSB_draggerContainer {
 }
 #spectrumPlugin .member .arrow_d a{
     color: #00C1A6;
-}
-#spectrumPlugin .member .arrow_d a:hover{
-    border-bottom: 1px #00C1A6 dotted;
 }
 /* =======================================================
 * gallery
