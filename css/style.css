@@ -783,10 +783,11 @@ figure.img_h.hover figcaption p {
     margin-top: -0.7em;
     padding-bottom: 0.3928em;
     position: absolute;
+    font-size: 2.8em;
 }
 .btm{
   margin: 0em;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
 }
 .btm + footer{
   background-color: #f0f3f9;
@@ -814,7 +815,10 @@ figure.img_h.hover figcaption p {
       margin-top: -1.8em;
   }
   .btm {
-      padding-bottom: 16em;
+      padding-bottom: 10em;
+  }
+  .btm h2 {
+      font-size: 2.5em;
   }
 }
 @media (max-width: 375px) {
@@ -822,7 +826,10 @@ figure.img_h.hover figcaption p {
     padding-top: 2em;
   }
   .btm {
-      padding-bottom: 20em;
+      padding-bottom: 8em;
+  }
+  .btm h2 {
+      font-size: 2em;
   }
   figure.img_h figcaption p {
       font-size: 1em;
