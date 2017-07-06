@@ -1576,7 +1576,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 * ======================================================= */
 .gallery_f {
   overflow: hidden;
-  padding: 4em 0 0;
+  padding: 0;
 }
 .gallery_f .link_m{
   float: left;
@@ -1615,7 +1615,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
   border-left: 0;
   margin-left: 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .gallery_f .link_m{
     float: none;
     vertical-align: baseline;
