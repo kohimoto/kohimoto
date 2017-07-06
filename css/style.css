@@ -917,13 +917,13 @@ and (min-color-index:0)
 }
 .device_sp svg {
   z-index: 2;
-  width: 300px;
+  width: 299.5px;
   position: relative;
 }
 .device_sp .video {
   position: absolute;
-  top: 10.9%;
-  left: 6.4%;
+  top: 10.7%;
+  left: 6.47%;
   width: 87%;
   z-index: 1;
 }
