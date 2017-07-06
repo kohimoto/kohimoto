@@ -1586,6 +1586,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 .gallery_f .link_m ul{
   overflow: hidden;
   padding-bottom: 0.7142em;
+  padding-right: 2em;
 }
 .gallery_f .link_m ul li{
   font-size: 0.8571em;
