@@ -1615,7 +1615,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
   border-left: 0;
   margin-left: 0;
 }
-@media (max-width: 340px) {
+@media (max-width: 375px) {
   .gallery_f .link_m{
     float: none;
     vertical-align: baseline;
