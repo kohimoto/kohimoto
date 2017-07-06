@@ -1088,10 +1088,11 @@ and (min-color-index:0)
     width: 121.975px;
   }
   .device_pc .video {
-    top: 4.35%;
+    top: 4.3%;
   }
   .device_sp .video {
-    top: 10.15%;
+    top: 10.1%;
+    left: 6.4%;
   }
 }
 /*==================== works detail ---- SP ===================== */
