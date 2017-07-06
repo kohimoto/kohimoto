@@ -1082,16 +1082,16 @@ and (min-color-index:0)
     width: 219.6px;
   }
   .device_sp svg {
-    width: 139.5px;
+    width: 140px;
   }
   .device_sp .video video {
     width: 121.975px;
   }
   .device_pc .video {
-    top: 4.4%;
+    top: 4.35%;
   }
   .device_sp .video {
-    top: 10.18%;
+    top: 10.15%;
   }
 }
 /*==================== works detail ---- SP ===================== */
