@@ -136,6 +136,9 @@ h4{
   h2{
     font-size: 3em;
   }
+  p.h2_cap{
+    padding-bottom: 3.5em;
+  }
   h3{
     font-size: 2.3em;
   }
@@ -809,6 +812,7 @@ figure.img_h.hover figcaption p {
   .list_dtl {
       width: 100%;
       margin-left: 0;
+      margin-bottom: 3.5em;
   }
   .img_h {
       max-height: 100%;
