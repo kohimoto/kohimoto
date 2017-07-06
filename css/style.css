@@ -651,7 +651,7 @@ footer .content {
 * top
 * ======================================================= */
 .bg_top h3 {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .art_top .content {
   padding-bottom: 2em;
@@ -794,6 +794,9 @@ figure.img_h.hover figcaption p {
 }
 /*==================== top ---- SP ===================== */
 @media (max-width: 768px) {
+  .bg_top h3 {
+    font-size: 1.3em;
+  }
   .art_g {
     padding-top: 2.5em;
   }
