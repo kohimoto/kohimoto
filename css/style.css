@@ -948,6 +948,9 @@ and (min-color-index:0)
 }
 .device_sp .video video {
   width: 261.375px;
+  height: auto;
+  max-height: 100%;
+  min-width: 261.375px;
 }
 .works_f {
   overflow: hidden;
