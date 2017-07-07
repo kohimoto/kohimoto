@@ -28,5 +28,23 @@
 <script src="/js/jquery.spectrum.js"></script>
 <script src="/js/jquery.mCustomScrollbar.js"></script>
 <script src="/js/scroll.js"></script>
+<script type="text/javascript"></script>
+<script>
+var video = document.getElementById("myVideo");
+// 映像に再生終了時のイベントハンドラを設定
+video.addEventListener("ended", function(){
+alert("再生が終了しました");
+}, false);
+
+// 映像にtimeupdateのイベントハンドラを設定
+video.addEventListener("timeupdate", function(){
+document.getElementById("cTime").innerHTML = video.currentTime;
+}, false);
+
+// 再生ボタンにイベントを割り当て
+video.addEventListener("click", function(){
+video.play();
+}, false);
+</script>
 </body>
 </html>
