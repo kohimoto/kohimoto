@@ -30,21 +30,33 @@
 <script src="/js/scroll.js"></script>
 <script type="text/javascript"></script>
 <script>
-var video = document.getElementById("bgvid");
-// 映像に再生終了時のイベントハンドラを設定
-video.addEventListener("ended", function(){
-alert("再生が終了しました");
-}, false);
+// videoの取得
+var video = document.getElementById('bgvid');
+// 自動再生
+video.autoplay = true;
+// ループ
+video.loop = true;
 
-// 映像にtimeupdateのイベントハンドラを設定
-video.addEventListener("timeupdate", function(){
-document.getElementById("cTime").innerHTML = video.currentTime;
-}, false);
+// 再生状態になったとき
+video.addEventListener('play', function() {
+    console.log('再生中');
+});
+// 停止状態になったとき
+video.addEventListener('pause', function() {
+    console.log('停止中');
+});
 
-// 再生ボタンにイベントを割り当て
-video.addEventListener("click", function(){
-video.play();
-}, false);
+// 現在の経過時間
+var currentTime = document.getElementById('currentTime');
+video.addEventListener('timeupdate', function() {
+    currentTime.textContent = Math.floor(video.currentTime);
+});
+
+// 動画全体の時間
+var totalTime = document.getElementById('totalTime');
+video.addEventListener('loadedmetadata', function() {
+    totalTime.textContent = Math.floor(video.duration);
+});
 </script>
 </body>
 </html>
