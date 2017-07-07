@@ -28,35 +28,5 @@
 <script src="/js/jquery.spectrum.js"></script>
 <script src="/js/jquery.mCustomScrollbar.js"></script>
 <script src="/js/scroll.js"></script>
-<script type="text/javascript"></script>
-<script>
-// videoの取得
-var video = document.getElementById('bgvid');
-// 自動再生
-video.autoplay = true;
-// ループ
-video.loop = true;
-
-// 再生状態になったとき
-video.addEventListener('play', function() {
-    console.log('再生中');
-});
-// 停止状態になったとき
-video.addEventListener('pause', function() {
-    console.log('停止中');
-});
-
-// 現在の経過時間
-var currentTime = document.getElementById('currentTime');
-video.addEventListener('timeupdate', function() {
-    currentTime.textContent = Math.floor(video.currentTime);
-});
-
-// 動画全体の時間
-var totalTime = document.getElementById('totalTime');
-video.addEventListener('loadedmetadata', function() {
-    totalTime.textContent = Math.floor(video.duration);
-});
-</script>
 </body>
 </html>
