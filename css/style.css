@@ -857,6 +857,7 @@ figure.img_h.hover figcaption p {
 }
 .works_d .works_head_text {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
@@ -1088,10 +1089,11 @@ and (min-color-index:0)
     width: 121.975px;
   }
   .device_pc .video {
-    top: 4.5%;
+    top: 4%;
   }
   .device_sp .video {
-    top: 10.2%;
+    top: 9.8%;
+    left: 6.4%;
   }
 }
 /*==================== works detail ---- SP ===================== */
@@ -1575,7 +1577,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 * ======================================================= */
 .gallery_f {
   overflow: hidden;
-  padding: 4em 0 0;
+  padding: 0;
 }
 .gallery_f .link_m{
   float: left;
@@ -1584,6 +1586,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 .gallery_f .link_m ul{
   overflow: hidden;
   padding-bottom: 0.7142em;
+  padding-right: 2em;
 }
 .gallery_f .link_m ul li{
   font-size: 0.8571em;
@@ -1614,7 +1617,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
   border-left: 0;
   margin-left: 0;
 }
-@media (max-width: 340px) {
+@media (max-width: 768px) {
   .gallery_f .link_m{
     float: none;
     vertical-align: baseline;
