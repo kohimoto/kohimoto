@@ -1429,8 +1429,9 @@ and (min-color-index:0)
   z-index: 3;
 }
 .text-input {
-  padding: 1.5em 0 0.7em 0.5em;
+  padding: 1.5em 0.5em 0.7em 0.5em;
   font-size: 30px;
+  word-break: break-all;
 }
 textarea.text-input {
   -webkit-appearance: none;
