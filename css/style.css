@@ -1203,32 +1203,32 @@ and (min-color-index:0)
   background-image: url('/images/works/2017/risakoyamada/main_02.jpg');
 }
 .risakoyamada .bg_d {
-  background-color: #31498B;
+  background-color: #effff2;
 }
 .risakoyamada .devise_title h2 {
-  color: #F51F72;
+  color: #f71137;
 }
 .risakoyamada .works_f {
-  color: #F51F72;
+  color: #f71137;
 }
 .risakoyamada .works_f a{
-  color: #F51F72;
+  color: #f71137;
 }
 .risakoyamada .works_f a:hover{
   border: none;
 }
 .risakoyamada .works_f .line_s{
-  border-bottom: 1px solid #F51F72;
+  border-bottom: 1px solid #f71137;
 }
 .risakoyamada .works_f .color ul li:nth-child(1){
-  border-right: 1px solid #F51F72;
+  border-right: 1px solid #f71137;
 }
 .risakoyamada .works_c {
-  border: 2px solid #F51F72;
+  border: 2px solid #f71137;
   background-color: #fff;
 }
 .risakoyamada .works_c .works_c_d{
-  color: #F51F72;
+  color: #f71137;
 }
 .risakoyamada .bg_d_n {
   background-color: #f0f3f9;
@@ -1245,32 +1245,32 @@ and (min-color-index:0)
   background-image: url('../images/works/2017/llll/main.jpg');
 }
 .llll .bg_d {
-  background-color: #fdfad8;
+  background-color: #FFFAE1;
 }
 .llll .devise_title h2 {
-  color: #7C682A;
+  color: #00c1a6;
 }
 .llll .works_f {
-  color: #7C682A;
+  color: #00c1a6;
 }
 .llll .works_f a{
-  color: #7C682A;
+  color: #00c1a6;
 }
 .llll .works_f a:hover{
   border: none;
 }
 .llll .works_f .line_s{
-  border-bottom: 1px solid #7C682A;
+  border-bottom: 1px solid #00c1a6;
 }
 .llll .works_f .color ul li:nth-child(1){
-  border-right: 1px solid #7C682A;
+  border-right: 1px solid #00c1a6;
 }
 .llll .works_c {
-  border: 2px solid #7C682A;
+  border: 2px solid #00c1a6;
   background-color: #fff;
 }
 .llll .works_c .works_c_d{
-  color: #7C682A;
+  color: #00c1a6;
 }
 .llll .bg_d_n {
   background-color: #f0f3f9;
@@ -1287,42 +1287,42 @@ and (min-color-index:0)
   background-image: url('../images/works/2017/cocooilmask/main.jpg');
 }
 .cocooilmask .bg_d {
-  background-color: #E7FBFA;
+  background-color: #F0F3F9;
 }
 .cocooilmask .devise_title h2 {
-  color: #5C4BA0;
+  color: #1c18c4;
 }
 .cocooilmask .works_f {
-  color: #5C4BA0;
+  color: #1c18c4;
 }
 .cocooilmask .works_f a{
-  color: #5C4BA0;
+  color: #1c18c4;
 }
 .cocooilmask .works_f a:hover{
   border: none;
 }
 .cocooilmask .works_f .line_s{
-  border-bottom: 1px solid #5C4BA0;
+  border-bottom: 1px solid #1c18c4;
 }
 .cocooilmask .works_f .color ul li:nth-child(1){
-  border-right: 1px solid #5C4BA0;
+  border-right: 1px solid #1c18c4;
 }
 .cocooilmask .works_c {
-  border: 2px solid #5C4BA0;
+  border: 2px solid #1c18c4;
   background-color: #fff;
 }
 .cocooilmask .works_c .works_c_d{
-  color: #5C4BA0;
+  color: #1c18c4;
 }
 .cocooilmask .bg_d_n {
-  background-color: #f0f3f9;
+  background-color: #fff2f3;
 }
 .cocooilmask .works_d_f a {
   color: #000;
 }
 .cocooilmask .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/kirsche/main.jpg');
-  background-color: #f0f3f9;
+  background-color: #fff2f3;
 }
 
 /* =======================================================
