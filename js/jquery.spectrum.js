@@ -22,19 +22,19 @@ $.fn.spectrum = function(options) {
 	    // Colour 3 - blue
 	    {
 	       	src: 'colour3',
-	        colour: 'rgb(240, 243, 249)'
+	        colour: 'rgb(255, 250, 225)'
 	    },
 
 	    // Colour 4 - Pink
 	   	{
 	        src: 'colour4',
-		      colour: 'rgb(255, 242, 243)'
+	        colour: 'rgb(240, 243, 249)'
 	    },
 
 	    // Colour 5 - green
 	    {
 	        src: 'colour5',
-	        colour: 'rgb(239, 255, 242)'
+	        colour: 'rgb(240, 243, 249)'
 	    }
 	];
 
