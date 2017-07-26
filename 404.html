@@ -1,0 +1,21 @@
+<?
+$head_c = file_get_contents("./header.html");
+$head = preg_replace("/<title>.*<\/title>/","<title>404 Not Found</title>",$head_c);
+echo $head;
+?>
+<div class="err_p" style="padding:7em 0;">
+<div class="content member">
+<h4>404</h4>
+<h2>Not Found</h2>
+<section>
+<h3>Sorry, this page doesn’t exist. </h3>
+
+</section>
+    <div class="arrow_d" style="padding:7em 0 0;">
+    <a class="arrow" href="/">&#8594;&nbsp;Back&nbsp;to&nbsp;Top</a>
+    </div>
+</div>
+</div>
+<?
+include_once("./footer.html");
+?>
