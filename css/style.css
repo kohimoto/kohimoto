@@ -886,7 +886,7 @@ figure.img_h.hover figcaption p {
 .devise_title {
   padding: 6em 0 4em;
 }
-.devise_title h2 {
+.devise_title h4 {
   text-align: center;
 }
 .works_d_f .works_head_text p{
@@ -1163,7 +1163,7 @@ and (min-color-index:0)
 .kirsche .bg_d {
   background-color: #fff2f3;
 }
-.kirsche .devise_title h2 {
+.kirsche .devise_title h4 {
   color: #1c18c4;
 }
 .kirsche .works_f {
@@ -1205,7 +1205,7 @@ and (min-color-index:0)
 .risakoyamada .bg_d {
   background-color: #effff2;
 }
-.risakoyamada .devise_title h2 {
+.risakoyamada .devise_title h4 {
   color: #f71137;
 }
 .risakoyamada .works_f {
@@ -1247,7 +1247,7 @@ and (min-color-index:0)
 .llll .bg_d {
   background-color: #FFFAE1;
 }
-.llll .devise_title h2 {
+.llll .devise_title h4 {
   color: #00c1a6;
 }
 .llll .works_f {
@@ -1289,7 +1289,7 @@ and (min-color-index:0)
 .cocooilmask .bg_d {
   background-color: #F0F3F9;
 }
-.cocooilmask .devise_title h2 {
+.cocooilmask .devise_title h4 {
   color: #1c18c4;
 }
 .cocooilmask .works_f {
