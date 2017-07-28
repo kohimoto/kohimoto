@@ -1341,11 +1341,12 @@ and (min-color-index:0)
   padding-bottom: 0.5em;
 }
 
-#spectrumPlugin h2:not(.heading) {
+#spectrumPlugin h4:not(.heading) {
   position: relative;
-  top: -0.605em;
+  top: -0.6em;
   color: #1c18c4;
   padding-bottom: 0;
+  font-size: 5em;
 }
 #spectrumPlugin h3.heading {
   font-family: 'Gentium Book Basic', serif;
@@ -1503,7 +1504,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 /* =======================================================
 * about
 * ======================================================= */
-#spectrumPlugin .about h2{
+#spectrumPlugin .about h4{
   color: #f71137;
 }
 #spectrumPlugin .about h2.heading {
@@ -1561,7 +1562,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 /* =======================================================
 * member
 * ======================================================= */
-#spectrumPlugin .member h2{
+#spectrumPlugin .member h4{
   color: #00C1A6;
 }
 #spectrumPlugin .member h2.heading {
