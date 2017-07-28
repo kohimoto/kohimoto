@@ -1080,18 +1080,6 @@ and (min-color-index:0)
   .works_cap .pc_cap img {
     width: 700px;
   }
-  /*
-  .works_cap .sp_cap{
-    max-width: 720px;
-    width: 100%;
-  }
-  .works_cap .sp_cap ul li{
-    padding-left: 30px;
-  }
-  .works_cap .sp_cap ul li img{
-    max-width: 220px;
-    width: 100%;
-  }*/
 }
 @media (max-width: 875px) {
   .device_pc svg {
@@ -1109,18 +1097,6 @@ and (min-color-index:0)
   .works_cap .pc_cap img {
     width: 560px;
   }
-  /*
-  .works_cap .sp_cap{
-    max-width: 560px;
-    width: 100%;
-  }
-  .works_cap .sp_cap ul li{
-    padding-left: 25px;
-  }
-  .works_cap .sp_cap ul li img{
-    max-width: 170px;
-    width: 100%;
-  }*/
 }
 @media (max-width: 600px) {
   .device_pc svg {
@@ -1262,14 +1238,14 @@ and (min-color-index:0)
   color: #1c18c4;
 }
 .kirsche .bg_d_n {
-  background-color: #f0f3f9;
+  background-color: #effff2;
 }
 .kirsche .works_d_f a {
   color: #000;
 }
 .kirsche .works_d_f .works_foot_img{
   background-image: url('/images/works/2017/risakoyamada/main_02.jpg');
-  background-color: #f0f3f9;
+  background-color: #effff2;
 }
 /*==================== risakoyamada_detail ===================== */
 .risakoyamada .works_d {
@@ -1304,14 +1280,14 @@ and (min-color-index:0)
   color: #f71137;
 }
 .risakoyamada .bg_d_n {
-  background-color: #f0f3f9;
+  background-color: #FFFAE1;
 }
 .risakoyamada .works_d_f a {
   color: #000;
 }
 .risakoyamada .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/llll/main.jpg');
-  background-color: #f0f3f9;
+  background-color: #FFFAE1;
 }
 /*==================== llll_detail ===================== */
 .llll .works_d {
@@ -1346,14 +1322,14 @@ and (min-color-index:0)
   color: #00c1a6;
 }
 .llll .bg_d_n {
-  background-color: #f0f3f9;
+  background-color: #F0F3F9;
 }
 .llll .works_d_f a {
   color: #000;
 }
 .llll .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/cocooilmask/main.jpg');
-  background-color: #f0f3f9;
+  background-color: #F0F3F9;
 }
 /*==================== cocooilmask_detail ===================== */
 .cocooilmask .works_d {
