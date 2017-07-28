@@ -906,7 +906,7 @@ figure.img_h.hover figcaption p {
 }
 .device_pc .video {
   position: absolute;
-  top: 5%;
+  top: 4.8%;
   left: 4.4%;
   width: 91.2%;
 }
@@ -930,8 +930,8 @@ and (min-color-index:0)
 }
 .device_sp .video {
   position: absolute;
-  top: 10.7%;
-  left: 6.47%;
+  top: 10.2%;
+  left: 6.4%;
   width: 87%;
   z-index: 1;
 }
