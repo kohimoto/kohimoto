@@ -949,8 +949,19 @@ and (min-color-index:0)
 .device_sp .video video {
   width: 261.375px;
 }
+.works_cap {
+  text-align: center
+}
+.works_cap .pc_cap{
+  padding-bottom: 6em;
+}
+.works_cap .pc_cap img{
+  max-width: 900px;
+  width: 100%;
+}
 .works_f {
   overflow: hidden;
+  text-align: left;
 }
 .works_f .link_m{
   float: left;
@@ -1165,6 +1176,12 @@ and (min-color-index:0)
 }
 .kirsche .devise_title h4 {
   color: #1c18c4;
+}
+.kirsche .works_cap .pc_cap img{
+  border: 1.5px solid #1c18c4;
+}
+.kirsche .works_cap .sp_cap img{
+  border: 1px solid #1c18c4;
 }
 .kirsche .works_f {
   color: #1c18c4;
