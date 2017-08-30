@@ -99,6 +99,7 @@
 .slick-initialized .slick-slide
 {
     display: block;
+    padding: 0 0.5em;
 }
 .slick-loading .slick-slide
 {
