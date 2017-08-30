@@ -1569,6 +1569,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 }
 #spectrumPlugin .about ul li {
   display: inline-block;
+  padding-bottom: 1em;
   padding-right: 2em;
 }
 #spectrumPlugin .about li.add:not(:nth-child(1)):before{
