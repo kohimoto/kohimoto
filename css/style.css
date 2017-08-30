@@ -1425,17 +1425,19 @@ and (min-color-index:0)
 #spectrumPlugin button {
   cursor: pointer;
   color: #1c18c4;
-  border: 2px solid #1c18c4;
+  border: 1px solid #1c18c4;
   padding: 14px 25px;
   font-size: 30px;
   line-height: 1;
   font-weight: bold;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #fff;
   margin: 0 10px;
 }
 #spectrumPlugin button:hover {
-  background-color: rgba(255,255,255,0.3);
+  /*background-color: rgba(255,255,255,0.3);*/
+  color: #fff;
+  background-color: #1c18c4;
 }
 #spectrumPlugin  form p {
   margin-bottom: -10px;
@@ -1576,14 +1578,16 @@ span:not(.conf_input) .mCSB_draggerContainer {
   padding-bottom: 3em;
 }
 #spectrumPlugin .about ul li:not(.add) {
-  border: 2px solid;
+  border: 1px solid #f71137;
   text-align: center;
-  padding: 20px;
+  padding: 20px 25px;
   background: #fff;
 }
+/*
 #spectrumPlugin .about ul li:not(.add):not(:first-child) {
   margin-left: -1em;
 }
+*/
 #spectrumPlugin .about ul li:not(.add) span {
   font-size: 80%;
 }
@@ -1612,16 +1616,16 @@ span:not(.conf_input) .mCSB_draggerContainer {
 * member
 * ======================================================= */
 #spectrumPlugin .member h4{
-  color: #00C1A6;
+  color: #00D2B5;
 }
 #spectrumPlugin .member h2.heading {
-    color: #00C1A6;
+    color: #00D2B5;
 }
 #spectrumPlugin .member {
-    color: #00C1A6;
+    color: #00D2B5;
 }
 #spectrumPlugin .member .arrow_d a{
-    color: #00C1A6;
+    color: #00D2B5;
 }
 /* =======================================================
 * gallery
