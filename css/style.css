@@ -1393,9 +1393,7 @@ and (min-color-index:0)
 #spectrumPlugin h2:not(.heading) {
   position: relative;
   top: -0.6em;
-  color: #1c18c4;
   padding-bottom: 0;
-  font-size: 5em;
 }
 #spectrumPlugin h3.heading {
   font-family: 'Gentium Book Basic', serif;
