@@ -1390,7 +1390,7 @@ and (min-color-index:0)
   padding-bottom: 0.5em;
 }
 
-#spectrumPlugin h4:not(.heading) {
+#spectrumPlugin h2:not(.heading) {
   position: relative;
   top: -0.6em;
   color: #1c18c4;
