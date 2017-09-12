@@ -114,7 +114,7 @@ h4{
   display: block;
   width: 100%;
   padding-bottom: 3em;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   margin-bottom: 2em;
 }
 /*====================common ---- SP===================== */
@@ -897,7 +897,7 @@ figure.img_h.hover figcaption p {
   height: auto;
   text-align: center;
   position: relative;
-  padding-bottom: 4em;
+  padding-bottom: 6em;
 }
 .device_pc svg {
   z-index: 2;
@@ -906,7 +906,7 @@ figure.img_h.hover figcaption p {
 }
 .device_pc .video {
   position: absolute;
-  top: 5%;
+  top: 4.8%;
   left: 4.4%;
   width: 91.2%;
 }
@@ -930,8 +930,8 @@ and (min-color-index:0)
 }
 .device_sp .video {
   position: absolute;
-  top: 10.7%;
-  left: 6.47%;
+  top: 10.2%;
+  left: 6.4%;
   width: 87%;
   z-index: 1;
 }
@@ -957,6 +957,26 @@ and (min-color-index:0)
 }
 .works_cap .pc_cap img{
   max-width: 900px;
+  width: 100%;
+}
+.works_cap .sp_cap{
+  padding-bottom: 6em;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+.works_cap .sp_cap ul{
+  overflow: hidden;
+}
+.works_cap .sp_cap ul li{
+  float: left;
+  margin-left: 8%;
+  width: 28%
+}
+.works_cap .sp_cap ul li:first-child{
+  margin-left: 0;
+}
+.works_cap .sp_cap ul li img{
   width: 100%;
 }
 .works_f {
@@ -1057,6 +1077,9 @@ and (min-color-index:0)
   .device_pc .video video {
     width: 695.4px;
   }
+  .works_cap .pc_cap img {
+    width: 700px;
+  }
 }
 @media (max-width: 875px) {
   .device_pc svg {
@@ -1071,6 +1094,9 @@ and (min-color-index:0)
   .device_sp .video video {
     width: 209.1px;
   }
+  .works_cap .pc_cap img {
+    width: 560px;
+  }
 }
 @media (max-width: 600px) {
   .device_pc svg {
@@ -1084,6 +1110,9 @@ and (min-color-index:0)
   }
   .device_sp .video video {
     width: 174.5px;
+  }
+  .works_cap .pc_cap img {
+    width: 400px;
   }
 }
 @media (max-width: 440px) {
@@ -1105,6 +1134,9 @@ and (min-color-index:0)
   .device_sp .video {
     top: 9.8%;
     left: 6.4%;
+  }
+  .works_cap .pc_cap img {
+    width: 240px;
   }
 }
 /*==================== works detail ---- SP ===================== */
@@ -1206,14 +1238,14 @@ and (min-color-index:0)
   color: #1c18c4;
 }
 .kirsche .bg_d_n {
-  background-color: #f0f3f9;
+  background-color: #effff2;
 }
 .kirsche .works_d_f a {
   color: #000;
 }
 .kirsche .works_d_f .works_foot_img{
   background-image: url('/images/works/2017/risakoyamada/main_02.jpg');
-  background-color: #f0f3f9;
+  background-color: #effff2;
 }
 /*==================== risakoyamada_detail ===================== */
 .risakoyamada .works_d {
@@ -1248,14 +1280,14 @@ and (min-color-index:0)
   color: #f71137;
 }
 .risakoyamada .bg_d_n {
-  background-color: #f0f3f9;
+  background-color: #FFFAE1;
 }
 .risakoyamada .works_d_f a {
   color: #000;
 }
 .risakoyamada .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/llll/main.jpg');
-  background-color: #f0f3f9;
+  background-color: #FFFAE1;
 }
 /*==================== llll_detail ===================== */
 .llll .works_d {
@@ -1290,14 +1322,14 @@ and (min-color-index:0)
   color: #00c1a6;
 }
 .llll .bg_d_n {
-  background-color: #f0f3f9;
+  background-color: #F0F3F9;
 }
 .llll .works_d_f a {
   color: #000;
 }
 .llll .works_d_f .works_foot_img{
   background-image: url('../images/works/2017/cocooilmask/main.jpg');
-  background-color: #f0f3f9;
+  background-color: #F0F3F9;
 }
 /*==================== cocooilmask_detail ===================== */
 .cocooilmask .works_d {
@@ -1358,12 +1390,10 @@ and (min-color-index:0)
   padding-bottom: 0.5em;
 }
 
-#spectrumPlugin h4:not(.heading) {
+#spectrumPlugin h2:not(.heading) {
   position: relative;
   top: -0.6em;
-  color: #1c18c4;
   padding-bottom: 0;
-  font-size: 5em;
 }
 #spectrumPlugin h3.heading {
   font-family: 'Gentium Book Basic', serif;
@@ -1393,17 +1423,19 @@ and (min-color-index:0)
 #spectrumPlugin button {
   cursor: pointer;
   color: #1c18c4;
-  border: 2px solid #1c18c4;
+  border: 1px solid #1c18c4;
   padding: 14px 25px;
   font-size: 30px;
   line-height: 1;
   font-weight: bold;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: #fff;
   margin: 0 10px;
 }
 #spectrumPlugin button:hover {
-  background-color: rgba(255,255,255,0.3);
+  /*background-color: rgba(255,255,255,0.3);*/
+  color: #fff;
+  background-color: #1c18c4;
 }
 #spectrumPlugin  form p {
   margin-bottom: -10px;
@@ -1535,6 +1567,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
 }
 #spectrumPlugin .about ul li {
   display: inline-block;
+  padding-bottom: 1em;
   padding-right: 2em;
 }
 #spectrumPlugin .about li.add:not(:nth-child(1)):before{
@@ -1544,14 +1577,16 @@ span:not(.conf_input) .mCSB_draggerContainer {
   padding-bottom: 3em;
 }
 #spectrumPlugin .about ul li:not(.add) {
-  border: 2px solid;
+  border: 1px solid #f71137;
   text-align: center;
-  padding: 20px;
+  padding: 20px 25px;
   background: #fff;
 }
+/*
 #spectrumPlugin .about ul li:not(.add):not(:first-child) {
   margin-left: -1em;
 }
+*/
 #spectrumPlugin .about ul li:not(.add) span {
   font-size: 80%;
 }
@@ -1580,16 +1615,16 @@ span:not(.conf_input) .mCSB_draggerContainer {
 * member
 * ======================================================= */
 #spectrumPlugin .member h4{
-  color: #00C1A6;
+  color: #00D2B5;
 }
 #spectrumPlugin .member h2.heading {
-    color: #00C1A6;
+    color: #00D2B5;
 }
 #spectrumPlugin .member {
-    color: #00C1A6;
+    color: #00D2B5;
 }
 #spectrumPlugin .member .arrow_d a{
-    color: #00C1A6;
+    color: #00D2B5;
 }
 /* =======================================================
 * gallery
