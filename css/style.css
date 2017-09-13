@@ -186,7 +186,7 @@ header .g_fix_w{
 }
 header .cherry {
   position: absolute;
-  left: 1em;
+  left: 2em;
 }
 header .cherry a:hover,
 header .cherry a:active {
@@ -219,7 +219,7 @@ header .side-menu a:hover{
 header .copyright {
   bottom: 45vh;
   position: absolute;
-  left: 1.5em;
+  left: 4em;
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   margin-top: 0;
@@ -245,7 +245,7 @@ header .copyright {
 }
 header .get {
   position: absolute;
-  right: 1.5em;
+  right: 4em;
   bottom: 45vh;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
@@ -303,10 +303,10 @@ nav#fh5co-main-nav{
     width: 1em;
   }
   header .copyright {
-    left: 0.5em;
+    left: 1em;
   }
   header .get {
-    right: 0.5em;
+    right: 1em;
   }
 
 }
