@@ -55,7 +55,7 @@ input, select {
 * ======================================================= */
 body {
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.8;
   color: #000;
   font-family: 'Poppins',"Yu Gothic",YuGothic, sans-serif;
   font-weight: 700;
@@ -597,6 +597,9 @@ nav#fh5co-main-nav{
 /* =======================================================
 * footer
 * ======================================================= */
+footer {
+  line-height: 1.4;
+}
 footer .content {
   padding-bottom: 4em;
 }
@@ -1693,7 +1696,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
   left: 0px;
   background: #fff;
   z-index: 1;
-  margin 0 auto;
+  margin: 0 auto;
 }
 #loader {
   display: none;
