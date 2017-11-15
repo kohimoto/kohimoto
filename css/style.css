@@ -114,7 +114,7 @@ h4{
   display: block;
   width: 100%;
   padding-bottom: 3em;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   margin-bottom: 2em;
 }
 /*====================common ---- SP===================== */
@@ -714,7 +714,7 @@ ul.slick-dots li.slick-active {
   width: calc(50% - 3.5714em / 2);
   margin-left: 3.5714em;
   padding-bottom: 4.2857em;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   margin-bottom: 5.7142em;
 }
 .list_dtl:nth-child(odd) {
