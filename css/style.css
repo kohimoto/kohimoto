@@ -1693,7 +1693,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
   top: 0px;
   left: 0px;
   background: #fff;
-  z-index: 1;
+  z-index: 11;
   margin: 0 auto;
 }
 #loader {
