@@ -85,7 +85,7 @@ h1{
 h2{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 3.5em;
+  font-size: 4.5em;
   padding-bottom: 0.2em;
 }
 p.h2_cap{
@@ -654,6 +654,12 @@ footer .content {
 /* =======================================================
 * top
 * ======================================================= */
+.bg_top h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 4em;
+    padding: 0.1em 0 0.1em;
+}
 .bg_top h3 {
   font-size: 1.5em;
 }
@@ -1433,7 +1439,7 @@ and (min-color-index:0)
   cursor: pointer;
   color: #1c18c4;
   border: 1px solid #1c18c4;
-  padding: 14px 25px;
+  padding: 25px 50px;
   font-size: 30px;
   line-height: 1;
   font-weight: bold;
@@ -1589,7 +1595,8 @@ span:not(.conf_input) .mCSB_draggerContainer {
   border: 1px solid #f71137;
   text-align: center;
   padding: 20px 25px;
-  background: #fff;
+  /*background: #fff;*/
+  margin-bottom: 5px;
 }
 /*
 #spectrumPlugin .about ul li:not(.add):not(:first-child) {
@@ -1614,6 +1621,7 @@ span:not(.conf_input) .mCSB_draggerContainer {
   #spectrumPlugin .about ul li:not(.add){
     display: block;
     width: 100%;
+    margin-bottom: 0;
   }
   #spectrumPlugin .about ul li:not(.add):not(:first-child) {
     margin-left: 0;
