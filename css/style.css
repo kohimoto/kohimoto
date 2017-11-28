@@ -684,7 +684,7 @@ ul.slick-dots li:nth-child(1) {
 ul.slick-dots li {
   width: 1.125em;
   height: 0.1875em;
-  background-color: #666;
+  background-color: #999;
   float: left;
   margin: 0 0 1em 1em;
   cursor: pointer;
@@ -695,8 +695,6 @@ ul.slick-dots li.slick-active {
 ul.slick-dots li button {
   display: none;
 }
-
-
 .flexslider .slides {
   padding: 0 0 3em;
 }
@@ -807,6 +805,7 @@ figure.img_h.hover figcaption p {
   background-color: #f0f3f9;
 }
 /*==================== top ---- SP ===================== */
+
 @media (max-width: 768px) {
   .bg_top h3 {
     font-size: 1.3em;
@@ -889,7 +888,7 @@ figure.img_h.hover figcaption p {
   -webkit-transform: translate(-50%, -50%); /* Safari用 */
   transform: translate(-50%, -50%);
 }
-.works_d > img{
+.works_d > img {
   opacity: 0.5;
   width: 100%;
   height: 100%;
@@ -963,31 +962,31 @@ and (min-color-index:0)
 .works_cap {
   text-align: center
 }
-.works_cap .pc_cap{
+.works_cap .pc_cap {
   padding-bottom: 6em;
 }
-.works_cap .pc_cap img{
+.works_cap .pc_cap img {
   max-width: 900px;
   width: 100%;
 }
-.works_cap .sp_cap{
+.works_cap .sp_cap {
   padding-bottom: 6em;
   margin: 0 auto;
   max-width: 960px;
   width: 100%;
 }
-.works_cap .sp_cap ul{
+.works_cap .sp_cap ul {
   overflow: hidden;
 }
-.works_cap .sp_cap ul li{
+.works_cap .sp_cap ul li {
   float: left;
   margin-left: 8%;
   width: 28%
 }
-.works_cap .sp_cap ul li:first-child{
+.works_cap .sp_cap ul li:first-child {
   margin-left: 0;
 }
-.works_cap .sp_cap ul li img{
+.works_cap .sp_cap ul li img {
   width: 100%;
 }
 .works_f {
