@@ -11,7 +11,10 @@ $(document).ready(function(){
 });
 
 $('.slick-slider').slick({
-slidesToShow: 4, //通常 1024px以上の領域では4画像表示
+slidesToShow: 3,
+arrows: false,
+dots: true,
+autoplay: true,
   responsive: [ //レスポンシブの設定
   {
     breakpoint: 480, //ブレークポイント1の値

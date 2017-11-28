@@ -692,6 +692,10 @@ ul.slick-dots li {
 ul.slick-dots li.slick-active {
   background-color: #000;
 }
+ul.slick-dots li button {
+  display: none;
+}
+
 
 .flexslider .slides {
   padding: 0 0 3em;

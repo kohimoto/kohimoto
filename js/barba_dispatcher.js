@@ -53,37 +53,6 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
       // advanced:{updateOnContentResize: true},
       // theme: "dark-thin"
       //});
-
-      //------- slick ------//
-/*
-      $('.slick-slider').slick({
-        slidesToShow: 4, //通常 1024px以上の領域では4画像表示
-    		responsive: [{
-    			breakpoint: 480,
-          settings: { //480px以下では1画像表示
-    				slidesToShow: 1,
-    			}
-    		}]
-      });
-      */
-
-
-/*
-        $('.slick-slider').slick({
-        slidesToShow: 4, //通常 1024px以上の領域では4画像表示
-          responsive: [ //レスポンシブの設定
-          {
-            breakpoint: 480, //ブレークポイント1の値
-            settings: { //480px以下では1画像表示
-      				slidesToShow: 1
-      			}
-          }]
-        });
-
-        */
-
-
-
       break;
       }
       });
