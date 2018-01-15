@@ -676,9 +676,12 @@ ul.slick-dots {
   overflow: hidden;
   margin: 0 auto;
   padding: 4em 0 0;
-  width: 7em;
+  width: 11.5em;
 }
 /* ///Anaismiyasoko/// */
+.gaetano_cartone ul.slick-dots {
+  width: 7em;
+}
 .anaismiyasoko ul.slick-dots {
   width: 11.5em;
 }
