@@ -790,9 +790,11 @@ figure.img_h.hover figcaption p {
   position: relative;
   overflow: hidden;
 }
+/*
 .list_des p{
   float: right;
 }
+*/
 .bg_top{
   background-color: #fff;
 }
@@ -1215,6 +1217,58 @@ and (min-color-index:0)
     font-size: 2.5em;
   }
 }
+/*==================== silva_detail ===================== */
+.silva .works_d {
+  background-image: url('../images/works/2018/silva/main.jpg');
+}
+.silva .works_d:hover {
+}
+/*
+.kirsche .bg_d {
+  background-color: #FFFAE1;
+}
+*/
+.silva .devise_title h4 {
+  color: #000330;
+}
+.silva .works_cap .pc_cap img{
+  border: 1.5px solid #000330;
+}
+.silva .works_cap .sp_cap img{
+  border: 1px solid #000330;
+}
+.silva .works_f {
+  color: #000330;
+}
+.silva .works_f a {
+  color: #000330;
+}
+.silva .works_f a:hover {
+  border: none;
+}
+.silva .works_f .line_s{
+  border-bottom: 1px solid #000330;
+}
+.silva .works_f .color ul li:nth-child(1){
+  border-right: 1px solid #000330;
+}
+.silva .works_c {
+  border: 2px solid #000330;
+  background-color: #fff;
+}
+.silva .works_c .works_c_d{
+  color: #000330;
+}
+.silva .bg_d_n {
+  background-color: #fff2f3;
+}
+.silva .works_d_f a {
+  color: #000;
+}
+.silva .works_d_f .works_foot_img{
+  background-image: url('/images/works/2017/kirsche/main.jpg');
+  background-color: #fff2f3;
+}
 /*==================== kirsche_detail ===================== */
 .kirsche .works_d {
   background-image: url('../images/works/2017/kirsche/main.jpg');
@@ -1390,14 +1444,14 @@ and (min-color-index:0)
   color: #00D2B5;
 }
 .cocooilmask .bg_d_n {
-  background-color: #fff2f3;
+  background-color: #FFFAE1;
 }
 .cocooilmask .works_d_f a {
   color: #000;
 }
 .cocooilmask .works_d_f .works_foot_img{
-  background-image: url('../images/works/2017/kirsche/main.jpg');
-  background-color: #fff2f3;
+  background-image: url('../images/works/2018/silva/main.jpg');
+  background-color: #FFFAE1;
 }
 
 /* =======================================================
