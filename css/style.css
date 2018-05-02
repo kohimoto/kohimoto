@@ -295,7 +295,7 @@ nav#fh5co-main-nav{
     font-size: 0.8571em;
   }
   header .cherry {
-    left: 0.5em;
+    left: 0.8em;
   }
   header .cherry img{
     width: 1em;
@@ -487,8 +487,8 @@ nav#fh5co-main-nav{
     display: inline-block;
     zoom: 1;
     *display: inline;
-    width: 30px;
-    height: 2.5px;
+    width: 25px;
+    height: 2px;
     color: #000;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
@@ -502,8 +502,8 @@ nav#fh5co-main-nav{
   }
   .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
     content: '';
-    width: 30px;
-    height: 2.5px;
+    width: 25px;
+    height: 2px;
     background: #000;
     position: absolute;
     left: 0;
@@ -1216,6 +1216,58 @@ and (min-color-index:0)
   .works_d_f .works_head_text h2{
     font-size: 2.5em;
   }
+}
+/*==================== sharedine_detail ===================== */
+.sharedine .works_d {
+  background-image: url('../images/works/2018/sharedine/main.jpg');
+}
+.sharedine .works_d:hover {
+}
+/*
+.kirsche .bg_d {
+  background-color: #FFFAE1;
+}
+*/
+.sharedine .devise_title h4 {
+  color: #1e1100;
+}
+.sharedine .works_cap .pc_cap img{
+  border: 1.5px solid #1e1100;
+}
+.sharedine .works_cap .sp_cap img{
+  border: 1px solid #1e1100;
+}
+.sharedine .works_f {
+  color: #1e1100;
+}
+.sharedine .works_f a {
+  color: #1e1100;
+}
+.sharedine .works_f a:hover {
+  border: none;
+}
+.sharedine .works_f .line_s{
+  border-bottom: 1px solid #1e1100;
+}
+.sharedine .works_f .color ul li:nth-child(1){
+  border-right: 1px solid #1e1100;
+}
+.sharedine .works_c {
+  border: 2px solid #1e1100;
+  background-color: #fff;
+}
+.sharedine .works_c .works_c_d{
+  color: #1e1100;
+}
+.sharedine .bg_d_n {
+  background-color: #F0F3F9;
+}
+.sharedine .works_d_f a {
+  color: #000;
+}
+.sharedine .works_d_f .works_foot_img{
+  background-image: url('/images/works/2018/silve/main.jpg');
+  background-color: #F0F3F9;
 }
 /*==================== silva_detail ===================== */
 .silva .works_d {
