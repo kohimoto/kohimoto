@@ -1203,6 +1203,7 @@ and (min-color-index:0)
   .works_c .works_c_d .works_c_dt {
     float: none;
     width: 100%;
+    word-break: break-all;
   }
   .works_d_f .works_head_text h2{
     font-size: 3em;
