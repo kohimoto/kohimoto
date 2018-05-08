@@ -1217,6 +1217,50 @@ and (min-color-index:0)
     font-size: 2.5em;
   }
 }
+/*==================== risakoyamada_detail ===================== */
+.risakoyamada .works_d {
+  background-image: url('/images/works/2018/akisatoru/main.jpg');
+}
+/*
+.risakoyamada .bg_d {
+  background-color: #effff2;
+}
+*/
+.risakoyamada .devise_title h4 {
+  color: #f71137;
+}
+.risakoyamada .works_f {
+  color: #f71137;
+}
+.risakoyamada .works_f a{
+  color: #f71137;
+}
+.risakoyamada .works_f a:hover{
+  border: none;
+}
+.risakoyamada .works_f .line_s{
+  border-bottom: 1px solid #f71137;
+}
+.risakoyamada .works_f .color ul li:nth-child(1){
+  border-right: 1px solid #f71137;
+}
+.risakoyamada .works_c {
+  border: 2px solid #f71137;
+  background-color: #fff;
+}
+.risakoyamada .works_c .works_c_d{
+  color: #f71137;
+}
+.risakoyamada .bg_d_n {
+  background-color: #FFFAE1;
+}
+.risakoyamada .works_d_f a {
+  color: #000;
+}
+.risakoyamada .works_d_f .works_foot_img{
+  background-image: url('../images/works/2018/sharedine/main.jpg');
+  background-color: #FFFAE1;
+}
 /*==================== sharedine_detail ===================== */
 .sharedine .works_d {
   background-image: url('../images/works/2018/sharedine/main.jpg');
