@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=UTF-8">
+
+<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="./js/three.min.js"></script>
+<script type="text/javascript" src="./js/jquery.onebook3d-2.33.js?2"></script>
+
+
+<script>
+
+$(function(){
+
+	var arr = [];
+
+	arr[0] = [
+		'ga02/001.jpg', 
+		'ga02/002.jpg', 'ga02/003.jpg',
+		'ga02/004.jpg', 'ga02/005.jpg',
+		'ga02/006.jpg', 'ga02/007.jpg',
+		'ga02/008.jpg', 'ga02/009.jpg',
+		'ga02/010.jpg', 'ga02/011.jpg',
+		'ga02/012.jpg'
+		];	
+
+	arr[1] = [
+		'ga03/001.jpg', 
+		'ga03/002.jpg', 'ga03/003.jpg',
+		'ga03/004.jpg', 'ga03/005.jpg',
+		'ga03/006.jpg', 'ga03/007.jpg',
+		'ga03/008.jpg', 'ga03/009.jpg',
+		'ga03/010.jpg', 'ga03/011.jpg',
+		'ga03/012.jpg'
+		];
+
+	arr[2] = [
+		'ga04/001.jpg', 
+		'ga04/002.jpg', 'ga04/003.jpg',
+		'ga04/004.jpg', 'ga04/005.jpg',
+		'ga04/006.jpg', 'ga04/007.jpg',
+		'ga04/008.jpg', 'ga04/009.jpg',
+		'ga04/010.jpg'
+		];					
+	
+	
+	$('#photobook').onebook(arr[2]);
+
+
+	$('#book-links a').each(function(i){
+		$(this).on('click',function(){
+
+			if(arr&&arr[i]){
+				$('#photobook').onebook(arr[i]);		
+			};
+
+			return false;		
+		});
+	});
+
+
+
+		
+});
+
+
+</script>
+
+
+<style>
+html,body{width:100%;margin:0px;padding:0px;background:#e0604a url('./i/bg2.jpg');color:#000000;min-width:800px;}
+body * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+.links a:link,.links a:visited{color:black;text-decoration:none;font:20px sans-serif;}
+.links a:hover{color:black;text-decoration:underline;}
+
+.red {border:1px solid #ffc30d;}
+.red-filled {background:#e0604a;border:1px solid #ffc30d;}
+.blue {background:#67BCCF;}
+
+.section {width:900px;border-radius:10px; margin:50px auto;}
+.section p{text-align:center;margin:0px;padding:20px;font:16px sans-serif;line-height:140%;}
+.section p strong {color:gold;}
+
+.section-list {width:900px;border-radius:10px;margin:50px auto;}
+
+.address{margin:0px auto 50px auto;padding:0px;width:800px;text-align:center;}
+.address, .address a{font:16px arial, sans-serif;color:black;}
+
+#book-links {text-align: center;padding: 10px;color: white;}
+#book-links a:link, #book-links a:visited {color: white;font:24px sans-serif;text-decoration: none;}
+#book-links a:hover {text-decoration: underline;}
+
+</style>
+
+</head>
+<body>
+
+<h1 style="text-align:center;margin:50px auto 50px auto;color:white;font:16px arial;">OneBook3D 2.33 (update 07.03.2017)</h1>	
+
+<div class="section red">
+<div style="padding:30px;">
+	<div id="photobook" style="height:150px;"></div> 
+</div>
+
+	<div id="book-links">
+		<a href="#">book-1</a>, <a href="#">book-2</a>, <a href="#">book-3</a>
+	</div>	
+
+</div>
+
+
+<p class="address">Home page: <a href="http://www.onebook3d.riadesign.ru" target="_blank">www.onebook3d.riadesign.ru</a>, 2015-2017</p>
+
+</body>
+</html>

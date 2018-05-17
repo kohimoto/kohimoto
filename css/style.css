@@ -685,7 +685,9 @@ ul.slick-dots {
 .anaismiyasoko ul.slick-dots {
   width: 11.5em;
 }
-
+.tatiana_bugaenko ul.slick-dots {
+  width: 25em;
+}
 ul.slick-dots li:nth-child(1) {
   margin: 0 0 1em 0;
 }
