@@ -1224,11 +1224,6 @@ and (min-color-index:0)
 .akisatoru .works_d {
   background-image: url('/images/works/2018/akisatoru/main.jpg');
 }
-/*
-.risakoyamada .bg_d {
-  background-color: #effff2;
-}
-*/
 .akisatoru .devise_title h4 {
   color: #f71137;
 }
@@ -1270,16 +1265,11 @@ and (min-color-index:0)
 }
 .sharedine .works_d:hover {
 }
-/*
-.kirsche .bg_d {
-  background-color: #FFFAE1;
-}
-*/
 .sharedine .devise_title h4 {
   color: #1e1100;
 }
 .sharedine .works_cap .pc_cap img{
-  border: 1.5px solid #1e1100;
+  border: 1px solid #1e1100;
 }
 .sharedine .works_cap .sp_cap img{
   border: 1px solid #1e1100;
@@ -1322,16 +1312,11 @@ and (min-color-index:0)
 }
 .silva .works_d:hover {
 }
-/*
-.kirsche .bg_d {
-  background-color: #FFFAE1;
-}
-*/
 .silva .devise_title h4 {
   color: #000330;
 }
 .silva .works_cap .pc_cap img{
-  border: 1.5px solid #000330;
+  border: 1px solid #000330;
 }
 .silva .works_cap .sp_cap img{
   border: 1px solid #000330;
@@ -1374,16 +1359,11 @@ and (min-color-index:0)
 }
 .kirsche .works_d:hover {
 }
-/*
-.kirsche .bg_d {
-  background-color: #fff2f3;
-}
-*/
 .kirsche .devise_title h4 {
   color: #1c18c4;
 }
 .kirsche .works_cap .pc_cap img{
-  border: 1.5px solid #1c18c4;
+  border: 1px solid #1c18c4;
 }
 .kirsche .works_cap .sp_cap img{
   border: 1px solid #1c18c4;
@@ -1424,11 +1404,6 @@ and (min-color-index:0)
 .risakoyamada .works_d {
   background-image: url('/images/works/2017/risakoyamada/main_02.jpg');
 }
-/*
-.risakoyamada .bg_d {
-  background-color: #effff2;
-}
-*/
 .risakoyamada .devise_title h4 {
   color: #f71137;
 }
@@ -1468,13 +1443,14 @@ and (min-color-index:0)
 .llll .works_d {
   background-image: url('../images/works/2017/llll/main.jpg');
 }
-/*
-.llll .bg_d {
-  background-color: #FFFAE1;
-}
-*/
 .llll .devise_title h4 {
   color: #af9678;
+}
+.llll .works_cap .pc_cap img{
+  border: 1px solid #af9678;
+}
+.llll .works_cap .sp_cap img{
+  border: 1px solid #af9678;
 }
 .llll .works_f {
   color: #af9678;
@@ -1512,13 +1488,14 @@ and (min-color-index:0)
 .cocooilmask .works_d {
   background-image: url('../images/works/2017/cocooilmask/main.jpg');
 }
-/*
-.cocooilmask .bg_d {
-  background-color: #F0F3F9;
-}
-*/
 .cocooilmask .devise_title h4 {
   color: #00D2B5;
+}
+.cocooilmask .works_cap .pc_cap img{
+  border: 1px solid #00D2B5;
+}
+.cocooilmask .works_cap .sp_cap img{
+  border: 1px solid #00D2B5;
 }
 .cocooilmask .works_f {
   color: #00D2B5;

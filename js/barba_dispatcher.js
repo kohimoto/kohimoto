@@ -62,7 +62,33 @@ Barba.Dispatcher.on("newPageReady", function(current, prev, container, raw){
           }
         }]
       });
-      
+
+      //-----animated------//
+      // Animations
+    	var contentWayPoint = function() {
+      var i = 0;
+    		$('.animate-box').waypoint( function( direction ) {
+    			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+    				i++;
+    				$(this.element).addClass('item-animate');
+    				setTimeout(function(){
+    					$('body .animate-box.item-animate').each(function(k){
+    						var el = $(this);
+    						setTimeout( function () {
+    							var effect = el.data('animate-effect');
+    							if ( effect === 'fadeIn') {
+    								el.addClass('fadeIn animated');
+    							} else {
+    								el.addClass('fadeInUp animated');
+    							}
+    							el.removeClass('item-animate');
+    						},  k * 600, 'easeInOutExpo' );
+    					});
+    				}, 600);
+    			}
+    		} , { offset: '85%' } );
+    	};
+
       //-----scrollbar--------//
       //$('.description').mCustomScrollbar({
       // advanced:{updateOnContentResize: true},
