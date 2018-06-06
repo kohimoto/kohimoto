@@ -1,6 +1,6 @@
 <?
 $head_c = file_get_contents("../../header.html");
-$head = preg_replace("/<title>.*<\/title>/","<title>SILVA | WORKS</title>",$head_c);
+$head = preg_replace("/<title>.*<\/title>/","<title>VISIBLEX | WORKS</title>",$head_c);
 echo $head;
 
 $ua_flg = 0;
@@ -18,13 +18,13 @@ if (preg_match("/iPhone|iPod/", $USER_AGENT)
 ?>
 <style>
 .pc_gif{
-  background-image: url(/images/works/2018/silva/silva_pc.gif);
+  background-image: url(/images/works/2018/visiblex/visiblex_pc.gif);
   background-repeat: no-repeat;
   background-size: 92%;
   background-position: 49.5% 14.2%;
 }
 .sp_gif{
-  background-image: url(/images/works/2018/silva/silva_sp.gif);
+  background-image: url(/images/works/2018/visiblex/visiblex_sp.gif);
   background-repeat: no-repeat;
   background-size: 87%;
   background-position: 49% 49%;
@@ -44,24 +44,22 @@ if($ua_flg == 1){
 <?
 }
 ?>
-<div class="silva">
+<div class="visiblex">
 
 <div class="works_head">
-  <!--div class="content"-->
     <div class="works_d">
     <img class="hidden_img" src="/images/works/main_bg.jpg">
     <div class="works_head_img">
     <div class="arrow_d">
-      <a class="arrow" href="../2017/kirsche.html">&#8594;&nbsp;View&nbsp;next&nbsp;&nbsp;work</a>
+      <a class="arrow" href="../2018/silva.html">&#8594;&nbsp;View&nbsp;next&nbsp;&nbsp;work</a>
     </div>
     <div class="works_head_text">
-      <h4 class="heading">Silva</h4>
-      <h2 class="heading">Official Site</h4>
+      <h4 class="heading">visiblex</h4>
+      <h2 class="heading">Official Website</h4>
     </div>
       <p>&#8600&#65038;&nbsp;Scroll to see more</p>
     </div>
     </div>
-  <!--/div-->
 </div>
 <div class="bg_d">
   <div class="content">
@@ -85,9 +83,7 @@ $add_sp_class = "class='sp_gif'";
 if($ua_flg !== 1){
 ?>
         <div class="video">
-        <video autoplay muted playsinline loop poster="" id="bgvid">
-        <source src="/images/works/2018/silva/silva_pc.mp4" type="video/mp4">
-        </video>
+          <img src="/images/works/2018/visiblex/pc_cap.png" alt="pc_cap">
         </div>
 <?
 }
@@ -96,24 +92,27 @@ if($ua_flg !== 1){
     </div>
     <div class="works_cap">
       <div class="pc_cap">
-          <img src="/images/works/2018/silva/silva_pc_cap_01.png" alt="silva_pc_01">
+          <img src="/images/works/2018/visiblex/pc_01.png" alt="visiblex_pc_01">
+      </div>
+      <div class="pc_cap">
+          <img src="/images/works/2018/visiblex/pc_02.png" alt="visiblex_pc_02">
       </div>
     </div>
     <div class="works_f">
     <span class="line_s"></span>
       <div class="link_m">
         <ul>
-          <li>Direction&nbsp;/&nbsp;Design&nbsp;/&nbsp;Coding&nbsp;/&nbsp;Cording&nbsp;/&nbsp;Website&nbsp;/&nbsp;CMS</li>
+          <li>Website&nbsp;/&nbsp;Coding&nbsp;/&nbsp;Cms&nbsp;</li>
         </ul>
         <ul>
-          <li><span>Website</span><a target="_blank" href="http://silva.tokyo/">http://silva.tokyo</a></li>
-          <li><span>Contents</span>-Shogo&nbsp;Ino</li>
+          <li><span>Website</span><a target="_blank" href="http://visiblex.com">http://visiblex.com</a></li>
+          <li><span>Design</span>-Yutaka Nishioka (VISIBLEX Inc.)</li>
         </ul>
       </div>
       <div class="color">
         <ul>
-          <li>#000330</li>
-          <li>#219b1e</li>
+          <li>#989898</li>
+          <li>#ffffff</li>
         </ul>
       </div>
     </div>
@@ -134,9 +133,7 @@ if($ua_flg !== 1){
 if($ua_flg !== 1){
 ?>
         <div class="video">
-        <video autoplay muted playsinline  loop poster="" id="bgvid">
-        <source src="/images/works/2018/silva/silva_sp.mp4" type="video/mp4">
-        </video>
+          <img src="/images/works/2018/visiblex/sp_cap.png" alt="sp_cap">
         </div>
 <?
 }
@@ -146,53 +143,51 @@ if($ua_flg !== 1){
     <div class="works_cap">
       <div class="sp_cap">
         <ul>
-          <li><img src="/images/works/2018/silva/silva_sp_cap_01.png" alt="silva_pc_01"></li>
-          <li><img src="/images/works/2018/silva/silva_sp_cap_02.png" alt="silva_pc_02"></li>
-          <li><img src="/images/works/2018/silva/silva_sp_cap_03.png" alt="silva_pc_03"></li>
+          <li><img src="/images/works/2018/visiblex/sp_01.png" alt="visiblex_sp_01"></li>
+          <li><img src="/images/works/2018/visiblex/sp_02.png" alt="visiblex_sp_02"></li>
+          <li><img src="/images/works/2018/visiblex/sp_03.png" alt="visiblex_sp_03"></li>
         </ul>
       </div>
     </div>
     <div class="works_c">
       <div class="works_c_d">
         <div class="works_c_dd">Client</div>
-        <div class="works_c_dt">東京都・笹塚でシェアハウスを運営しながらレンタルスペース事業なども手掛ける株式会社SILVA</div>
+        <div class="works_c_dt">VISIBLEX Inc.</div>
       </div>
       <div class="works_c_d">
         <div class="works_c_dd">Point</div>
-        <div class="works_c_dt">オリジナルデザインへワードプレスを組込み、充実したコンテンツの更新を可能に。余白を多くとり、ネイビーとポイントカラーでまとめすっきりとした印象のウェブサイト。</div>
+        <div class="works_c_dt">TVCM・ミュージックビデオ・番組オープニング映像など、多岐にわたる映像コンテンツの制作を行うVISIBLEXのコーポレートサイト構築を担当。自動再生により映像をユーザにノーアクションで見せられる独自のデザインへWordpressを埋め込むことによりCMSによる更新が可能に。</div>
       </div>
       <div class="works_c_d">
         <div class="works_c_dd">Searvice</div>
-        <div class="works_c_dt">Direction&nbsp;/&nbsp;Design&nbsp;/&nbsp;Coding&nbsp;/&nbsp;Cording&nbsp;/&nbsp;Website&nbsp;/&nbsp;CMS</div>
+        <div class="works_c_dt">Website&nbsp;/&nbsp;Coding&nbsp;/&nbsp;Cms</div>
       </div>
       <div class="works_c_d">
         <div class="works_c_dd">Required time</div>
-        <div class="works_c_dt">About 3month</div>
+        <div class="works_c_dt">About 1month</div>
       </div>
-      <div class="works_c_d">
+      <!--div class="works_c_d">
         <div class="works_c_dd">Cms</div>
         <div class="works_c_dt">Wordpress</div>
-      </div>
+      </div-->
     </div>
   </div>
 </div>
 <div class="bg_d_n">
-  <!--div class="content"-->
     <div class="works_d_f">
-      <a href="../2017/kirsche.html">
+      <a href="../2018/mamatas.html">
         <div class="works_foot_img"></div>
         <div class="works_foot_text">
         <div class="arrow_d">
         <p class="heading">&#8594;&nbsp;View&nbsp;next&nbsp;&nbsp;work</p>
         </div>
         <div class="works_head_text">
-          <h2 class="heading">Kirshe</h2>
-          <p>Direction&nbsp;/&nbsp;Branding&nbsp;/&nbsp;Design&nbsp;/&nbsp;Cording&nbsp;/&nbsp;Contents&nbsp;/&nbsp;Logo&nbsp;/&nbsp;Website&nbsp;/&nbsp;E-commerce</p>
+          <h2 class="heading">Mamatas</h2>
+          <p>Direction&nbsp;/&nbsp;Design&nbsp;/&nbsp;UI&nbsp;/&nbsp;Website</p>
         </div>
         </div>
       </a>
     </div>
-  <!--/div-->
 </div>
 
 </div>
