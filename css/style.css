@@ -1311,6 +1311,10 @@ and (min-color-index:0)
 .mamatas .works_c .works_c_d{
   color: #1c18c4;
 }
+.mamatas .works_c .works_c_d a ,
+.mamatas .works_c .works_c_d a:hover{
+  color: #1c18c4;
+}
 .mamatas .works_cap .sp_cap img {
   border: 2px solid #1c18c4;
 }
